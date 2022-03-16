@@ -1,0 +1,12 @@
+death_id, death_desc
+S,Survived	
+E,Killed by Eliminators	
+X,Exed	
+V,Elim killed by Village	
+F,Villager Killed by Village (Friendly Fire)	
+M,Killed by Neutral Evil	
+N,Neutral Killed	
+I,Inactive Killed	
+O,Out of Commission (alive but not counting)	
+D,Dropped Out (good reason)	
+P,Replaced by Pinch-hitter	

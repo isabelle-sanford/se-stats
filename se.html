@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Sanderson Elimination Data Desc</title>
+</head>
+
+
+<body>
+    <h1>Sanderson Elimination Data</h1>
+
+    <h2>Source/Explanation</h2>
+    The data below is pulled from <a
+        href="https://docs.google.com/spreadsheets/d/1CxrgdT4Xd8J0N3CuVmkVRryMeIdm93H8rzv8-YlP0kw/edit#gid=2121616728">this
+        spreadsheet</a>, which records the statistics for the games on the <a
+        href="https://www.17thshard.com/forum/forum/62-sanderson-elimination/">Sanderson Elimination</a> subforum. It
+    was specifically pulled from the "Data Test" tab of the sheet on Feb 16, 2022.
+    [more
+    stuff here about terminology / link to mafia explanation / ??]
+
+    <h2>Data files</h2>
+    <ul>
+        <li>
+            <a href="se_data/original_data.csv">original_data.csv</a> and <a
+                href="se_data/original_game.csv">original_game.csv</a>: original source tables for all tables below,
+            from the "Data Test" and "GameTest" tabs in the spreadsheet linked above.
+        </li>
+        <li>
+            <a href="se_data/player.csv">player.csv</a>: player name and ID
+        </li>
+        <li>
+            <a href="se_data/game.csv">game.csv</a>: game ID and info
+        </li>
+        <li>
+            <a href="se_data/gm_partial.csv">gm_partial.csv</a>: who GMed each game
+        </li>
+        <li>
+            <a href="se_data/playergame.csv">playergame.csv</a>: player info for each game
+        </li>
+        <li>
+            <a href="se_data/alignment.csv">alignment.csv</a>: key/description for alignment field in playergame
+        </li>
+        <li>
+            <a href="se_data/death.csv">death.csv</a>: key/description for death field in playergame
+        </li>
+    </ul>
+
+    The tables look approximately like so:
+    <br />
+    <img src="se_data/tentative SE table diagram.png" height="600px">
+
+    <h2>In-depth table descriptions</h2>
+    <h3>player</h3>
+    Player stores a simple integer/string pair for each unique player who has ever played (or run) a game in SE.
+    <ul>
+        <li>
+            <strong>player_id</strong>: integer representing a particular player.
+        </li>
+        <li>
+            <strong>player_name</strong>: string representing that player's actual username (or occasionally nickname).
+            In several tables below where <strong>player_id</strong> is used, this column stil appears alongside it,
+            mostly
+            because I know names and not IDs; those may be removed once tables are fully cleaned and ready to be worked
+            with.
+        </li>
+        <li>
+            May optionally include more stats here, but they'd mostly be summaries/statistics drawn from the playergame
+            table.
+        </li>
+    </ul>
+
+    <h3>game</h3>
+    Game is the primary table for providing information about each game. Games are usually referred to as XX#, e.g. LG17
+    is the 17th game in the LG (Long Game) format. Asterisks indicate columns which do not currently
+    exist or do not have any data in them right now. Many columns are only partially filled out; that will hopefully be
+    fixed soon.
+    <ul>
+        <li>
+            <strong>game_id</strong>: integer representing the particular game
+        </li>
+        <li>
+            <strong>format</strong>: two characters representing the game format. Options are LG (Long Game), MR (Mid
+            Range), QF (Quick Fix), BT (Break Tank), or AG (Anniversary Game, a subset of LG).
+        </li>
+        <li>
+            <strong>game_num</strong>: double representing which number in the format the game is. (It's a double
+            because a few games accidentally end the first turn for some reason and are rerun immediately, in which case
+            they're denoted as XX.1 and XX.2 - or sometimes XXa and XXb, but double is more convenient I think.)
+        </li>
+        <li>
+            <strong>game_string</strong>: This may or may not be taken out eventually as it represents redundant
+            information: it's 4-ish characters combining <strong>format</strong> and <strong>game_num</strong> into a
+            string that's the common way we refer to games, e.g. my first game was LG15. This column is also included in
+            other tables which include <strong>game_id</strong>, because it's a more helpful reference than a random
+            integer, but those will probably be taken out eventually. (Not sure yet; integer seems better but when I
+            look at a game string I know what it means without having to look it up in a table and the strings
+            <i>are</i> unique.)
+        </li>
+        <li>
+            <strong>is_anon*</strong>: boolean representing whether the game was anonymous or not. (Occasionally we play
+            'anonymous' games wherein each player gets access to one of the special accounts made for this purpose and
+            they play without revealing their usual identity/username.)
+        </li>
+        <li>
+            <strong>broken</strong>: Character? String? Number? Something representing whether the game was broken and
+            in what way. (Currently in game.csv there's an is_broken column which is "Y" or nothing (and will definitely
+            at least be made a boolean), and a different (much less filled out) column which specifies in what way it's
+            broken.) Options are Well Balanced, Fairly Balanced, Broken from Mechanics, Very Broken from Mechanics,
+            Broken from Distribution, Broken from Mechanics and Distribution. (May have a separate key table for this
+            column.)
+        </li>
+        <li>
+            <strong>IM_id</strong>: integer representing the player_id of the Impartial Moderator for that game. (There
+            are 3-5 moderators of the subforum at any given time, and for each game one of them must watch the game,
+            provide advice and help the GM with any problems that arise.)
+        </li>
+        <li>
+            <strong>start_date*</strong> and <strong>end_date*</strong>: Dates representing the day (in uhh some time
+            zone) on which the game started and ended. (Generally these are in the range of 1-8 weeks apart.)
+        </li>
+        <li>
+            <strong>num_cycles</strong>: Number of cycles from start to end that a game had. (This just records the
+            cycle number immediately previous to game end; day/night separation vs not isn't considered.)
+        </li>
+        <li>
+            <strong>is_sanderson*</strong>: boolean representing whether the setting of the game was Sanderson or not.
+            (Each game has a 'flavor' / setting which determines the names of the roles/teams, and players can roleplay
+            as a character in that setting, and if they die the GM will describe each character's death in detail when
+            announcing who died. (I have written literally hundreds of deaths because of this.) The forum on which we
+            play is a fan site for the author Brandon Sanderson, so there are certain restrictions on when you can run
+            games which have a non-Sanderson setting. Currently there's instead a <strong>setting</strong> column which
+            specifies a string that includes whether something is non-sanderson or not.)
+        </li>
+        <li>
+            <strong>world*</strong>: string?? representing which world a particular game took place on (i.e. basically
+            which book series is being drawn on for the flavor). Probably only
+            filled if is_sanderson is true? (could also have an additional location
+            column that's more specific)
+        </li>
+        <li>
+            <strong>complexity</strong>: number(??) representing how complex the game was. (may also break out a key
+            table for this) Current options are Basic, Standard, Semi Standard,
+            Complex, and Faction/Free-for-all.
+        </li>
+        <li>
+            <strong>fundamentals</strong>: Short string(?) representing what type of game it was. Options are V/E
+            ("standard" village/elim), Multiple E (multiple elim teams), Conversion (elims start as usually-1-person who
+            converts others), Faction (no evil/good distinction between teams), FFA (free for all: only one person can
+            win), or Unique.
+        </li>
+        <li>
+            <strong>num_posts</strong>: Number of posts in the relevant game thread overall.
+        </li>
+        <li>
+            Other things that might be added: a link to the actual game thread [note to self: will be tricky for LG37,
+            but probs just link main thread?], a column indicating who won the game. (This is currently present in the
+            game.csv table as <strong>winner</strong>, but it is technically redundant to player_game and in fact loses
+            information from that since multiple teams might win in some cases and only one will be listed here.)
+        </li>
+    </ul>
+
+    <!-- TODO remember to include note about currently having name/game strings -->
+
+    <h3>gm</h3>
+    This table lists the GM(s), or Game Master(s), who ran each game. Often a game is run with two or three people, one
+    of whom may be the "primary" GM and the others are helpers.
+    <ul>
+        <li>
+            <strong>gm_id</strong>: integer representing the player_id of the GM.
+        </li>
+        <li>
+            <strong>game_id</strong>: integer representing the game_id of the game this person GMed.
+        </li>
+        <li>
+            <strong>is_main</strong>: boolean representing whether this person was the primary GM of this game or not.
+            (There may be multiple primary GMs for a single game.)
+        </li>
+    </ul>
+
+    <h3>playergame</h3>
+    This is the "primary" table which holds by far the most data. Each row has a unique player_id/game_id pair, which
+    represents what happened to that player in that game.
+    <ul>
+        <li>
+            <strong>player_id</strong>: integer representing a particular player (from the player table).
+        </li>
+        <li>
+            <strong>game_id</strong>: integer representing the game_id of the game in question.
+        </li>
+        <li>
+            <strong>alignment_id</strong>: character representing what alignment (good, evil, neutral, etc) the player
+            was. References the alignment table.
+        </li>
+        <li>
+            <strong>death_id</strong>: character representing what happened to the player that game (survived, killed by
+            elims, dropped out, etc). References the death table.
+        </li>
+        <li>
+            <strong>first_hit</strong> and <strong>last_hit</strong> integers representing the cycles on which a player
+            first and last took a hit. [reminder about how it's the cycle hit NOT announced] Data is absent for some
+            games.
+        </li>
+        <li>
+            <strong>num_hits</strong>: integer representing the number of hits a player took over the course of a game.
+        </li>
+        <li>
+            <strong>win</strong>: nullable boolean representing whether the player won (true), lost (false), or drew
+            (null; this happens rarely but it does happen).
+        </li>
+        <li>
+            <strong>pinchhitter*</strong>: boolean representing whether this player stepped in for someone else. (Or
+            maybe was-stepped-in-for?) Helpful especially for accurately counting the number of players in a game.
+        </li>
+        <li>
+            <strong>inactive</strong>: character representing whether the player went inactive or not. (kinda
+            subjective, and depends on whether the player warned anyone beforehand)
+        </li>
+    </ul>
+
+    <h3>alignment</h3>
+    This table is basically a "key" that describes what each character in the alignment column of playergame means.
+    <ul>
+        <li>
+            <strong>alignment_id</strong>: character representing a unique alignment.
+        </li>
+        <li>
+            <strong>alignment_name</strong>: short string describing what that character stands for.
+        </li>
+        <li>
+            <strong>is_elim*</strong>: boolean representing whether this alignment is a type of eliminator (since there
+            are several).
+        </li>
+        <li>
+            Optionally other booleans to make the division make more sense like is_converter, was_converted (or maybe
+            put that as a separate bool in playergame?), and has_kill.
+        </li>
+    </ul>
+
+    <h3>death</h3>
+    This table is basically a "key" that describes what each character in the death column of playergame means.
+    <ul>
+        <li>
+            <strong>death_id</strong>: character representing a unique death type (killed by eliminators, by execution,
+            by a neutral, etc).
+        </li>
+        <li>
+            <strong>game_id</strong>: short description (usually a word) describing what that character represents.
+        </li>
+        <li>
+            Optionally booleans like killed_by_village (for F vs V), or maybe just stick that in playergame and have a
+            single thing for night kills.
+        </li>
+    </ul>
+
+
+    <h2>Table relations</h2>
+    Each player and each game has a unique integer ID, which are stored along with associated information in the player
+    and game tables respectively as primary keys. The game_id is used in playergame and gm, also as game_id. Player IDs
+    are used anywhere a player is referred to, which includes IM_id in game (for the Impartial Moderator) and gm_id in
+    gm (for the Game Master in question). The alignment and death tables are both essentially legends or keys that
+    provide more description/information about the values in the corresponding columns in playergame. The "main" table
+    here is playergame, which contains a single row for each player in each game, including whether they were
+    good/evil/etc, what happened to them, when it happened, and what role they had.
+
+
+
+    <!-- <script src="mycode.js"></script> -->
+</body>
+
+</html>

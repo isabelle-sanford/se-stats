@@ -1,0 +1,209 @@
+,game_string,num_cycles,num_posts,fundamentals,winner,complexity,broken,setting,world,is_anon,format,game_num,is_broken,game_id,IM_id
+0,LG1,4,462.0,V/E,E,Standard,Well Balanced,Cosmere,,,LG,1.0,,1,
+1,LG2,11,1232.0,Conversion,E,Standard,Balanced,Cosmere,,,LG,2.0,,2,
+2,LG3,7,739.0,V/E,V,Standard,Broken Distribution,Cosmere,,,LG,3.0,Y,3,
+3,LG4,9,1029.0,V/E,V,Semi Standard,Broken Mechanics,Cosmere,,,LG,4.0,Y,4,
+4,QF1,4,118.0,V/E,E,Basic,Well Balanced,Cosmere,,,QF,1.0,,5,
+5,LG5,7,617.0,V/E,V,Semi Standard,Balanced,Cosmere,,,LG,5.0,,6,12.0
+6,MR1,7,384.0,Faction,F,Faction/FFA,Broken Mechanics,Cosmere,,,MR,1.0,Y,7,1.0
+7,LG6,8,503.0,Multiple E,V,Semi Standard,Well Balanced,Wheel of Time,,,LG,6.0,,8,1.0
+8,QF2,10,361.0,V/E,E,Standard,Well Balanced,Cosmere,,,QF,2.0,,9,12.0
+9,LG7,6,657.0,Faction,V,Semi Standard,Balanced,Cosmere,,,LG,7.0,,10,12.0
+10,MR2,5,355.0,V/E,V,Standard,Broken Mechanics,Cosmere,,,MR,2.0,Y,11,12.0
+11,LG8,10,451.0,V/E,E,Complex,Broken Mech. and Dist,Cosmere,,,LG,8.0,Y,12,7.0
+12,QF3,5,201.0,V/E,V,Standard,Well Balanced,Cosmere,,,QF,3.0,,13,12.0
+13,MR3,6,226.0,V/E,E,Standard,Balanced,Non Cosmere,,,MR,3.0,,14,12.0
+14,LG9,6,343.0,V/E,E,Semi Standard,Well Balanced,Non Cosmere,,,LG,9.0,,15,1.0
+15,QF4,5,210.0,Conversion,E,Standard,Balanced,Cosmere,,,QF,4.0,,16,12.0
+16,MR4,7,711.0,V/E,V,Semi Standard,Balanced,Cosmere,,,MR,4.0,,17,7.0
+17,QF5,6,221.0,FFA,FFA,Faction/FFA,Well Balanced,Non Sanderson,,,QF,5.0,,18,12.0
+18,AG1,9,825.0,V/E,E,Standard,Well Balanced,Cosmere,,,AG,1.0,,19,7.0
+19,LG10,10,1049.0,V/E,V,Semi Standard,Broken Mechanics,Cosmere,,,LG,10.0,Y,20,12.0
+20,QF6,7,239.0,V/E,V,Standard,Broken Mechanics,Non Cosmere,,,QF,6.0,Y,21,12.0
+21,MR5,12,530.0,Faction,F,Faction/FFA,Well Balanced,Sanderson Misc,,,MR,5.0,,22,1.0
+22,LG11,8,651.0,V/E,V,Complex,Broken Mechanics,Cosmere,,,LG,11.0,Y,23,12.0
+23,QF7,5,339.0,V/E,E,Standard,Balanced,Cosmere,,,QF,7.0,,24,
+24,MR6,6,395.0,V/E,E,Semi Standard,Broken Mech. and Dist,Cosmere,,,MR,6.0,Y,25,1.0
+25,LG12,9,1301.0,Multiple E,V,Complex,Broken Mechanics,Cosmere,,,LG,12.0,Y,26,7.0
+26,QF8,11,529.0,V/E,V,Standard,Well Balanced,Cosmere,,,QF,8.0,,27,12.0
+27,MR7,12?,665.0,Faction,V,Faction/FFA,Broken Mechanics,Cosmere,,,MR,7.0,Y,28,7.0
+28,LG13,8,607.0,V/E,V,Standard,Balanced,Cosmere,,,LG,13.0,,29,12.0
+29,QF9,6,271.0,V/E,E,Basic,Balanced,Cosmere,,,QF,9.0,,30,12.0
+30,MR8,13,976.0,V/E,E,Standard,Well Balanced,Cosmere,,,MR,8.0,,31,1.0
+31,LG14,15,1250.0,V/E,V,Semi Standard,Broken Mech. and Dist,Cosmere,,,LG,14.0,Y,32,1.0
+32,QF10,11,645.0,V/E,E,Standard,Balanced,Cosmere,,,QF,10.0,,33,12.0
+33,MR9,11,821.0,V/E,V,Standard,Well Balanced,Cosmere,,,MR,9.0,,34,12.0
+34,LG15.1,1,209.0,V/E,E,Standard,Broken Mechanics,Cosmere,,,LG,15.1,Y,35,7.0
+35,LG15.2,10,1484.0,V/E,V,Standard,Broken Distribution,Cosmere,,,LG,15.2,Y,36,1.0
+36,QF11,7,285.0,V/E,E,Basic,Well Balanced,Cosmere,,,QF,11.0,,37,12.0
+37,MR10,11,937.0,V/E,E,Semi Standard,Balanced,Cosmere,,,MR,10.0,Y,38,1.0
+38,AG2,11,869.0,V/E,E,Standard,Well Balanced,Cosmere,,,AG,2.0,,39,12.0
+39,QF12,6,366.0,V/E,E,Standard,Balanced,Non Cosmere,,,QF,12.0,,40,20.0
+40,LG16,8,529.0,V/E,V,Standard,Well Balanced,Non Cosmere,,,LG,16.0,,41,12.0
+41,MR11,6,493.0,V/E,E,Semi Standard,Well Balanced,Cosmere,,,MR,11.0,,42,20.0
+42,LG17,9,581.0,V/E,V,Semi Standard,Balanced,Cosmere,,,LG,17.0,,43,12.0
+43,QF13,5,311.0,V/E,V,Standard,Broken Mechanics,Non Sanderson,,,QF,13.0,Y,44,1.0
+44,LG18,7,1161.0,V/E,V,Complex,Broken Mech. and Dist,Non Sanderson,,,LG,18.0,Y,45,20.0
+45,MR12,6,793.0,Faction,F,Semi Standard,Well Balanced,Non Cosmere,,,MR,12.0,,46,12.0
+46,LG19,8,624.0,V/E,E,Complex,Broken Mechanics,Cosmere,,,LG,19.0,Y,47,20.0
+47,QF14,12,687.0,,D,Semi Standard,Balanced,Cosmere,,,QF,14.0,,48,1.0
+48,MR13,5,278.0,V/E,E,Standard,Very Broken Mechanics,Cosmere,,,MR,13.0,,49,20.0
+49,LG20,12,1130.0,V/E,V,Semi Standard,Broken Distribution,Cosmere,,,LG,20.0,Y,50,1.0
+50,QF15,7,652.0,V/E,E,Semi Standard,Broken Mechanics,Non Sanderson,,,QF,15.0,,51,12.0
+51,LG21,6,1044.0,V/E,E,Complex,Broken Mechanics,Cosmere,,,LG,21.0,Y,52,12.0
+52,MR14,5,554.0,V/E,V,Semi Standard,Broken Mechanics,Non Sanderson,,,MR,14.0,Y,53,20.0
+53,LG22,11,1768.0,Multiple E,V,Semi Standard,Balanced,Wheel of Time,,,LG,22.0,,54,20.0
+54,QF16,9,355.0,V/E,V,Basic,Broken Mechanics,Cosmere,,,QF,16.0,Y,55,7.0
+55,LG23,9,972.0,Faction,E,Semi Standard,Broken Distribution,Cosmere,,,LG,23.0,,56,12.0
+56,MR15,6,727.0,V/E,V,Semi Standard,Broken Mechanics,Cosmere,,,MR,15.0,Y,57,20.0
+57,LG24,9,1559.0,Multiple E,E,Complex,Broken Distribution,Cosmere,,,LG,24.0,Y,58,1.0
+58,QF17,10,430.0,FFA,FFA,Faction/FFA,Balanced,Non Sanderson,,,QF,17.0,,59,12.0
+59,LG25,6,473.0,V/E,E,Standard,Balanced,Cosmere,,,LG,25.0,,60,12.0
+60,MR16,10,537.0,Faction,F,Faction/FFA,Well Balanced,Cosmere,,,MR,16.0,,61,1.0
+61,LG26,9,1344.0,Faction,Misc,Complex,Broken Mech. and Dist,Cosmere,,,LG,26.0,Y,62,20.0
+62,QF18,7,323.0,V/E,V,Semi Standard,Broken Mechanics,Non Sanderson,,,QF,18.0,,63,12.0
+63,MR17,8,589.0,V/E,E,Semi Standard,Broken Mechanics,Non Sanderson,,,MR,17.0,,64,12.0
+64,LG27,7,392.0,Faction,F,Complex,Very Broken Mechanics,Non Sanderson,,,LG,27.0,Y,65,20.0
+65,QF19,7,464.0,V/E,V,Standard,Balanced,Cosmere,,,QF,19.0,,66,1.0
+66,LG28,11,980.0,Conversion,V,Complex,Broken Mechanics,Cosmere,,,LG,28.0,,67,20.0
+67,MR18,7,357.0,V/E,E,Basic,Well Balanced,Cosmere,,,MR,18.0,,68,12.0
+68,QF20,8,434.0,V/E,E,Standard,Balanced,Non Sanderson,,,QF,20.0,,69,12.0
+69,LG29,8,984.0,V/E,E,Complex,Broken Mechanics,Cosmere,,,LG,29.0,Y,70,1.0
+70,MR19,3,329.0,V/E,Misc,Semi Standard,Balanced,Cosmere,,,MR,19.0,,71,20.0
+71,AG3,15,1403.0,V/E,E,Standard,Balanced,Cosmere,,,AG,3.0,,72,20.0
+72,QF21,8,124.0,,V,Standard,,Non Sanderson,,,QF,21.0,,73,20.0
+73,LG30,9,958.0,,E,Complex,,Cosmere,,,LG,30.0,,74,1.0
+74,MR20,10,360.0,V/E,E,Basic,,Cosmere,,,MR,20.0,,75,12.0
+75,LG31,2,313.0,,V,Semi Standard,Broken Distribution,Cosmere,,,LG,31.0,,76,12.0
+76,QF22,3,246.0,,E,Standard,,Cosmere,,,QF,22.0,,77,
+77,LG32,11,962.0,Conversion,V,Standard,Balanced,Cosmere,,,LG,32.0,,78,20.0
+78,MR21,5,368.0,,E,Standard,Broken Distribution,Non Cosmere,,,MR,21.0,Y,79,20.0
+79,LG33,10,1286.0,V/E,V,Complex,Broken Mech. and Dist,Non Sanderson,,,LG,33.0,Y,80,1.0
+80,QF23,6,395.0,,E,Standard,,Non Cosmere,,,QF,23.0,,81,20.0
+81,MR22,9,628.0,,D,Standard,,Non Sanderson,,,MR,22.0,,82,12.0
+82,LG34,9,848.0,,V,Standard,,Cosmere,,,LG,34.0,,83,20.0
+83,QF24,6,433.0,V/E,V,Basic,,Non Cosmere,,,QF,24.0,,84,1.0
+84,LG35,8,1742.0,V/E,E,Semi Standard,Broken Mechanics,Cosmere,,,LG,35.0,Y,85,20.0
+85,MR23,9,735.0,Faction,V,Semi Standard,Broken Mechanics,Cosmere,,,MR,23.0,Y,86,12.0
+86,LG36,8,685.0,,V,Complex,,Cosmere,,,LG,36.0,Y,87,12.0
+87,QF25,7,835.0,V/E,E,Basic,Broken Distribution,Cosmere,,,QF,25.0,,88,20.0
+88,LG37,5,1108.0,Unique,Misc,Complex,,Non Sanderson,,,LG,37.0,,89,12.0
+89,MR24,8,883.0,,Misc,,,Non Cosmere,,,MR,24.0,,90,108.0
+90,LG38,5,780.0,Unique,None,Complex,Very Broken Mechanics,Cosmere,,,LG,38.0,Y,91,20.0
+91,QF26,16,522.0,Unique,V,Basic,Broken Mechanics,Cosmere,,,QF,26.0,,92,108.0
+92,QF27,6,336.0,V/E,E,Standard,,Non Sanderson,,,QF,27.0,,93,77.0
+93,LG39,10,562.0,Conversion,E,Standard,,Cosmere,,,LG,39.0,,94,20.0
+94,MR25,9,433.0,,E,Standard,,Cosmere,,,MR,25.0,,95,20.0
+95,LG40,8,550.0,Faction,F,,,Cosmere,,,LG,40.0,,96,108.0
+96,QF28,7,233.0,,Misc,Basic,,,,,QF,28.0,,97,77.0
+97,MR26,6,351.0,,V,Standard,,Cosmere,,,MR,26.0,,98,108.0
+98,LG41,5,410.0,,F,Semi Standard,,Cosmere,,,LG,41.0,,99,20.0
+99,AG4,12,1054.0,V/E,E,Standard,Balanced,Cosmere,,,AG,4.0,,100,12.0
+100,QF29,4,175.0,,E,Standard,,Cosmere,,,QF,29.0,,101,108.0
+101,MR27,6,388.0,,V,Basic,,Non Cosmere,,,MR,27.0,,102,77.0
+102,LG42,8,352.0,Unique,FFA,Faction/FFA,Balanced,Cosmere,,,LG,42.0,Y,103,20.0
+103,QF30,8,520.0,,E,Basic,,Cosmere,,,QF,30.0,,104,108.0
+104,LG43,5,1385.0,Multiple E,Misc,Complex,,Cosmere,,,LG,43.0,Y,105,12.0
+105,MR28,6,443.0,,F,,,Cosmere,,,MR,28.0,,106,12.0
+106,LG44,8,1185.0,Multiple E,V,Complex,,Cosmere,,,LG,44.0,,107,108.0
+107,LG45,7,268.0,,V,Faction/FFA,,Non Cosmere,,,LG,45.0,,108,108.0
+108,QF31,8,509.0,,F,Faction/FFA,,Cosmere,,,QF,31.0,,109,77.0
+109,MR29,5,406.0,V/E,V,Semi Standard,,Non Sanderson,,,MR,29.0,Y,110,77.0
+110,LG46,10,862.0,,E,Semi Standard,,Non Sanderson,,,LG,46.0,Y,111,20.0
+111,QF32,5,305.0,,V,Basic,,Cosmere,,,QF,32.0,Y,112,108.0
+112,LG47,6,266.0,,E,,,Non Sanderson,,,LG,47.0,,113,12.0
+113,MR30,6,503.0,,V,,,Cosmere,,,MR,30.0,,114,108.0
+114,LG48,5,378.0,,V,Complex,,Cosmere,,,LG,48.0,,115,77.0
+115,QF33.1,1,392.0,,V,,Broken Mech. and Dist,Cosmere,,,QF,33.1,Y,116,20.0
+116,QF33.2,3,392.0,,V,,Well Balanced,Cosmere,,,QF,33.2,,117,20.0
+117,LG49,12,1062.0,Unique,Misc,Complex,Broken Mechanics,Cosmere,,,LG,49.0,,118,20.0
+118,MR31,7,454.0,,E,Semi Standard,,Cosmere,,,MR,31.0,,119,77.0
+119,QF34,6,177.0,,E,Semi Standard,,Non Cosmere,,,QF,34.0,,120,108.0
+120,LG50,7,426.0,,V,Standard,,Cosmere,,,LG,50.0,,121,12.0
+121,MR32,6,583.0,,E,Complex,,Wheel of Time,,,MR,32.0,,122,20.0
+122,LG51,8,458.0,Conversion,E,Standard,Balanced,Cosmere,,,LG,51.0,,123,108.0
+123,QF35,,288.0,,FFA,Faction/FFA,,Non Cosmere,,,QF,35.0,,124,20.0
+124,AG5,,1226.0,Faction,F,Complex,,Cosmere,,,AG,5.0,Y,125,108.0
+125,MR33,,185.0,,V,Standard,,Cosmere,,,MR,33.0,,126,20.0
+126,LG52,,472.0,,E,Semi Standard,,Cosmere,,,LG,52.0,,127,20.0
+127,QF36,,222.0,,F,,,Non Cosmere,,,QF,36.0,,128,241.0
+128,LG53,,1116.0,,V,,,Non Cosmere,,,LG,53.0,,129,108.0
+129,MR34,,220.0,,V,Basic,,Non Cosmere,,,MR,34.0,,130,241.0
+130,LG54,,528.0,,E,Complex,,Cosmere,,,LG,54.0,,131,20.0
+131,QF37,,258.0,,V,Semi Standard,,Cosmere,,,QF,37.0,,132,241.0
+132,LG55,,918.0,,V,Basic,,Cosmere,,,LG,55.0,,133,20.0
+133,MR35,,541.0,,V,,,,,,MR,35.0,,134,20.0
+134,LG56,6,525.0,,E,Standard,,Cosmere,,,LG,56.0,,135,20.0
+135,QF38,,382.0,,V,,,,,,QF,38.0,,136,108.0
+136,QF38,,382.0,,V,,,,,,QF,38.0,,136,12.0
+137,LG57,,229.0,,E,,,,,,LG,57.0,,137,241.0
+138,MR36,,329.0,,E,,,,,,MR,36.0,,138,241.0
+139,LG58,,504.0,,V,,,,,,LG,58.0,,139,20.0
+140,QF39,,744.0,,Misc,Complex,,Cosmere,,,QF,39.0,,140,12.0
+141,LG59,,286.0,,V,Semi Standard,,Cosmere,,,LG,59.0,,141,20.0
+142,MR37,,,,E,,,Cosmere,,,MR,37.0,,142,241.0
+143,LG60,,,,E,,,,,,LG,60.0,,143,20.0
+144,QF40.1,,,,E,,Well Balanced,Cosmere,,,QF,40.1,Y,144,241.0
+145,QF40.2,,,,E,,Well Balanced,Cosmere,,,QF,40.2,,145,241.0
+146,MR38.1,,,Unique,E,Basic,Broken Mechanics,Non Sanderson,,,MR,38.1,Y,146,12.0
+147,LG61,,,,V,,,,,,LG,61.0,Y,147,20.0
+148,MR38.2,,,Unique,V,Basic,Broken Mechanics,Non Sanderson,,,MR,38.2,,148,12.0
+149,QF41,,,,E,,,,,,QF,41.0,,149,241.0
+150,LG62,,,,F,,Well Balanced,,,,LG,62.0,,150,
+151,MR39,,,,V,,,,,,MR,39.0,,151,241.0
+152,AG6,,,V/E,E,Standard,Balanced,Cosmere,,,AG,6.0,,152,12.0
+153,QF42,,,,V,,,,,,QF,42.0,,153,
+154,MR40,,,,V,,,,,,MR,40.0,,154,236.0
+155,LG63,,,,E,,,,,,LG,63.0,,155,
+156,QF43,,,,E,,,,,,QF,43.0,,156,
+157,LG64,,,Multiple E,V,Semi Standard,Balanced,Non Cosmere,,,LG,64.0,,157,236.0
+158,MR41,,,,,,,,,,MR,41.0,,158,12.0
+159,LG65,,,V/E,V,Complex,Very Broken Mechanics,Non Sanderson,,,LG,65.0,Y,160,241.0
+160,QF44,,,,E,,,,,,QF,44.0,,161,236.0
+161,MR42,,,,E,,,,,,MR,42.0,,162,139.0
+162,LG66,,,,V,Complex,,,,,LG,66.0,,163,241.0
+163,QF45,,,,E,,,,,,QF,45.0,,164,12.0
+164,LG67,,,,E,,N,,,,LG,67.0,,165,12.0
+165,MR43,,,,E,,,,,,MR,43.0,,166,241.0
+166,QF46,,,,Misc,,,,,,QF,46.0,,167,12.0
+167,LG68,,,,V,,Y,,,,LG,68.0,Y,168,139.0
+168,MR44,,,,E,,,,,,MR,44.0,,169,236.0
+169,LG69,,,,E,,,,,,LG,69.0,,170,236.0
+170,QF47,,,,FFA,,,,,,QF,47.0,,171,236.0
+171,LG70,,,,E,,,,,,LG,70.0,,172,139.0
+172,MR45,,,,E,,,,,,MR,45.0,,173,236.0
+173,LG71,,,,E,,,,,,LG,71.0,,174,12.0
+174,QF48,,,,E,,,,,,QF,48.0,,175,139.0
+175,MR46,,,,E,,,,,,MR,46.0,,176,236.0
+176,LG72,,,,E,,,,,,LG,72.0,,177,139.0
+177,QF49,,,,E,,,,,,QF,49.0,,178,236.0
+178,MR47,,,,E,,,,,,MR,47.0,,179,236.0
+179,AG7,,,V/E,V,Complex,,Cosmere,,,AG,7.0,,180,241.0
+180,QF50,,,,V,,,,,,QF,50.0,,181,65.0
+181,LG73,,,,V,,,,,,LG,73.0,,182,253.0
+182,MR48,,,,E,,,,,,MR,48.0,,183,65.0
+183,LG74,,,,E,,,,,,LG,74.0,,184,12.0
+184,QF51,,,,E,,,,,,QF,51.0,,185,236.0
+185,MR49,,,,,,,,,,MR,49.0,,186,253.0
+186,LG75,,,,V,,,,,,LG,75.0,,187,236.0
+187,QF52,,,,,,,,,,QF,52.0,,188,65.0
+188,LG76,,,,V,,,,,,LG,76.0,,189,236.0
+189,MR50,,,,,,,,,,MR,50.0,,190,139.0
+190,LG77,,,,,Complex,,,,,LG,77.0,,191,139.0
+191,LG78,,,,,,,,,,LG,78.0,,192,253.0
+192,QF53,,,,,,,,,,QF,53.0,,193,65.0
+193,MR51,,,,,,,,,,MR,51.0,,194,236.0
+194,QF54,,,,,,,,,,QF,54.0,,195,12.0
+195,LG79,,,,,,,,,,LG,79.0,,196,65.0
+196,LG80,,,,,,,,,,LG,80.0,,197,253.0
+197,MR52,,,,,,,,,,MR,52.0,,198,236.0
+198,QF55,,,,,,,,,,QF,55.0,,199,65.0
+199,MR53,,,,,,,,,,MR,53.0,,200,236.0
+200,QF56,,,,,,,,,,QF,56.0,,201,253.0
+201,LG81,,,,,,,,,,LG,81.0,,202,236.0
+202,MR54,,,,,,,,,,MR,54.0,,203,253.0
+203,LG82,,,,,,,,,,LG,82.0,,204,253.0
+204,QF57,,,,,,,,,,QF,57.0,,205,236.0
+205,MR55,,,V/E,,Complex,,,,,MR,55.0,,206,65.0
+206,AG8,,,V/E,V,Standard,,Cosmere,Scadrial Era 1,,AG,8.0,,207,12.0
+207,QF58,,,,,,,,,,QF,58.0,,208,236.0
