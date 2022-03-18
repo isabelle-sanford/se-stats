@@ -87,15 +87,4 @@ CREATE TABLE playergame (
     FOREIGN KEY (death_id) REFERENCES death
 )
 
-
--- todo: make a view that's more like data test, game test, etc 
--- probably want it to actually be create MATERIALIZED view
-
-CREATE OR REPLACE VIEW game_view (
-
-    select game_string, is_anon, broken, start_date, end_date, num_cycles, is_sanderson, world, complexity, fundamentals, num_posts
-        from game
-
-)
-
--- might need to be create or replace game_view(columns) as select_query
+-- roles? 
