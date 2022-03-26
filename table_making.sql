@@ -1,3 +1,16 @@
+
+\c isanford;
+
+
+drop table if exists player;
+drop table if exists game;
+drop table if exists alignment;
+drop table if exists gms;
+drop table if exists death;
+drop table if exists playergame;
+
+
+
 -- ! Player
 CREATE TABLE player (
     player_id INT GENERATED ALWAYS AS IDENTITY,
@@ -7,7 +20,7 @@ CREATE TABLE player (
 
 -- ! Game
 CREATE TABLE game (
-    game_id INT GENERATED ALWAYS AS IDENTITY,
+    game_id INT, -- !GENERATED ALWAYS AS IDENTITY,
     game_format CHAR(2),
     game_number FLOAT,
     game_string CHAR(6),
