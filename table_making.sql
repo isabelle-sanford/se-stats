@@ -8,45 +8,58 @@ drop table if exists alignment;
 drop table if exists gms;
 drop table if exists death;
 drop table if exists playergame;
-
+drop table if exists roles;
+drop table if exists player_roles;
+drop table if exists settings;
 
 
 -- ! Player
 CREATE TABLE player (
-    player_id INT GENERATED ALWAYS AS IDENTITY,
-    player_name VARCHAR,
+    player_id INT,
+    player_name VARCHAR UNIQUE NOT NULL,
     PRIMARY KEY (player_id)
 );
 
 -- ! Game
 CREATE TABLE game (
-    game_id INT, -- !GENERATED ALWAYS AS IDENTITY,
-    game_format CHAR(2),
-    game_number FLOAT,
-    game_string CHAR(6),
-    is_anon BOOLEAN,
-    broken , -- ?
+    game_id INT, 
+    game_format CHAR(2) NOT NULL,
+    game_number FLOAT NOT NULL,
+    game_string CHAR(6) UNIQUE NOT NULL,
+    anon_num NULL INT, -- num only if anon else null
+
+    -- ??
+    mechanics_balance CHAR(1) NOT NULL,
+    distribution_balance CHAR(1) NOT NULL,
+
     IM_id INT,
     start_date DATE,
     end_date DATE,
     num_cycles INT,
-    is_sanderson BOOL,
-    world VARCHAR(20),
+    num_posts INT,
+
+    setting_id INT,
+
     complexity VARCHAR(20), -- or make sep table
     fundamentals VARCHAR(20), -- or make sep table
-    num_posts INT,
+    role_madness BOOLEAN,
+    
 
     PRIMARY KEY (game_id)
     FOREIGN KEY (IM_id) REFERENCES player(player_id)
+    FOREIGN KEY (setting_id) REFERENCES setting
+    CHECK format_con (game_format IN ('LG', 'AG', 'MR', 'QF', 'BT')) -- may need to change at some point
 
-    CHECK (world IN ('Sel', 'Scadrial', 'Nalthis', 'Roshar')) --!
+    CHECK (mechanics_balance IN ('BB', 'B', 'M', 'MM')) -- probs should be sep table sigh
+    CHECK (distribution_balance IN ('BB', 'B', 'D', 'DD')) -- again sep table (or at least enum, since ordered)
+
 )
 
 
 -- ! Alignment
 CREATE TABLE alignment (
-    alignment_id INT GENERATED ALWAYS AS IDENTITY,
-    alignment_char CHAR,
+    alignment_id INT,
+    alignment_char CHAR UNIQUE, 
     alignment_desc VARCHAR,
     is_elim BOOLEAN,
     is_evil BOOLEAN
@@ -61,7 +74,7 @@ INSERT INTO alignment VALUES('V', 'Village', FALSE, FALSE)
 CREATE TABLE gms (
     game_id INT,
     player_id INT,
-    main_gm BOOLEAN,
+    main_gm BOOLEAN DEFAULT TRUE,
     FOREIGN KEY (game_id) REFERENCES game(game_id),
     FOREIGN KEY (player_id) REFERENCES player(player_id)
 )
@@ -69,8 +82,8 @@ CREATE TABLE gms (
 
 -- ! death
 CREATE TABLE death (
-    death_id INT GENERATED ALWAYS AS IDENTITY,
-    death_char CHAR,
+    death_id INT,
+    death_char CHAR UNIQUE,
     death_desc VARCHAR,
 
     PRIMARY KEY (death_id)
@@ -79,7 +92,7 @@ CREATE TABLE death (
 
 -- ! Playergame
 CREATE TABLE playergame (
-    -- maybe have PK - must if want to include roles
+    pg_id INT,
     player_id INT,
     game_id INT,
     alignment_id INT,
@@ -91,9 +104,7 @@ CREATE TABLE playergame (
     pinchhitter BOOLEAN,
     inactive BOOLEAN,
 
-    -- ? Role
-
-
+    PRIMARY KEY (pg_id),
     FOREIGN KEY (player_id) REFERENCES player, -- col doesn't have to be specified, default is table's PK
     FOREIGN KEY (game_id) REFERENCES game(game_id),
     FOREIGN KEY (alignment_id) REFERENCES alignment,
@@ -101,3 +112,32 @@ CREATE TABLE playergame (
 )
 
 -- roles? 
+
+-- ! Roles
+CREATE TABLE roles (
+    role_id INT,
+    role_type VARCHAR, -- check constraint probs
+    role_name VARCHAR
+
+    PRIMARY KEY (role_id)
+)
+
+-- ! Roles data
+CREATE TABLE player_roles (
+    pg_id INT,
+    role_id INT,
+
+    FOREIGN KEY (pg_id) REFERENCES playergame,
+    FOREIGN KEY (role_id) REFERENCES roles
+)
+
+
+
+CREATE TABLE settings (
+    world_id INT,
+    world_name VARCHAR,
+    is_sanderson BOOLEAN,
+    is_cosmere BOOLEAN,
+
+    PRIMARY KEY (world_id)
+)

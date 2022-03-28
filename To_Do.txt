@@ -1,3 +1,33 @@
 grab another copy of data test to get rid of random middle empty rows 
 
 grab another copy of game test once more info is in fron striker & co
+poke wilson about complexity stuff etc
+
+pickle (or just import CSV) for each table at end of game_cleaning & table_splitting into a new notebook which puts tables into SQL form (Y -> true, NaN -> null, put IDs in playergame), then use those to insert into actual SQL table 
+
+figure out how the heck to do this in mongo
+
+add more constraints on table creation, esp. uniqueness, not null, 
+
+
+make materialized views 
+
+
+QS:
+- if you tie something to a FK can it be null? 
+
+
+
+Indices...
+- Sparse index for each year in PG / games? dunno, not super helpful unless year is there somewhere
+
+
+mongo
+
+Collection 1 - games 
+{
+    _id: premade,
+    game_id: 1,
+    game_format: LG
+    game_num: 11,
+}
