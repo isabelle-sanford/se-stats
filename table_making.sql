@@ -43,7 +43,8 @@ CREATE TABLE game (
     complexity VARCHAR(20), -- or make sep table
     fundamentals VARCHAR(20), -- or make sep table
     role_madness BOOLEAN,
-    
+
+    -- optionally num players, winner, title, link
 
     PRIMARY KEY (game_id)
     FOREIGN KEY (IM_id) REFERENCES player(player_id)
@@ -62,12 +63,14 @@ CREATE TABLE alignment (
     alignment_char CHAR UNIQUE, 
     alignment_desc VARCHAR,
     is_elim BOOLEAN,
-    is_evil BOOLEAN
+    is_evil BOOLEAN,
+    has_kill BOOLEAN,
+    has_convert BOOLEAN,
 
     PRIMARY KEY (alignment_id)
 );
 
-INSERT INTO alignment VALUES('V', 'Village', FALSE, FALSE)
+--INSERT INTO alignment VALUES('V', 'Village', FALSE, FALSE)
 
 
 -- ! GMs

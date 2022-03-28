@@ -1,11 +1,11 @@
-alignment_id, alignment_desc
-G,Good
-E,Evil (Prim) (team kill, no conv)
-S,Secondary Evil Faction
-T,Tertiary Evil Faction
-B,Evil Convert (w/ kill)
-D,Evil Converter (w/o kill)
-C,Evil Convert (w/o kill)
-M,Neutral Evil/Serial Killer
-N,Neutral
-F,Faction
+alignment_id ,alignment_desc
+G            ,Good
+E            ,Evil (Prim) (team kill / no conv)
+S            ,Secondary Evil Faction
+T            ,Tertiary Evil Faction
+B            ,Evil Convert (w/ kill)
+D            ,Evil Converter (w/o kill)
+C            ,Evil Convert (w/o kill)
+M            ,Neutral Evil/Serial Killer
+N            ,Neutral
+F            ,Faction

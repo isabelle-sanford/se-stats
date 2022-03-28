@@ -1,0 +1,214 @@
+auto,Basics,,,,,,,,,,to delete,Elims,,,,Deaths,,,,,,,,,,,,,,,,
+auto?,# Players,# Cycles,# Posts,Fundamentals,Winner,Complexity,Role Madness,Anon?,Mech,Dist,Broken,# Elims,Elim %,# Xed,# Vig'd,# Deaths,# Survivors,# E killed,# M killed,# N killed,# V killed,# FF,# Xed,# I killed,# pinchhitters,# Spectators,GM(s),IM,Start/End date?,Title/Link,Sanderson? ,World
+LG1,16,4,462,V/E,E,Standard,FALSE,FALSE,,,Well Balanced,4,25.0%,0,1,10,6,5,0,0,1,0,4,0,,3,,,,In the Wake of Koloss,TRUE,Scadrial
+LG2,29,11,1232,CON,E,Standard,FALSE,FALSE,,,Balanced,5,17.2%,1,2,25,4,14,0,0,2,2,7,0,,2,,,,Devil's Den,TRUE,Scadrial
+LG3,22,7,739,V/E,V,Standard,FALSE,FALSE,,,Broken Distribution,5,22.7%,4,1,14,8,3,0,0,1,3,7,0,,5,,,,Blackwater Village,TRUE,Scadrial
+LG4,30,9,1029,V/E,V,Semi Standard,FALSE,FALSE,,,Broken Mechanics,6,20.0%,2,4,21,9,4,0,1,4,4,8,0,,1,,,,Colours of War,TRUE,Nalthis
+QF1,12,4,118,V/E,E,Basic,FALSE,FALSE,,,Well Balanced,3,25.0%,0,0,6,6,3,0,0,0,0,3,0,,11,,,,Jeskeri Mysteries,TRUE,Sel
+LG5,20,7,617,V/E,V,Semi Standard,FALSE,FALSE,,,Balanced,4,20.0%,2,2,14,6,4,0,0,2,1,7,0,,2,,,,Noble Secrets,TRUE,Roshar
+MR1,27,7,384,FAC,F,Faction/FFA,FALSE,FALSE,,,Broken Mechanics,0,0.0%,0,0,21,6,0,0,12,0,4,5,0,,4,,,,Riots of Kholinar,TRUE,Roshar
+LG6,25,8,503,EE,V,Semi Standard,FALSE,FALSE,,,Well Balanced,5,20.0%,4,0,21,4,11,0,0,0,2,8,0,,5,,,,Daes Dae'Mar,TRUE,Wheel of Time
+QF2,15,10,361,V/E,E,Standard,FALSE,FALSE,,,Well Balanced,3,20.0%,0,0,10,5,7,0,0,0,0,3,0,,9,,,,Crushthroat's Beginnings,TRUE,Sel
+LG7,21,6,657,FAC,V,Semi Standard,FALSE,FALSE,,,Balanced,4,19.0%,3,1,12,9,5,0,0,1,1,5,0,,4,,,,Annealing of Luthadel,TRUE,Scadrial
+MR2,18,5,355,V/E,V,Standard,FALSE,FALSE,,,Broken Mechanics,4,22.2%,4,0,4,14,0,0,0,0,0,4,0,,2,,,,Servants of Honor,TRUE,Roshar
+LG8,20,10,451,V/E,E,Complex,FALSE,FALSE,,,Broken Mech. and Dist,3,15.0%,0,0,15,5,9,0,0,0,1,5,0,,5,,,,Elendel Gang War,TRUE,Scadrial
+QF3,14,5,201,V/E,V,Standard,FALSE,FALSE,,,Well Balanced,3,21.4%,2,1,10,4,4,0,0,1,0,5,0,,4,,,,Shadowed Secrets,TRUE,Threnody
+MR3,15,6,226,V/E,E,Standard,FALSE,FALSE,,,Balanced,4,26.7%,1,0,10,5,6,0,0,0,0,4,0,,4,,,,When Chalklings Attack,TRUE,Rithmatist
+LG9,15,6,343,V/E,E,Semi Standard,FALSE,FALSE,,,Well Balanced,3,20.0%,1,1,12,3,3,1,0,1,1,6,0,,5,,,,The Empty Throne,TRUE,Reckoners
+QF4,14,5,210,CON,E,Standard,FALSE,FALSE,,,Balanced,4,28.6%,1,0,8,6,4,0,0,0,0,4,0,,4,,,,Conversions,TRUE,Cross-Cosmere
+MR4,20,7,711,V/E,V,Semi Standard,FALSE,FALSE,,,Balanced,6,30.0%,2,3,12,8,3,0,0,3,1,4,1,,2,,,,Alethi War of Unification,TRUE,Roshar
+QF5,21,6,221,FFA,FFA,Faction/FFA,FALSE,FALSE,,,Well Balanced,0,0.0%,0,0,20,1,0,0,20,0,0,0,0,,6,,,,Hunger Games,FALSE,Hunger Games
+AG1,28,9,825,V/E,E,Standard,FALSE,FALSE,,,Well Balanced,5,17.9%,1,0,18,10,9,0,0,0,3,6,0,,6,,,,In the Re-Wake of the Koloss,TRUE,Scadrial
+LG10,29,10,1049,V/E,V,Semi Standard,FALSE,FALSE,,,Broken Mechanics,6,20.7%,3,3,17,12,7,0,0,3,0,7,0,,8,,,,A Game of Shards,TRUE,Cross-Cosmere
+QF6,20,7,239,V/E,V,Standard,FALSE,FALSE,,,Broken Mechanics,4,20.0%,4,0,9,11,3,0,0,0,0,6,0,,17,,,,A Time of Nightmares,TRUE,Legion
+MR5,29,12,530,FAC,F,Faction/FFA,FALSE,FALSE,,,Well Balanced,0,0.0%,0,0,28,1,0,0,17,0,0,7,4,,9,,,,Competing Realities,TRUE,
+LG11,32,8,651,V/E,V,Complex,FALSE,FALSE,,,Broken Mechanics,5,15.6%,5,0,18,14,8,0,0,0,4,6,0,,8,,,,Twinborn Village,TRUE,Scadrial
+QF7,17,5,339,V/E,E,Standard,FALSE,FALSE,,,Balanced,4,23.5%,1,1,15,2,6,0,0,1,3,5,0,,22,,,,Living (and Dying) Rough,TRUE,Scadrial
+MR6,27,6,395,V/E,E,Semi Standard,FALSE,FALSE,,,Broken Mech. and Dist,6,22.2%,0,1,20,7,14,0,0,1,1,2,2,,19,,,,A Venture in Atium,TRUE,Scadrial
+LG12,36,9,1301,EE,V,Complex,FALSE,FALSE,,,Broken Mechanics,8,22.2%,3,4,21,10,3,0,2,4,3,9,0,,4,,,,Shadows of Elantris,TRUE,Sel
+QF8,22,11,529,V/E,V,Standard,FALSE,FALSE,,,Well Balanced,4,18.2%,3,1,21,1,6,0,0,1,2,12,0,,22,,,,The Steelway Express,TRUE,Scadrial
+MR7,27,12?,665,FAC,V,Faction/FFA,FALSE,FALSE,,,Broken Mechanics,4,14.8%,1,0,4,10,0,0,3,0,0,1,0,,18,,,,Eighty Splendid Suns,TRUE,Sel
+LG13,27,8,607,V/E,V,Standard,FALSE,FALSE,,,Balanced,5,18.5%,3,2,17,10,5,0,0,2,4,6,0,,13,,,,Traitors on the Plains,TRUE,Roshar
+QF9,19,6,271,V/E,E,Basic,FALSE,FALSE,,,Balanced,4,21.1%,1,0,13,6,6,0,1,0,0,6,0,,18,,,,The Court of the Gods,TRUE,Nalthis
+MR8,29,13,976,V/E,E,Standard,FALSE,FALSE,,,Well Balanced,5,17.2%,1,1,24,5,11,0,0,1,3,8,1,,11,,,,Highborn Intrigue,TRUE,Roshar
+LG14,28,15,1250,V/E,V,Semi Standard,FALSE,FALSE,,,Broken Mech. and Dist,6,21.4%,5,1,25,3,6,0,0,1,5,12,1,,18,,,,To Shatter a Shard,TRUE,Cross-Cosmere
+QF10,21,11,645,V/E,E,Standard,FALSE,FALSE,,,Balanced,4,19.0%,2,0,17,4,9,0,0,0,0,8,0,,21,,,,Scadrial Atium Rush,TRUE,Scadrial
+MR9,27,11,821,V/E,V,Standard,FALSE,FALSE,,,Well Balanced,7,25.9%,4,2,22,5,7,0,0,2,2,10,1,,15,,,,The Steel Ministry,TRUE,Scadrial
+LG15.1,26,1,209,V/E,E,Standard,FALSE,FALSE,,,Broken Mechanics,6,23.1%,0,0,0,26,0,0,0,0,0,0,0,,16,,,,The Shards Themselves...,TRUE,Cross-Cosmere
+LG15.2,32,10,1484,V/E,V,Standard,FALSE,FALSE,,,Broken Distribution,7,21.9%,3,3,24,8,6,0,0,3,5,10,0,,9,,,,,TRUE,Cross-Cosmere
+QF11,17,7,285,V/E,E,Basic,FALSE,FALSE,,,Well Balanced,3,17.6%,0,0,12,5,5,0,0,0,0,2,5,,20,,,,Cultists in a Snowstorm,TRUE,Sel
+MR10,36,11,937,V/E,E,Semi Standard,FALSE,FALSE,,,Balanced,8,22.2%,0,1,27,9,14,0,0,1,5,7,0,,8,,,,Divided Loyalties,TRUE,Roshar
+AG2,28,11,869,V/E,E,Standard,FALSE,FALSE,,,Well Balanced,5,17.9%,1,0,18,10,11,0,0,0,0,6,1,,18,,,,Return of the Koloss,TRUE,Scadrial
+QF12,19,6,366,V/E,E,Standard,FALSE,FALSE,,,Balanced,4,21.1%,1,0,13,6,4,1,2,1,1,4,0,,22,,,,The Time of Reckoning,TRUE,Reckoners
+LG16,19,8,529,V/E,V,Standard,FALSE,FALSE,,,Well Balanced,4,21.1%,3,0,17,2,5,1,0,0,3,7,1,,18,,,,Empty Throne Pt 2: The Catacombs,TRUE,Reckoners
+MR11,18,6,493,V/E,E,Semi Standard,FALSE,FALSE,,,Well Balanced,4,22.2%,0,0,12,6,4,0,2,0,0,6,0,,19,,,,Paradise Lost,TRUE,First of the Sun
+LG17,21,9,581,V/E,V,Semi Standard,FALSE,FALSE,,,Balanced,4,19.0%,3,1,17,4,7,0,0,1,0,5,4,,13,,,,Heronfall,TRUE,Scadrial
+QF13,17,5,311,V/E,V,Standard,FALSE,FALSE,,,Broken Mechanics,4,23.5%,2,2,11,6,4,0,0,2,0,4,1,,18,,,,Winter is Coming,FALSE,Game of Thrones
+LG18,24,7,1161,V/E,V,Complex,FALSE,FALSE,,,Broken Mech. and Dist,4,16.7%,0,4,13,8,0,0,7,4,2,0,0,,17,,,,Holly and Iron,FALSE,KKC
+MR12,26,6,793,FAC,F,Semi Standard,FALSE,FALSE,,,Well Balanced,6,23.1%,2,2,14,12,2,0,4,2,0,4,2,,14,,,,Turf War,TRUE,Reckoners
+LG19,17,8,624,V/E,E,Complex,FALSE,FALSE,,,Broken Mechanics,8,47.1%,4,3,14,3,6,0,0,4,0,4,0,,21,,,,Twinborn City,TRUE,Scadrial
+QF14,23,12,687,,D,Semi Standard,FALSE,FALSE,,,Balanced,5,21.7%,0,3,23,0,2,1,13,3,4,0,0,,15,,,,Corruption in the Senate,TRUE,Scadrial
+MR13,19,5,278,V/E,E,Standard,FALSE,FALSE,,,Very Broken Mechanics,4,21.1%,0,0,12,7,7,0,0,0,1,3,1,,16,,,,Treachery in the Terris Peaks,TRUE,Scadrial
+LG20,28,12,1130,V/E,V,Semi Standard,FALSE,FALSE,,,Broken Distribution,5,17.9%,2,2,22,5,6,0,2,2,5,7,0,,10,,,,Warcamp Enigmas,TRUE,Roshar
+QF15,22,7,652,V/E,E,Semi Standard,FALSE,FALSE,,,Broken Mechanics,7,31.8%,1,0,16,6,7,0,3,0,0,6,0,,16,,,,Death Note,FALSE,Death Note
+LG21,27,6,1044,V/E,E,Complex,FALSE,FALSE,,,Broken Mechanics,5,18.5%,0,0,13,13,3,3,4,0,1,2,0,,13,,,,To Reforge a God,TRUE,Cross-Cosmere
+MR14,18,5,554,V/E,V,Semi Standard,FALSE,FALSE,,,Broken Mechanics,4,22.2%,2,2,11,7,3,0,0,2,1,4,1,,16,,,,The Canim Fury,FALSE,Codex Alera
+LG22,28,11,1768,EE,V,Semi Standard,FALSE,FALSE,,,Balanced,10,35.7%,7,1,24,3,7,0,1,1,2,11,2,,10,,,,Corenne al'Daishar,TRUE,Wheel of Time
+QF16,17,9,355,V/E,V,Basic,FALSE,FALSE,,,Broken Mechanics,4,23.5%,2,2,15,2,5,0,0,2,1,7,0,,22,,,,Shades of Threnody,TRUE,Threnody
+LG23,27,9,972,FAC,E,Semi Standard,FALSE,FALSE,,,Broken Distribution,5,18.5%,1,1,22,5,5,0,7,1,0,9,0,,10,,,,The Siege of Luthadel,TRUE,Scadrial
+MR15,19,6,727,V/E,V,Semi Standard,FALSE,FALSE,,,Broken Mechanics,8,42.1%,4,0,10,8,2,1,0,0,1,6,0,,15,,,,The Dula Revolution,TRUE,Sel
+LG24,28,9,1559,EE,E,Complex,FALSE,FALSE,,,Broken Distribution,10,35.7%,4,0,24,4,7,2,3,0,1,9,2,,1,,,,The Godless City,TRUE,Sel
+QF17,25,10,430,FFA,FFA,Faction/FFA,FALSE,FALSE,,,Balanced,0,0.0%,0,0,25,0,0,0,18,0,0,7,0,,1,,,,Gotta Kil 'Em All,FALSE,Pokemon
+LG25,24,6,473,V/E,E,Standard,FALSE,FALSE,,,Balanced,7,29.2%,2,0,15,9,7,0,2,0,0,6,0,,1,,,,A Breath of Power,TRUE,Nalthis
+MR16,22,10,537,FAC,F,Faction/FFA,FALSE,FALSE,,,Well Balanced,0,0.0%,0,0,20,2,0,0,11,0,0,6,3,,0,,,,War of the (Cosmere) Worlds),TRUE,Cross-Cosmere
+LG26,35,9,1344,FAC,Misc,Complex,FALSE,FALSE,,,Broken Mech. and Dist,10,28.6%,4,0,17,18,3,0,6,0,0,6,2,,0,,,,Cognitive Dissonance,TRUE,Cross-Cosmere
+QF18,15,7,323,V/E,V,Semi Standard,FALSE,FALSE,,,Broken Mechanics,4,26.7%,3,1,13,2,5,0,0,1,0,6,1,,2,,,,The Black Prism,FALSE,Black Prism
+MR17,21,8,589,V/E,E,Semi Standard,FALSE,FALSE,,,Broken Mechanics,7,33.3%,2,1,16,4,3,5,1,1,0,5,1,,0,,,,Hic Sunt Leones,FALSE,Red Rising
+LG27,22,7,392,FAC,F,Complex,FALSE,FALSE,,,Very Broken Mechanics,0,0.0%,0,0,14,8,0,0,8,0,0,6,0,,2,,,,Strife in Ankh Morpork,FALSE,Discworld
+QF19,24,7,464,V/E,V,Standard,FALSE,FALSE,,,Balanced,6,25.0%,4,1,22,2,6,0,1,1,3,7,4,,2,,,,Noble Intentions,TRUE,Scadrial
+LG28,34,11,980,CON,V,Complex,FALSE,FALSE,,,Broken Mechanics,6,17.6%,4,0,22,12,9,0,0,0,3,10,0,,5,,,,Awakening at the House on the Hill,TRUE,Nalthis
+MR18,19,7,357,V/E,E,Basic,FALSE,FALSE,,,Well Balanced,5,26.3%,1,0,15,4,6,0,0,0,0,7,2,,3,,,,Patji's Cauldron,TRUE,First of the Sun
+QF20,23,8,434,V/E,E,Standard,FALSE,FALSE,,,Balanced,4,17.4%,2,0,21,2,8,0,0,0,0,8,5,,4,,,,Summitmist Manor,FALSE,Elder Scrolls
+LG29,29,8,984,V/E,E,Complex,FALSE,FALSE,,,Broken Mechanics,8,27.6%,1,0,14,15,2,4,2,0,0,6,0,,3,,,,A Mote in Adonalsium's Eye,TRUE,Cross-Cosmere
+MR19,20,3,329,V/E,Misc,Semi Standard,FALSE,FALSE,,,Balanced,4,20.0%,0,0,8,12,2,0,2,0,1,3,0,,1,,,,Return to Urithiru,TRUE,Roshar
+AG3,34,15,1403,V/E,E,Standard,FALSE,FALSE,,,Balanced,6,17.6%,2,0,25,9,14,0,0,0,0,11,0,,2,,,,The Curse of the Koloss,TRUE,Scadrial
+QF21,16,8,124,,V,Standard,FALSE,FALSE,,,,3,18.8%,2,0,11,5,0,0,0,0,0,8,3,,2,,,,"The Name's Smith, John Smith",FALSE,
+LG30,22,9,958,,E,Complex,FALSE,FALSE,,,,5,22.7%,0,0,8,9,7,0,0,0,0,1,0,,2,,,,Journey Before Destination,TRUE,Roshar
+MR20,21,10,360,V/E,E,Basic,FALSE,FALSE,,,,1,4.8%,0,0,20,1,10,0,0,0,1,9,0,,1,,,,With Ruin Beside Us,TRUE,Scadrial
+LG31,17,2,313,,V,Semi Standard,FALSE,FALSE,,,Broken Distribution,3,17.6%,0,2,9,8,3,0,1,2,1,2,0,,3,,,,A World Without Vin,TRUE,Scadrial
+QF22,22,3,246,,E,Standard,FALSE,FALSE,,,,6,27.3%,0,0,10,12,6,0,0,0,0,4,0,,3,,,,Ghosts in the Night,TRUE,Roshar
+LG32,30,11,962,CON,V,Standard,FALSE,FALSE,,,Balanced,5,16.7%,3,1,17,13,5,0,0,1,2,8,1,,2,,,,Pulling on Strings,TRUE,Scadrial
+MR21,18,5,368,,E,Standard,FALSE,FALSE,,,Broken Distribution,5,27.8%,1,0,11,7,6,0,0,0,0,5,0,,1,,,,The Battle for Nebrask,TRUE,Rithmatist
+LG33,27,10,1286,V/E,V,Complex,FALSE,FALSE,,,Broken Mech. and Dist,6,22.2%,0,3,15,6,2,0,7,3,3,0,0,,1,,,,Life,FALSE,KKC
+QF23,20,6,395,,E,Standard,FALSE,FALSE,,,,5,25.0%,1,3,18,2,4,0,0,3,4,7,0,,1,,,,You Don't Want to Play This Game,TRUE,Alcatraz
+MR22,20,9,628,,D,Standard,FALSE,FALSE,,,,5,25.0%,4,0,15,5,7,0,0,0,0,8,0,,2,,,,My Little Perfidy,FALSE,My Little Pony
+LG34,21,9,848,,V,Standard,FALSE,FALSE,,,,4,19.0%,3,1,16,5,5,0,1,1,0,9,0,,0,,,,Allomancer,TRUE,Scadrial
+QF24,17,6,433,V/E,V,Basic,FALSE,FALSE,,,,3,17.6%,2,1,10,7,3,0,0,1,1,5,0,,1,,,,Eliminating Elysium,TRUE,Other Sanderson
+LG35,28,8,1742,V/E,E,Semi Standard,FALSE,FALSE,,,Broken Mechanics,4,14.3%,1,0,15,13,6,0,0,0,1,8,0,,1,,,,L35 Miserables,TRUE,Les Miserables
+MR23,22,9,735,FAC,V,Semi Standard,FALSE,FALSE,,,Broken Mechanics,0,0.0%,0,0,14,8,0,0,8,0,0,6,0,,0,,,,A Desperate Alliance,TRUE,Roshar
+LG36,21,8,685,,V,Complex,FALSE,FALSE,,,,4,19.0%,1,2,12,9,4,0,2,2,0,4,0,,1,,,,State of Being,TRUE,Cross-Cosmere
+QF25,24,7,835,V/E,E,Basic,FALSE,FALSE,,,Broken Distribution,2,8.3%,1,0,20,4,13,0,0,0,0,6,1,,7,,,,A Sundered Sky,TRUE,Roshar
+LG37,34,5,1108,U,Misc,Complex,FALSE,FALSE,,,,6,17.6%,0,0,0,1,0,0,0,0,0,0,0,,7,,,,Coyote Stories,FALSE,Gunnerkrigg Court
+MR24,26,8,883,,Misc,,FALSE,FALSE,,,,8,30.8%,4,0,17,8,6,1,2,0,0,8,0,,5,,,,Baleful Eye,TRUE,Reckoners
+LG38,32,5,780,U,None,Complex,FALSE,FALSE,,,Very Broken Mechanics,0,0.0%,0,0,4,27,0,0,3,0,0,1,0,,2,,,,In the Beginning,TRUE,Cross-Cosmere
+QF26,31,16,522,U,V,Basic,FALSE,FALSE,,,Broken Mechanics,0,0.0%,0,0,15,16,0,0,9,0,0,6,0,,0,,,,Stop the Madness,TRUE,Threnody
+QF27,20,6,336,V/E,E,Standard,FALSE,FALSE,,,,4,20.0%,0,0,13,7,4,0,0,0,0,6,3,,1,,,,Lord of the Lynches: Terror in Minas Tirith,FALSE,Lord of the Rings
+LG39,25,10,562,CON,E,Standard,FALSE,FALSE,,,,4,16.0%,2,0,14,10,7,0,0,0,0,7,0,,1,,,,Blood Money,TRUE,Scadrial
+MR25,20,9,433,,E,Standard,FALSE,FALSE,,,,4,20.0%,2,1,18,2,7,0,0,1,1,7,2,,10,,,,Lowborn Intrigue,TRUE,Roshar
+LG40,27,8,550,FAC,F,,FALSE,FALSE,,,,5,18.5%,3,2,10,4,0,0,0,2,0,8,0,,10,,,,Ashen Rebellion,TRUE,Scadrial
+QF28,23,7,233,,Misc,Basic,FALSE,FALSE,,,,3,13.0%,0,0,12,11,6,0,0,0,0,6,0,,13,,,,Minimalist Elimination,,
+MR26,16,6,351,,V,Standard,FALSE,FALSE,,,,3,18.8%,1,2,10,6,3,0,0,2,0,5,0,,13,,,,Sands of Lossand,TRUE,Taldain
+LG41,17,5,410,,F,Semi Standard,FALSE,FALSE,,,,3,17.6%,2,0,14,2,4,4,0,0,0,6,0,,16,,,,INSTABILITY,TRUE,Scadrial
+AG4,37,12,1054,V/E,E,Standard,FALSE,TRUE,,,Balanced,5,13.5%,3,0,33,4,13,0,0,0,3,10,7,,9,,,,A Fresh Start,TRUE,Roshar
+QF29,16,4,175,,E,Standard,FALSE,FALSE,,,,3,18.8%,0,0,13,3,6,0,0,0,0,3,4,,20,,,,Passionate Realism,TRUE,
+MR27,17,6,388,,V,Basic,FALSE,FALSE,,,,4,23.5%,3,1,13,4,5,0,0,1,0,6,1,,18,,,,Quarantine,TRUE,Rithmatist
+LG42,20,8,352,U,FFA,Faction/FFA,FALSE,FALSE,,,Balanced,0,0.0%,0,0,17,3,0,0,14,0,0,3,0,,14,,,,Master of the House,TRUE,Scadrial
+QF30,17,8,520,,E,Basic,FALSE,FALSE,,,,4,23.5%,2,0,14,3,3,0,0,0,0,8,3,,15,,,,Manywar,TRUE,Nalthis
+LG43,25,5,1385,EE,Misc,Complex,FALSE,FALSE,,,,6,24.0%,0,1,5,17,1,1,0,1,0,2,0,,8,,,,Under the Banner of Adonalsium,TRUE,Cross-Cosmere
+MR28,19,6,443,,F,,FALSE,FALSE,,,,7,36.8%,1,0,9,3,5,0,0,0,0,4,0,,12,,,,Knives in the Dark,TRUE,Roshar
+LG44,29,8,1185,EE,V,Complex,FALSE,FALSE,,,,7,24.1%,6,0,15,13,4,0,0,0,0,8,3,,6,,,,Shadows of Elantris Redux,TRUE,Sel
+LG45,22,7,268,,V,Faction/FFA,FALSE,FALSE,,,,0,0.0%,0,0,0,0,0,0,0,0,0,0,0,,6,,,,The House War,TRUE,Scadrial
+QF31,12,8,509,,F,Faction/FFA,FALSE,FALSE,,,,3,25.0%,0,0,4,0,2,0,0,0,0,2,0,,3,,,,<MISSING VARIABLE>,TRUE,Other Sanderson
+MR29,20,5,406,V/E,V,Semi Standard,FALSE,FALSE,,,,4,20.0%,2,0,8,12,2,0,0,0,0,4,2,,4,,,,A Midsummer Night with no Moon,FALSE,Kingkiller Chronicles
+LG46,27,10,862,,E,Semi Standard,FALSE,FALSE,,,,6,22.2%,3,0,22,5,9,0,0,0,1,10,2,,8,,,,A Land War in Asia,FALSE,Princess Bride
+QF32,15,5,305,,V,Basic,FALSE,FALSE,,,,3,20.0%,1,2,10,5,3,0,0,2,0,4,1,,4,,,,,TRUE,
+LG47,16,6,266,,E,,FALSE,FALSE,,,,4,25.0%,2,0,12,4,7,0,0,0,2,2,1,,1,,,,Shadow in the South,FALSE,Lord of the Rings
+MR30,14,6,503,,V,,FALSE,FALSE,,,,0,0.0%,0,0,9,5,0,4,0,0,0,5,0,,8,,,,Scadrian Black Ops,TRUE,Scadrial
+LG48,19,5,378,,V,Complex,FALSE,FALSE,,,,4,21.1%,2,2,13,6,4,0,1,2,1,5,0,,4,,,,The Terris Synod,TRUE,Scadrial
+QF33.1,19,1,392,,V,,FALSE,FALSE,,,Broken Mech. and Dist,2,10.5%,0,0,0,0,0,0,0,0,0,0,0,,0,,,,Deception - Murder in the Cosmere,TRUE,
+QF33.2,19,3,392,,V,,FALSE,FALSE,,,Well Balanced,3,15.8%,0,0,0,0,0,0,0,0,0,0,0,,0,,,,,TRUE,
+LG49,25,12,1062,U,Misc,Complex,FALSE,TRUE,,,Broken Mechanics,0,0.0%,0,0,15,10,0,0,15,0,0,0,0,,1,,,,Window to the Past,TRUE,Roshar
+MR31,22,7,454,,E,Semi Standard,FALSE,FALSE,,,,6,27.3%,2,0,11,11,1,0,0,0,5,5,0,,0,,,,Spiritual Warfare,TRUE,Sel
+QF34,17,6,177,,E,Semi Standard,FALSE,FALSE,,,,4,23.5%,0,0,11,5,4,0,0,0,1,6,0,,0,,,,A Great Calamity,TRUE,
+LG50,22,7,426,,V,Standard,FALSE,FALSE,,,,5,22.7%,3,1,14,8,4,0,0,1,1,6,2,,3,,,,News of My Demise,TRUE,Scadrial
+MR32,20,6,583,,E,Complex,FALSE,FALSE,,,,4,20.0%,1,0,11,8,6,0,0,0,0,5,0,,1,,,,The Blight Encroaches,TRUE,Wheel of Time
+LG51,19,8,458,CON,E,Standard,FALSE,FALSE,,,Balanced,3,15.8%,1,0,16,3,5,0,0,0,0,7,4,,3,,,,A Traitor in the Obligators,TRUE,Scadrial
+QF35,21,,288,,FFA,Faction/FFA,FALSE,FALSE,,,,0,0.0%,0,0,18,2,0,0,18,0,0,0,0,,0,,,,The Melee,TRUE,Rithmatist
+AG5,30,,1226,FAC,F,Complex,FALSE,TRUE,,,,0,0.0%,0,0,12,18,0,0,7,0,0,5,0,,8,,,,One Final Blaze of Light,TRUE,Cross-Cosmere
+MR33,14,,185,,V,Standard,FALSE,FALSE,,,,3,21.4%,2,0,8,6,2,3,0,0,0,3,0,,2,,,,Danger in the Terris Peaks,TRUE,Scadrial
+LG52,18,,472,,E,Semi Standard,FALSE,FALSE,,,,5,27.8%,2,0,12,6,6,0,0,0,0,6,0,,0,,,,Treachery in the South,TRUE,Scadrial
+QF36,15,,222,,F,,FALSE,FALSE,,,,0,0.0%,0,0,0,15,0,0,0,0,0,0,0,,1,,,,Dream Thieves,TRUE,
+LG53,24,,1116,,V,,FALSE,FALSE,,,,5,20.8%,4,1,12,0,5,0,0,1,0,6,0,,0,,,,The Fate of the Forum,TRUE,
+MR34,13,,220,,V,Basic,FALSE,FALSE,,,,3,23.1%,3,0,12,1,4,0,0,0,0,8,0,,0,,,,Death by Lantern Light,TRUE,Rithmatist
+LG54,17,,528,,E,Complex,FALSE,FALSE,,,,5,29.4%,0,0,11,6,7,0,0,0,0,4,0,,3,,,,Cognitive Diversions,TRUE,Roshar
+QF37,14,,258,,V,Semi Standard,FALSE,FALSE,,,,3,21.4%,3,0,11,3,4,0,0,0,0,7,0,,2,,,,Black Shadows in T’Telir,TRUE,Nalthis
+LG55,21,,918,,V,Basic,FALSE,FALSE,,,,4,19.0%,3,0,16,5,5,3,0,0,0,8,0,,1,,,,Disquiet,TRUE,Scadrial
+MR35,17,,541,,V,,FALSE,FALSE,,,,4,23.5%,3,0,14,3,3,0,4,0,0,7,0,,3,,,,Final Flight,,
+LG56,17,6,525,,E,Standard,FALSE,FALSE,,,,4,23.5%,0,0,13,4,4,2,0,0,0,6,1,,3,,,,Discord in Elendel,TRUE,Scadrial
+QF38,20,,382,,V,,FALSE,FALSE,,,,14,70.0%,1,4,8,12,0,0,1,4,2,1,0,,5,,,,ZOMBIES,FALSE,
+LG57,13,,229,,E,,FALSE,FALSE,,,,4,30.8%,0,1,8,5,3,0,1,1,0,3,0,,4,,,,The Tower of Nebrask,TRUE,Rithmatist
+MR36,17,,329,,E,,FALSE,FALSE,,,,4,23.5%,0,0,4,13,0,0,0,0,0,4,0,,5,,,,The Northern Wind,TRUE,First of the Sun
+LG58,19,,504,,V,,FALSE,FALSE,,,,3,15.8%,3,0,10,9,3,0,0,0,0,7,0,,6,,,,A Hidden Threat,TRUE,Scadrial
+QF39,22,,744,,Misc,Complex,FALSE,FALSE,,,,7,31.8%,4,1,21,1,1,9,0,1,0,10,0,,2,,,,Corruption in the Senate 2: Allomantic Boogaloo,TRUE,Scadrial
+LG59,13,,286,,V,Semi Standard,FALSE,FALSE,,,,1,7.7%,0,0,4,9,1,0,0,0,0,3,0,,0,,,,Shadows and Spikes,TRUE,Scadrial
+MR37,15,,188,,E,,FALSE,TRUE,,,,3,20.0%,0,0,11,4,5,1,0,0,0,5,0,,2,,,,An Empire is Falling,TRUE,Sel
+LG60,14,,321,,E,,FALSE,FALSE,,,,4,28.6%,0,0,9,4,4,0,0,0,0,5,0,,2,,,,Shadow Over the Forests of Hell,TRUE,Threnody
+QF40.1,14,,,,E,,FALSE,FALSE,,,Well Balanced,3,21.4%,0,0,2,12,2,0,0,0,0,0,0,,1,,,,Uneasy Lies,TRUE,Sel
+QF40.2,15,,,,E,,FALSE,FALSE,,,Well Balanced,4,26.7%,1,0,8,7,4,0,0,0,0,3,1,,0,,,,,TRUE,Sel
+MR38.1,18,,,U,E,Basic,FALSE,FALSE,,,Broken Mechanics,5,27.8%,3,0,3,15,0,0,0,0,0,3,0,,6,,,,The Council of Elrond,FALSE,Lord of the Rings
+LG61,15,,374,,V,,FALSE,FALSE,,,,3,20.0%,2,0,13,2,5,0,0,0,0,6,2,,0,,,,A Radiant Light,TRUE,Roshar
+MR38.2,15,,,U,V,Basic,FALSE,FALSE,,,Broken Mechanics,4,26.7%,1,0,5,10,0,0,0,0,0,5,0,,9,,,,,FALSE,Lord of the Rings
+QF41,14,,197,,E,,FALSE,FALSE,,,,4,28.6%,1,0,8,6,4,0,0,0,0,4,0,,8,,,,The Lord Mistborn's School for Gifted Allomancers,TRUE,Scadrial
+LG62,16,,138,,F,,FALSE,FALSE,,,Well Balanced,0,0.0%,0,0,9,0,0,0,0,0,9,0,0,,3,,,,Remaster of the House,TRUE,Scadrial
+MR39,15,,338,,V,,FALSE,FALSE,,,,3,20.0%,2,0,13,2,5,0,0,0,0,7,1,,0,,,,For Science,TRUE,Reckoners
+AG6,24,,442,V/E,E,Standard,FALSE,TRUE,,,Balanced,6,25.0%,2,3,22,2,7,0,0,3,6,6,0,,1,,,,We Shall All Be Changed,TRUE,Roshar
+QF42,12,,240,,V,,FALSE,FALSE,,,,3,25.0%,2,0,6,6,2,0,0,0,0,4,0,,0,,,,Alcatraz vs. the Watakotse Infiltration,TRUE,Alcatraz
+MR40,14,,229,,V,,FALSE,FALSE,,,,3,21.4%,3,0,12,2,6,0,0,0,0,6,0,,2,,,,A Defiant Rebellion,,
+LG63,15,,302,,E,,FALSE,FALSE,,,,4,26.7%,3,0,14,1,6,0,0,0,0,8,0,,0,,,,The Set,,
+QF43,16,,216,,E,,FALSE,FALSE,,,,3,18.8%,1,0,13,1,6,0,0,0,0,7,0,,0,,,,Mysteries in the Snow,TRUE,Sel
+LG64,16,,421,EE,V,Semi Standard,FALSE,FALSE,,,Balanced,2,12.5%,1,0,14,2,0,5,0,1,0,6,2,,0,,,,Choose your own Sanderson Adventure!,TRUE,Alcatraz
+MR41,13,,235,,,,FALSE,TRUE,,,,1,7.7%,0,0,3,0,2,0,0,1,0,0,0,,0,,,,Lord of Chaos,TRUE,Wheel of Time
+LG65,27,,951,V/E,V,Complex,FALSE,FALSE,,,Very Broken Mechanics,7,25.9%,0,4,11,0,0,0,4,4,2,1,0,,2,,,,Dancing Through Life,FALSE,Kingkiller Chronicles
+QF44,22,,367,,E,,FALSE,FALSE,,,,5,22.7%,1,0,17,5,7,0,0,0,1,7,2,,0,,,,Shadows in the Forest,TRUE,Threnody
+MR42,32,,1481,,E,,FALSE,FALSE,,,,9,28.1%,5,1,28,4,11,3,0,1,1,10,2,,4,,,,The Auction of Lord Winsting,TRUE,Scadrial
+LG66,24,,1458,,V,Complex,FALSE,FALSE,,,,6,25.0%,2,1,17,5,4,2,0,2,1,7,1,,0,,,,A Struggle for Power,TRUE,Scadrial
+QF45,22,7,589,V/E,E,Basic,FALSE,FALSE,,,Balanced,4,18.2%,1,0,17,5,7,0,0,0,0,7,3,,0,,,,To Set an Example,TRUE,Scadrial
+LG67,25,7,907,V/E,E,Standard,FALSE,FALSE,,,N,7,28.0%,1,0,14,11,6,0,0,0,0,7,1,,0,,,,The Road to Urithiru,TRUE,Roshar
+MR43,18,5,421,V/E,E,Semi Standard,FALSE,FALSE,,,,4,22.2%,0,1,13,5,6,0,0,1,0,4,2,,2,,,,Death Comes As The End,TRUE,Scadrial
+QF46,21,7,370,,Misc,,FALSE,FALSE,,,,10,47.6%,9,0,20,1,6,0,0,0,0,14,0,,0,,,,Mysteries within Secrets,TRUE,Sel
+LG68,20,5,819,V/E,V,Semi Standard,FALSE,FALSE,,,Broken Distribution,3,15.0%,3,0,10,10,4,0,0,0,0,5,1,,0,,,,Studies of Ashyn,TRUE,
+MR44,13,5,188,V/E,E,,FALSE,FALSE,,,,3,23.1%,1,0,10,3,5,0,0,0,1,4,0,,0,,,,Obligations,TRUE,Scadrial
+LG69,15,7,594,V/E,E,Semi Standard,FALSE,FALSE,,,,4,26.7%,3,0,14,1,7,0,0,0,0,7,0,,0,,,,The Politics of the Passions,TRUE,Roshar
+QF47,17,9,228,FFA,FFA,Standard,FALSE,FALSE,,,,0,0.0%,0,0,16,1,0,0,16,0,0,0,0,,0,,,,Multi-Man Melee,TRUE,Rithmatist
+LG70,15,6,499,,E,,FALSE,FALSE,,,,4,26.7%,1,0,9,6,3,0,0,0,0,6,0,,0,,,,Reforging Arelon,TRUE,Sel
+MR45,16,6,428,V/E,E,,FALSE,FALSE,,,,4,25.0%,2,0,10,6,4,0,0,0,1,5,0,,0,,,,A Trapper's Tale,TRUE,First of the Sun
+LG71,25,8,1256,V/E,E,Semi Standard,FALSE,FALSE,,,,6,24.0%,1,0,15,10,5,0,0,0,1,7,2,,0,,,,A Cosmere Odyssey,TRUE,First of the Sun
+QF48,18,4,442,V/E,E,,FALSE,FALSE,,,,5,27.8%,0,0,8,10,4,0,0,0,0,4,0,,0,,,,Welcome to the Family,TRUE,Roshar
+MR46,23,,1278,,E,,FALSE,FALSE,,,,5,21.7%,1,0,16,7,7,0,0,0,0,8,1,,0,,,,A Broken Imperium,TRUE,Scadrial
+LG72,26,,1329,,E,,FALSE,FALSE,,,,6,23.1%,2,0,21,4,7,0,2,0,0,8,4,,0,,,,The Secret of Shinovar,TRUE,Roshar
+QF49,16,,297,,E,,FALSE,FALSE,,,,3,18.8%,0,0,11,5,5,0,0,0,0,5,1,,0,,,,Chaos in Newcago,TRUE,Reckoners
+MR47,18,,499,,E,,FALSE,FALSE,,,,5,27.8%,3,0,15,2,6,0,0,0,1,8,0,,0,,,,Conflict of Superiority,,
+AG7,29,7,1222,V/E,V,Complex,FALSE,TRUE,,,,6,20.7%,5,1,13,14,4,0,0,1,0,7,1,,2,,,,"From Embers, A Flame",TRUE,Cross-Cosmere
+QF50,20,9,1909,V/E,V,,FALSE,FALSE,,,,4,20.0%,2,1,18,1,9,0,0,1,1,7,0,,0,,,,Return to Tar Valon,TRUE,Wheel of Time
+LG73,23,9,1583,V/E,V,,FALSE,FALSE,,,,5,21.7%,5,0,16,6,5,0,0,0,2,9,0,,0,,,,The Forgotten Coup,TRUE,Rithmatist
+MR48,18,5,515,V/E,E,,FALSE,FALSE,,,,5,27.8%,1,0,11,6,5,0,0,0,0,4,2,,0,,,,The Southern Wind,TRUE,First of the Sun
+LG74,30,6,1717,V/E,E,Standard,FALSE,FALSE,,,,6,20.0%,0,0,15,13,5,0,0,0,4,6,0,,0,,,,You Want It Darker,TRUE,Scadrial
+QF51,12,4,355,V/E,E,,FALSE,FALSE,,,,3,25.0%,0,0,8,4,3,0,0,0,1,4,0,,0,,,,I Love Dragons,TRUE,Other Sanderson
+MR49,20,8,976,EE,E,,FALSE,FALSE,,,,11,55.0%,5,0,16,2,8,0,0,0,0,8,0,,0,,,,Lode of Luthadel,TRUE,Scadrial
+LG75,17,8,799,V/E,V,,FALSE,FALSE,,,,5,29.4%,4,0,13,3,5,0,0,0,0,8,0,,0,,,,Alethi Politics,TRUE,Roshar
+QF52,15,4,333,V/E,E,,FALSE,FALSE,,,,4,26.7%,0,0,9,5,4,0,0,0,0,5,0,,0,,,,Dancing in the Mists,TRUE,Scadrial
+LG76,15,7,892,V/E,V,,FALSE,FALSE,,,,4,26.7%,3,1,11,4,4,0,1,1,0,5,0,,0,,,,At the Forests of Madness,TRUE,Threnody
+MR50,16,7,596,V/E,E,,FALSE,FALSE,,,,3,18.8%,0,0,13,3,6,0,0,0,0,7,0,,0,,,,The Northern Wind II,,
+LG77,20,5,726,V/E,E,Complex,FALSE,FALSE,,,,3,15.0%,0,0,14,5,6,3,0,1,0,4,0,,0,,,,A Political Trap,TRUE,Scadrial
+LG78,28,9,1189,V/E,E,,FALSE,FALSE,,,,7,25.0%,1,3,20,5,7,0,0,3,2,8,0,,0,,,,The Legend of Zelda: The False Heroes,FALSE,Zelda
+QF53,12,8,196,CON,E,,FALSE,FALSE,,,,2,16.7%,2,0,10,1,2,0,0,0,0,8,0,,0,,,,Forging a Nation,TRUE,Sel
+MR51,19,7,608,U,V,,FALSE,FALSE,,,,7,36.8%,0,0,0,12,0,0,0,0,0,0,0,,0,,,,Come On Down To Irontown,TRUE,Scadrial
+QF54,12,4,192,V/E,E,,FALSE,FALSE,,,,3,25.0%,0,0,8,4,4,0,0,0,0,4,0,,0,,,,The Smoking Mirror,TRUE,Nalthis
+LG79,20,9,819,V/E,V,,FALSE,TRUE,,,,4,20.0%,4,0,15,4,6,0,0,0,0,7,2,,0,,,,The Rhythm of Freedom,TRUE,Roshar
+LG80,17,6,594,V/E,V,,FALSE,FALSE,,,,4,23.5%,3,0,10,6,4,0,0,0,0,6,0,,0,,,,Skaa Tenements,TRUE,Scadrial
+MR52,12,5,343,V/E,V,,FALSE,FALSE,,,,3,25.0%,2,1,9,2,3,0,0,1,0,5,0,,0,,,,Guard Duty,TRUE,Roshar
+QF55,8,3,76,V/E,E,,FALSE,FALSE,,,,2,25.0%,0,0,5,3,2,0,0,0,0,3,0,,0,,,,Battle of Traitors,TRUE,
+MR53,16,6,508,CON,E,,FALSE,FALSE,,,,5,31.3%,2,1,12,2,5,0,0,1,1,5,0,,0,,,,"Unmade, Remade",TRUE,Roshar
+QF56,15,4,213,U,F,,FALSE,FALSE,,,,0,0.0%,0,0,13,0,0,0,8,0,0,4,1,,0,,,,Your Turn to Be Eliminated,,
+LG81,11,5,373,V/E,E,,FALSE,FALSE,,,,2,18.2%,0,0,6,5,3,0,0,0,0,3,0,,0,,,,Lasting Integrity?,TRUE,Roshar
+MR54,13,4,264,V/E,E,,FALSE,FALSE,,,,3,23.1%,0,0,8,5,4,0,0,0,0,4,0,,0,,,,Fading Glory,TRUE,Sel
+LG82,9,4,323,V/E,E,,FALSE,FALSE,,,,3,33.3%,1,0,6,3,3,0,0,0,1,2,0,,0,,,,Secrets Written in Metal,TRUE,Scadrial
+QF57,8,3,123,V/E,E,,FALSE,FALSE,,,,2,25.0%,0,0,5,3,2,0,0,0,0,3,0,,0,,,,The Infiltrators of Elantris,TRUE,Sel
+MR55,12,5,268,FAC,E,Complex,FALSE,FALSE,,,,3,25.0%,0,0,8,4,3,0,0,0,1,4,0,,0,,,,Sudden but Inevitable Betrayal,FALSE,Firefly
+AG8,29,8,,V/E,V,Standard,FALSE,TRUE,,,,5,17.2%,5,0,15,11,6,0,0,0,0,8,1,,0,,,,Back to Beginnings,TRUE,Scadrial
+QF58,12,,,,,,FALSE,FALSE,,,,3,25.0%,2,0,6,5,1,0,1,0,0,4,0,,0,,,,Rebellion,TRUE,Roshar
+MR56,21,8,,V/E,F,,FALSE,FALSE,,,,4,19.0%,2,0,19,2,5,4,0,0,1,8,1,,0,,,,Day of Reckoning,TRUE,Reckoners
+LG83,28,6,,V/E,E,,FALSE,FALSE,,,,6,21.4%,2,0,17,7,10,0,1,0,0,6,0,,0,,,,The Survivor,FALSE,
+BT1,12,4,,V/E,E,,FALSE,FALSE,,,,,,,,,,,,,,,,,,,,,,Auction of Stories,TRUE,Cross-Cosmere
+QF59,15,7,,V/E,E,,FALSE,FALSE,,,,,,,,,,,,,,,,,,,,,,Bachelor - Roshar Edition!,TRUE,Roshar
+MR57,,,,V/E,,Semi Standard,FALSE,FALSE,,,,,,,,,,,,,,,,,,,,,,,FALSE,
