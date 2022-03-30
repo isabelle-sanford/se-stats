@@ -144,3 +144,17 @@ CREATE TABLE settings (
 
     PRIMARY KEY (world_id)
 )
+
+
+CREATE INDEX players ON playergame
+    USING hash
+    (player_id ASC NULLS LAST)
+
+-- CREATE INDEX [name] ON [table]
+--     opt:USING [method]
+--     ([column] ASC NULLS FIRST) -- or DESC, NULLS LAST
+
+
+-- method can be hash, btree, gist, ... 
+-- DROP INDEX name; or DROP INDEX IF EXISTS name;
+

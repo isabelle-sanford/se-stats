@@ -1,0 +1,12 @@
+death_char,death_desc,dying_alignment,killer_alignment,non-kills
+S,Survived,none,none,
+E,Killed by Eliminators,not E,E,
+X,Exed,any,none,
+V,Elim killed by Village,E,V,
+F,Villager Killed by Village (Friendly Fire),V,V,
+M,Killed by Neutral Evil,any,M,
+N,Neutral Killed,any,N,
+I,Inactive Killed,any,none,Y
+O,Out of Commission (alive but not counting),any,any,Y
+D,Dropped Out (good reason),any,none,Y
+P,Replaced by Pinch-hitter,any,none,Y

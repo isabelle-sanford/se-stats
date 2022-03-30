@@ -1,0 +1,12 @@
+alignment_char,alignment_desc,is_elim,is_evil,has_kill,can_convert,was_converted
+G,Good,FALSE,FALSE,FALSE,FALSE,FALSE
+E,Evil (Prim) (team kill / no conv),TRUE,TRUE,TRUE,FALSE,FALSE
+S,Secondary Evil Faction,TRUE,TRUE,TRUE,FALSE,FALSE
+T,Tertiary Evil Faction,TRUE,TRUE,TRUE,FALSE,FALSE
+?,Evil Converter (w/kill),TRUE,TRUE,TRUE,TRUE,FALSE
+B,Evil Convert (w/ kill),TRUE,TRUE,TRUE,FALSE,TRUE
+D,Evil Converter (w/o kill),TRUE,TRUE,FALSE,TRUE,FALSE
+C,Evil Convert (w/o kill),TRUE,TRUE,FALSE,FALSE,TRUE
+M,Neutral Evil/Serial Killer,FALSE,TRUE,TRUE,FALSE,FALSE
+N,Neutral,FALSE,FALSE,FALSE,FALSE,FALSE
+F,Faction,FALSE,FALSE,FALSE,FALSE,FALSE
