@@ -25,7 +25,7 @@ CREATE TABLE game (
     game_id INT, 
     game_format CHAR(2) NOT NULL,
     game_number FLOAT NOT NULL,
-    game_string CHAR(6) UNIQUE NOT NULL,
+    game_string CHAR(6) UNIQUE NOT NULL, -- optional
     anon_num NULL INT, -- num only if anon else null
 
     -- ??
@@ -66,6 +66,7 @@ CREATE TABLE alignment (
     is_evil BOOLEAN,
     has_kill BOOLEAN,
     has_convert BOOLEAN,
+    was_converted BOOLEAN,
 
     PRIMARY KEY (alignment_id)
 );
@@ -137,12 +138,12 @@ CREATE TABLE player_roles (
 
 
 CREATE TABLE settings (
-    world_id INT,
-    world_name VARCHAR,
+    setting_id INT,
+    world VARCHAR,
     is_sanderson BOOLEAN,
     is_cosmere BOOLEAN,
 
-    PRIMARY KEY (world_id)
+    PRIMARY KEY (settings_id)
 )
 
 

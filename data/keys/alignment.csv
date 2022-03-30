@@ -1,4 +1,4 @@
-alignment_char,alignment_desc,is_elim,is_evil,has_kill,can_convert,was_converted
+alignment_char,alignment_desc,is_elim,is_evil,has_kill,has_convert,was_converted
 G,Good,FALSE,FALSE,FALSE,FALSE,FALSE
 E,Evil (Prim) (team kill / no conv),TRUE,TRUE,TRUE,FALSE,FALSE
 S,Secondary Evil Faction,TRUE,TRUE,TRUE,FALSE,FALSE
