@@ -31,3 +31,39 @@ Collection 1 - games
     game_format: LG
     game_num: 11,
 }
+
+
+
+
+figure out why the hell game ID is being turned into a float on merging
+and possibly other IDs
+
+
+
+
+### Problems with game 
+* Missing columns: 
+    - Game format & number (could pull in from pg, should put in sheet)
+    - Mech and dist balance (not yet in sheet; just make all null? )
+    - IM id (pull from pg)
+    - anon_num (currently boolean)
+    - start and end date (not yet in sheet)
+    - link (not in sheet in a helpful way)
+* Type problems: 
+    - num_posts is a float (??)
+
+### Problems with playergame 
+* Type problems: 
+    - first, last, and num hits are all floats and should be ints
+    - win should be nullable boolean
+    - ids for game, alignment, and death should be ints
+    - inactive is Y/blank rather than t/f
+* pinchhitter doesn't exist
+
+### Where to check for bad characters:
+* game.title 
+* player.player_name
+* game.fundamentals?
+
+### Other
+* PG needs to be cleaned to remove things not in death / alignment tables; want to be able to do constraints also on complexity / etc 
