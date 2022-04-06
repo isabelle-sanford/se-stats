@@ -56,10 +56,10 @@ CREATE TABLE death (
 -- ! Game
 CREATE TABLE game (
     game_id INT, 
-    -- game_format CHAR(2) NOT NULL,
-    -- game_number FLOAT NOT NULL,
+    game_format CHAR(2) NOT NULL,
+    game_number FLOAT NOT NULL,
     game_string CHAR(6) UNIQUE NOT NULL, -- optional
-    anon_num BOOLEAN, -- TODO num only if anon else null
+    anon_num INT, -- TODO num only if anon else null
 
     -- ??
     -- mechanics_balance CHAR(1) NOT NULL,
