@@ -31,3 +31,9 @@
 ## LATER
 
 - website whatever
+
+fix up key tables
+
+how do I get sql to FUCKING ROUND
+
+add sheet sources in notebook

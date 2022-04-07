@@ -1,3 +1,5 @@
+-- LAST MODIFIED 4/7/22
+
 
 \c isanford;
 
@@ -22,7 +24,7 @@ CREATE TABLE player (
 CREATE TABLE setting (
     setting_id INT,
     setting VARCHAR,
-    is_sanderson BOOLEAN,
+    is_sanderson BOOLEAN, -- could have defaults here? 
     is_cosmere BOOLEAN,
 
     PRIMARY KEY (setting_id)
@@ -48,6 +50,7 @@ CREATE TABLE death (
     death_id INT,
     death_char CHAR UNIQUE,
     death_desc VARCHAR,
+    -- could have more here? see CSV/key sheet
 
     PRIMARY KEY (death_id)
 );
@@ -85,7 +88,9 @@ CREATE TABLE game (
     PRIMARY KEY (game_id),
     FOREIGN KEY (IM_id) REFERENCES player(player_id),
     FOREIGN KEY (setting_id) REFERENCES setting --,
-    --CHECK format_con (game_format IN ('LG', 'AG', 'MR', 'QF', 'BT')), -- may need to change at some point
+    
+    -- hopefully works? TODO TEST
+    CHECK format_con (game_format IN ('LG', 'AG', 'MR', 'QF', 'BT')), -- may need to change at some point
 
     -- CHECK (mechanics_balance IN ('BB', 'B', 'M', 'MM')), -- probs should be sep table sigh
     -- CHECK (distribution_balance IN ('BB', 'B', 'D', 'DD')) -- again sep table (or at least enum, since ordered)
@@ -149,6 +154,9 @@ CREATE TABLE player_roles (
 CREATE INDEX players ON playergame
     USING hash
     (player_id);
+
+CREATE INDEX formats ON game 
+    USING hash (game_format);
 
 -- CREATE INDEX [name] ON [table]
 --     opt:USING [method]

@@ -1,28 +1,35 @@
+# CURRENT AS OF 4/7/22
+# inputting this into https://app.quickdatabasediagrams.com/#/ 
+# will create the diagram that's in the diagrams folder
+
 player 
 -
 player_id PK int
-player_name string UNIQUE
+player_name string UNIQUE 
 
 game
 -
 game_id PK int
-format char(2)
-game_number double
+game_format char(2)
+game_number float
 game_string char(6) #OPTIONAL
-is_anon bool
-broken char #??
+anon_num int
+mechanics_balance NULL char(2) # blank atm
+distribution_balance NULL char(2) # blank atm
 IM_id int FK >- player.player_id
-start_date date
-end_date date
+start_date NULL date # blank
+end_date NULL date # blank
 num_cycles int
-is_sanderson bool
-world varchar(20) # maybe make types
-complexity varchar(20) #??
-fundamentals varchar(20) #??
 num_posts int
+setting_id int FK >- setting.setting_id
+fundamentals varchar(20) #??
+complexity varchar(20)
+role_madness bool
+
 
 playergame as pg
 -
+pg_id int PK
 player_id int FK >- player.player_id
 game_id int FK >- game.game_id
 alignment_id int FK >- alignment.alignment_id
@@ -37,10 +44,13 @@ inactive bool
 alignment
 -
 alignment_id PK int
-alignment_char char
-alignment_desc string UNIQUE
+alignment_char char UNIQUE
+alignment_desc string
 is_elim bool
 is_evil bool
+has_kill bool 
+has_convert bool 
+was_converted bool
 
 death
 -
@@ -48,11 +58,19 @@ death_id PK int
 death_char char 
 death_desc string UNIQUE
 
-GMs
+gms
 -
-game_id int FK >- game.game_id
 player_id int FK >- player.player_id
+game_id int FK >- game.game_id
 main_GM bool
+
+setting
+-
+setting_id int PK
+setting varchar 
+is_sanderson bool 
+is_cosmere bool
+
 
 #OPTIONALLY
 role
