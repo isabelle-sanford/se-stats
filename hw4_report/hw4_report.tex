@@ -80,24 +80,251 @@ isanford@brynmawr.edu% Your email
 
 \section{Database Structure}
 
+\subsection{Original}
+bloop :)
+
+First, a very brief review of the two original data sets I'm pulling from:
+
+
+\subsubsection{Games}
+Each row on the Games table represents a single game and collected data about it. There are several columns which are aggregated from the original Player Data table, which I've left out, but a couple of them (like the number of players) were worth keeping track of. I'll also note that a few of these columns aren't actually filled out right now (and others are very incomplete), but I'd rather include them in the structure now than try to add them later. 
+
+\begin{table}[h]
+    \begin{tabular}{ll}
+    \textbf{Column}       & \textbf{Description} \\
+    \hline 
+    format       & category of game (e.g. LG, meaning Long Game)\\
+    number       & nth game in its category   \\
+    game string  & format + number (e.g. LG25)   \\
+    \# Players   & number of players in the game         \\
+    \# Cycles    & number of ``rounds'' the game took        \\
+    \# Posts     & total \# of posts in entire game thread          \\
+    Fundamentals & basic structure of game (e.g. Faction, V/E)    \\
+    Complexity   & complexity of ruleset (e.g. Standard)          \\
+    Role madness & whether every player had a role                        \\
+    Anon number  & if the game was anonymized, what number was it         \\
+    Mechanics    & how broken/balanced the game's mechanics/rules were \\
+    Distribution & how broken/balanced the arrangement of roles/teams was \\
+    \# Elims     & number of ``eliminators'' (Evil team)                    \\
+    \# Survivors & number of players alive at the end of the game         \\
+    GM(s)        & person or people who ran the game                      \\
+    IM           & forum mod that ``supervised'' the game                   \\
+    Title   & Linked title of game thread                            \\
+    World        & setting of the game  (e.g. Scadrial, Lord of the Rings)       \\
+    start date   & date the first cycle started                           \\
+    end date     & date the last cycle ended                                           
+    \end{tabular}
+    \end{table}
+
+
+\subsubsection{Player Data}
+The Player Data table is the majority of the raw data. It contains one row for every player that interacted with any game: that is, a particular game would have a bunch of rows containing the data for each player in that game, and then additionally rows indicating who ran and supervised that game. This table is currently about 5000 rows. 
+
+\begin{table}[h]
+    \begin{tabular}{ll}
+    \textbf{Column}       & \textbf{Description} \\                                                          
+    \hline
+    ID              & number tracking chronological order of entries                         \\
+    Player          & name of player                                                         \\
+    Alignment       & what team the player was on (e.g. ``E'' for evil)                     \\
+    Faction Outcome & whether the player won or lost (e.g. ``W'' for win)                  \\
+    First Hit       & cycle in which the player was first attacked                           \\
+    Last Hit        & cycle in which the player was last attacked                            \\
+    \# of Hits      & number of attacks total which hit the player                           \\
+    Death/Survival  & how the player died (or if they survived) (e.g. ``E'' for killed by evil team)   \\
+    Inactive        & whether the player went inactive (stopped playing) during the game     \\
+    GM(s)           & if player ran game (in which case most of above columns will be empty) \\
+    Main?           & whether the player was the main GM or helping out                      \\
+    Mod             & whether the player was the forum moderator supervising the game        \\
+    Game format     & category of the game (same as in Game table)                           \\
+    Game \#         & \# of the game within that category (same as in Game table)            \\
+    Game string     & combination of the above 2 (same as in game table)                     \\
+    Role            & ability of player during the game, if any                              \\
+    Secondary role  & secondary ability of player if present                                           
+    \end{tabular}
+\end{table}
+
+
+
+\subsection{Mongo}
+
+Let's start with Mongo, since the structure of that database is much more similar to the original data. The database contains two collections: \texttt{players} and \texttt{games}, since those are the two major entry points for asking questions about the data. I will admit that I put much less effort into these than the SQL data, partly because I didn't have to worry as much about messy data, but mainly because I like SQL better and plan to use that database past the end of this course. Given more time and interest, these collections would be somewhat more robust. There are also currently a lot of places where a document contains something like \texttt{"mechanics": nan}, which should technically just be left out of the document altogether. 
+
+
+\subsubsection{games}
+The \texttt{games} data is actually fairly close to what the original Games table contained, and looks approximately like this: 
+
+\includegraphics[scale=0.5]{../mongo/mongo_games_v0.png}
+
+I've included an example below (real data, albeit slightly truncated for space), but essentially the Game data is split into sensible categories (similar to those on the actual sheet), and there's a player list pulled from the Player Data. That player list doesn't contain any stats about what happened to the player in that game (although it could, and arguably should), but the name is enough to look up the relevant data from the \texttt{players} collection. I've also kept some of the summary stats (like the number of players) in Mongo, for easy access to especially common ones without having to cross-reference with \texttt{players}.
+
+\begin{verbatim}
+{
+    'format': 'MR',
+    'game_num': 38.1,
+    'game_string': 'MR38.1',
+    'basics': {
+        'fundamentals': 'U', 
+        'complexity': 'Basic', 
+        'role_madness': False
+    },
+    'player_stats': {
+        'num_players': 18.0,
+        'num_elims': 5.0,
+        'num_survivors': 15.0,
+        'player_list': [
+            'Haelbarde',
+            'Straw',
+            ...
+        ]
+    },
+    'winner': 'E',
+    'num_cycles': nan,
+    'num_posts': nan,
+    'title': 'The Council of Elrond',
+    'balance': {
+        'mechanics': nan, 
+        'distribution': nan
+    },
+    'setting': {
+        'world': 'Lord of the Rings'
+    },
+    'GMs': ['Elbereth', 'Elbereth'],
+    'IM': 'little wilson'
+}
+\end{verbatim}
+And yes, I'm marked as having ran that game twice. No, I don't know why. 
+
+\subsubsection{players}
+The \texttt{players} collection, on the other hand, isn't very like the original Player Data. Instead, it's a version of that data aggregated by player, like so:
+
+\includegraphics[scale=0.5]{../mongo/mongo_players_v0.png}
+
+Again, I've included an example below, this time of my own document (though again truncated for space). 
+
+\begin{verbatim}
+{
+    'player_name': 'Elbereth',
+    'games': [
+        {
+            'game_string': 'LG15.2',
+            'alignment': 'G',
+            'death': 'S',
+            'result': 'W',
+            'hits': {
+                'first': nan, 
+                'last': nan, 
+                'num': 0.0
+            },
+            'roles': ['Kill', nan],
+            'inactive': False
+        },
+        ...
+    ],
+    'GMed': [
+        {'game_string': 'QF11', 'main': False},
+        {'game_string': 'LG19', 'main': True},
+        ...
+    ],
+    'IMed': [
+        {'game_string': 'MR42'},
+        {'game_string': 'LG68'},
+        {'game_string': 'LG70'},
+        ...
+    ]
+}
+\end{verbatim}
+
+Though it was true to an extent in the last collection, it's much more noticeable in this one that you need some outside knowledge to decipher what's going on, particularly in the alignment/death/result values. Those are based on key tables present in the SQL database (and in the original table), but absent here - while having a separate table and just being careful about how you order queries would work and avoid joins, ideally the single characters would just be replaced by a more helpful description, like "Good" / "Survived" / "Won" and so on.
+
+I wasn't sure what to do with the second list, that is `GMed' - the games that you've run. The Player Data sheet only has the two fields shown there easily accessible, and `game\_string' could be used as a key to look up any of the games in the \texttt{games} collection, but it'd still maybe be convenient to have a little more summary information here. (The `GMed' list is probably fine; it's a list only present in the dozen or so people that have been forum moderators over the years, since each game gets supervised by one of them.)
+
+
+\subsection{SQL}
+
+For putting all this into SQL, I went much more heavy on splitting out things, making key tables, etc, so the final structure looks like this: 
+
 \includegraphics[scale=0.5]{../diagrams/se diagram v3.png}
 
+Each player, game, alignment (team), death type, game setting, and role gets its own integer primary key in separate tables. That's most important for \texttt{player}, as players are both referenced all over the place and may change their name over time. 
 
-SIGHHHH
+The \texttt{game} table looks most like the original data, as most of that table is in fact data that applies only to the game in question or that doesn't need any information attached. (That said, I could have made key tables for the two balance columns, the fundamentals column, and the complexity column. I didn't partly because those would be very small tables, and partly because what those columns actually look like in the spreadsheet is currently in flux anyway.) The only notable key table connection there is to \texttt{setting}, since it's helpful to hold a couple of booleans about each setting in addition to the setting itself for easy querying.
+
+The \texttt{playergame} table contains very similar information to the original Player Data table, and is still a few thousand rows (not the full five thousand since GMs, IMs, etc have been moved to their own spots), but nearly half the columns are integers that connect to varying key tables. Some of these aren't very interesting (the \texttt{death} table doesn't contain any information that wouldn't be as easily gathered by just putting the death description into \texttt{playergame}), but some of them (like \texttt{alignment}) have a bunch of extra data that makes certain queries much easier. (There are seven different types of evil teams represented, each of which has their own id. Having an is\_evil boolean is much, much nicer than having to specify all seven options.)
+
+As I mentioned, the \texttt{gms} table has been separated out. It would be more convenient to just have a row inside \texttt{game}, but the problem is that there can be (and often are) multiple GMs running a single game. So there's a small table with just a player and a game they ran in each row, plus a boolean indicating whether they were the ``main'' GM or not. 
+
+The last branch I haven't described here is the \texttt{pg\_roles} table and its associated \texttt{role} key table. These are the most tentative tables, mainly because we only recently started collecting role data and less than a quarter of the data is filled in right now. But the idea is that a player can (and often does) have multiple roles in a single game, which means putting roles into \texttt{playergame} wouldn't work without duplication somewhere or using arrays. Instead, I gave \texttt{playergame} a primary key ID, and the intention is for \texttt{pg\_roles} to list roles which a certain player in a certain game had. 
+
 
 \section{Queries}
 
+\subsection{Question:} What games have I ("Elbereth") played? 
+
+SQL answer: 
+\begin{lstlisting}[language=SQL]
+    with my_games as (
+        select game_id from playergame 
+        where playergame.player_id IN (
+            select player_id from player where player_name LIKE 'Elbereth'
+        )
+    )
+        
+    select game_string from game natural join my_games;
+\end{lstlisting}
+    
+% Mongo answer:
+% \begin{lstlisting}[language=Javascript]
 
 
+% \end{lstlisting}
+
+\subsection{Question:} When the evil team wins, what percentage of it (on average) is alive at the end? 
+
+SQL answer:
+\begin{lstlisting}[language=SQL]
+select
+\end{lstlisting}
+
+Mongo answer:
 
 
+\subsection{Question:} Do games where the evil team wins last longer/shorter than when they don't? (More broadly - does which team won correlate any with game length?)
+
+SQL answer:
+\begin{lstlisting}[language=SQL]
+-- all factions that won for each game and how many ppl 
+WITH by_game AS (
+    select game_id, alignment_id, count(player_id) as num_won
+    from playergame
+    where win
+    group by game_id, alignment_id
+    order by game_id
+),
+
+-- above with cycle length for each game
+with_nums AS (
+    SELECT * 
+    FROM by_game 
+        NATURAL JOIN (select game_id, num_cycles from game) AS cycle_nums
+), 
+
+-- grouped by alignment
+by_alignment AS (
+    SELECT alignment_id, avg(num_cycles) as avg_cycle, count(num_cycles) as num_games
+    FROM with_nums 
+    GROUP BY alignment_id
+)
+
+-- adding alignment description
+SELECT alignment_desc, avg_cycle, num_games, is_evil 
+    FROM by_alignment NATURAL JOIN alignment;
+\end{lstlisting}
+
+Mongo answer:
 
 
 \section{univ}
-
-\subsection{Top enrolled courses in CS}
-
- Find the number of people who have taken each course in the comp sci department. Show only the course name and count. Show only the 2 most commonly taken courses. Sort this list by course name.
 
 \begin{lstlisting}[language=SQL]
 with course_counts as 
@@ -118,17 +345,6 @@ select title, count
 
 Resulting table: 
 
-\begin{verbatim}
-    title                   | count
-    ------------------------+-------
-    Corporate Law           |   332
-    International Practicum |   335
-\end{verbatim}
-
-\subsection{Biggest section in fall 2009}
-
- What section of what course had the most students in fall of 2009?
-
 \begin{lstlisting}[language=SQL]
 with thecourse as (select course_id, sec_id, count(sec_id) as c 
     from takes 
@@ -139,10 +355,6 @@ with thecourse as (select course_id, sec_id, count(sec_id) as c
 select course_id, sec_id, c, title from thecourse natural join course;
 \end{lstlisting}
 \textbf{Answer: } Section 1 of course 105 (Image Processing) with 327 students. 
-
-\subsection{3 lowest GPAs}
-
-GPA at this university is defined to be function of the graded earned and the credits for each course. For example suppose, the grades earned in two classes are A and B, and those two classes are worth 2 and 5 credits respectively. Further suppose that A has a value of 4.0 and B has a value of 3.0. Then the GPA calculation is (4.0*2 + 3.0*5)/(2+5)=(8+15)/7=3.29 Show the name, student id and GPA of the three students that have the lowest GPA. 
 
 \begin{lstlisting}[language=SQL]
 
@@ -167,18 +379,8 @@ select id, name, gpa from student natural join takes_gpa;
 
 \end{lstlisting}
 
-Table: 
-\begin{verbatim}
-     id    |  name   |        gpa
-    -------+---------+--------------------
-     83871 | Stylian | 1.8799999999999997
-     507   | Recc    | 1.9823529411764707
-     55329 | Vyborny | 2.0565217391304347
-\end{verbatim}
 
 \subsection{3 lowest and 3 highest GPAs}
-
-Building from the previous query, in a single table, show the students with the three lowest, and 3 highest, GPAs. Order the resulting table by student name.
 
 \begin{lstlisting}[language=SQL]
     with creds as (select course_id, credits from course),
@@ -206,20 +408,6 @@ select id, name, gpa
 \end{lstlisting}
 
 Table: 
-\begin{verbatim}
-     id    |  name   |        gpa
-    -------+---------+--------------------
-     81207 | Masri   | 3.9904761904761896
-     98619 | Nagaraj | 3.9400000000000004
-     18286 | Pang    |                3.9
-     507   | Recc    | 1.9823529411764707
-     83871 | Stylian | 1.8799999999999997
-     55329 | Vyborny | 2.0565217391304347
-\end{verbatim}
-
-\subsection{Took no classes before 2005}
-
-Find the IDs of students who did not take a class before 2005 (but who have taken a course after 2005). Sort this list by ID and show only the top 5.
 
 \begin{lstlisting}[language=SQL]
     select id
@@ -231,18 +419,6 @@ Find the IDs of students who did not take a class before 2005 (but who have take
 \end{lstlisting}
 (Note: the limit is greater than 2004 there because using 2005 as the lower limit gave exactly 1 student, and the wording is ambiguous.)
 
-Table:
-\begin{verbatim}
-     id
-    -------
-     17192
-     3163
-     33094
-     58919
-     81550
-\end{verbatim}
-
-\subsection{Highest paid instructor whose name starts with A}
 
 Find the name of the instuructor and salary of the highest paid instructor in all departments whose name starts with A.
 \begin{lstlisting}[language=SQL]
@@ -250,9 +426,6 @@ Find the name of the instuructor and salary of the highest paid instructor in al
 \end{lstlisting}
 
 \textbf{Answer: } Arias, \$104,563.38 in Statistics. (The wording here arguably means per department, but the only three instructors whose names start with A are all in statistics as far as I can tell. )
-
-\subsection{Lowest salary among highest paid instructors by department}
-Find the name of the the instructor, and that person's salary and department, such that they have the highest salary in their department, but a lower salary than that of the highest paid person in any other department.
 
 \begin{lstlisting}[language=SQL]
 with ret as (select dept_name, max(salary) as m 
@@ -271,9 +444,6 @@ select name, salary, ret.dept_name
 
 \section{rocket}
 
-\subsection{Max vs All} 
-The following two queries both find all launches such that the launch apogee was higher than the launch apogee of any launch in 1957. The first is 15x slower than second!!! Explain.
-
 \begin{lstlisting}[language=SQL]
 select apogee, date from launch where apogee > all ( select apogee from launch where date_part('year', date)=1957);
 
@@ -282,25 +452,6 @@ select apogee, date from launch where apogee > ( select max(apogee) from launch 
             
 The former query selects the entire set of 1957 launches, and then compares every row in the table to every single row in that subset (to make sure that the apogee is greater than \textit{all} the 1957 ones). The latter finds the maximum apogee from 1957, and then compares every row in the table to just that single number, which is much faster (roughly by a factor of however many things launched in 1957, though optimization may change that). 
 
-\subsection{Join types}
-
-Consider a query in which you want to join the launch table to the launch\_nonull table on the criteria \texttt{launch\_nonull.mission=launch.mission} and \texttt{launch\_nonull.tag=launch.tag}. Try every variation of join (inner join, natural join, cross join, right outer join, ....). Report the number of rows in the resulting table for each different join. Explain the differences between the sizes of the tables. (You may need to do some other queries to give good explanations.)
-
-\begin{itemize}
-    \item Initial table lengths: 72,691 each
-    \item Inner: 11,714
-    \item Natural: 1,541
-    \item Right outer: 72,691
-    \item Left outer: 72,691
-    \item Full outer: 133,668
-    \item Cross: 11,714
-\end{itemize}
-
-Natural is so tiny because it joins on every similar column name, which is every single column name, and only retains rows that exactly match, so the result is a table containing only the rows that are identical between the two tables (which seems to be the ones with both a launchpad and mission that are known, i.e. non-null). Inner is joining only on the two specified columns, so if the mission and tag are the same for both tables it includes a union of those rows (which also means several more duplicate columns), so it makes sense that it's somewhat larger than natural join. Right and left outer joins keep all the information from one of the tables and add on information from the other in matching rows, so of course they're the length of whichever table is the outer and then some of the rows now have extra information in other columns. The full outer join joins rows with identical missions and tags but leaves all the other rows from each table in there, which means double the length of the tables ($72691 * 2 = 145382$), minus the number of rows that are joined, which is exactly the number in the inner join ($145382 - 11714 = 133668$ as expected). And then the cross join (so long as you use a where clause) acts exactly like the inner join. (If you don't, you get the full cartesian product, which is $5283981481$. Yikes.)
-
-\section{hurricane}
-
-\subsection{Most recent unnamed storms} Find the first observation of the 5 most recent storms in the database whcih were not given a name (that is, their name is 'UNNAMED').
 
 \begin{lstlisting}[language=SQL]
 with lat_date as (select hid, min(date) as min
@@ -331,21 +482,6 @@ select all_obvs.* from min_times join all_obvs on true
 \end{lstlisting}
 (I apologize for how involved this is and it definitely could be better but it works.)
 
-Table:
-\begin{verbatim}
-  hid    |    date    |   time   | type | lat  | lathemi | long | longhemi | maxsustained
----------+------------+----------+------+------+---------+------+----------+--------------
-AL212005 | 2005-10-04 | 00:00:00 | LO   | 33.8 | N       | 31.8 | W        |       30
-AL152013 | 2013-12-03 | 18:00:00 | EX   | 34.3 | N       | 27.7 | W        |       50
-AL202011 | 2011-08-31 | 12:00:00 | LO   | 37.1 | N       | 64.3 | W        |       25
-AL022006 | 2006-07-16 | 12:00:00 | EX   | 37.2 | N       | 68.7 | W        |       30
-AL102004 | 2004-09-07 | 12:00:00 | TD   | 31.5 | N       | 39.7 | W        |       25
-\end{verbatim}
-
-\subsection{Longitude negative instead of E}
-
-
-Write a single query to recreate the observation table where longitude is negative in eastern hemisphere. That is eliminate the longitudehemi column and make any observation in which that column was 'E' have a value in the longitude column that is -1 times the original value.
 
 \begin{lstlisting}[language=SQL]
 with eastern as (
@@ -363,23 +499,7 @@ western as (
 (select * from eastern) union (select * from western);
 \end{lstlisting}
 
-Table (start):
-\begin{verbatim}
-  hid    |    date    |   time   | type | latitude | latitudehemi | maxsustained | newlong
----------+------------+----------+------+----------+--------------+--------------+---------
-AL011851 | 1851-06-25 | 00:00:00 | HU   |       28 | N            |           80 |    94.8
-AL011851 | 1851-06-25 | 06:00:00 | HU   |       28 | N            |           80 |    95.4
-AL011851 | 1851-06-25 | 12:00:00 | HU   |       28 | N            |           80 |      96
-AL011851 | 1851-06-25 | 18:00:00 | HU   |     28.1 | N            |           80 |    96.5
-AL011851 | 1851-06-25 | 21:00:00 | HU   |     28.2 | N            |           80 |    96.8
-AL011851 | 1851-06-26 | 00:00:00 | HU   |     28.2 | N            |           70 |      97
-\end{verbatim}
-
-
-\subsection{Easternmost storm}
-
-Use the answer to the previous question to find the name, date, longitude and latitude of the easternmost observed storm in the database.
-
+p
 \begin{lstlisting}[language=SQL]
 with eastern as (
     select hid, date, time, type, latitude, latitudehemi, 
@@ -397,16 +517,6 @@ un as (select * from eastern union select * from western)
 
 select date, latitude, newlong, name from un natural join hurricane order by newlong limit 1;
 \end{lstlisting}
-
-\textbf{Answer: } HOW, October 11 1951, at -63 longitude and 81 latitude.  
-
-
-\section{null values}
-Discuss: null values in a database require ternary logic; which is a pain. So why should you you allow them (give at least two reasons)? What are the alternatives (describe at least one)? Is your alternative to nulls better or worse, why? 
-
-They're useful for a generic non-value that's not specific to individual tables - that is, say I have a table of student grades that range from 0 to 4, and I want to have a value for non-existent. Putting in 0 won't work because that's an actual grade, and putting in even a number outside the range like 100 will mess everything up if I try to take an average. I could put a character like `-' there, but SQL might get unhappy if I tried to do an average then, and I might have to do special logic there. And even if none of that were a problem, someone else might use `NA' or `NaN' or any number of other things where I'd used `-', which is very inconvenient for trying to do anything with multiple tables. So a null value is useful for not interrupting aggregation/math, and for having a systemic not-there value for everyone instead of having everyone make up their own. 
-
-And an alternative is - as noted just above - using specific characters or numbers in place of null, which is way worse because it doesn't necessarily actually avoid ternary logic, it's not standardized across tables, and it's just really annoying to work with. (I guess the other alternative is not allowing nulls, which I think SQL does actually allow you to define column-by-column, and is reasonable if your data is perfectly clean and neat but that is not exactly common.) 
 
 
 

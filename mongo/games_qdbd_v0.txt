@@ -1,0 +1,47 @@
+# last modified 4/7; probably not complete tbh
+
+games
+-
+game_id int pk
+game_format char(2)
+game_num double
+game_string varchar
+basics int fk >- basic.basics
+player_stats int fk >- stats.player_stats
+winner varchar
+num_cycles int
+num_posts int
+title varchar
+balance int fk >- balance_stats.balance
+gms arr[varchar]
+anon_num null int
+IM varchar
+setting int fk >- settings.setting
+
+basic
+-
+basics int pk
+fundamentals varchar
+complexity varchar
+role_madness bool
+
+
+stats
+-
+player_stats int pk
+num_players int
+num_elims int
+num_survivors int
+player_list arr
+
+balance_stats
+-
+balance int pk
+mechanics char(2)
+distribution char(2)
+
+settings
+-
+setting int pk
+world varchar
+# other stuff here? 

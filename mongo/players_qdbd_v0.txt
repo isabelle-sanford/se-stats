@@ -1,0 +1,31 @@
+# last modified 4/7 (1pm), probably not great
+
+players
+-
+player_name varchar pk
+games_list arr[game_stat] fk >- game_stat.game_string
+GMed null arr[game] fk >- GM_stat.game_string
+IMed null arr[game_string]
+
+game_stat
+-
+game_string varchar pk
+alignment char
+death char
+outcome char
+hits int fk >- hits.hit
+roles arr[varchar]
+inactive bool
+
+hits
+-
+hit int pk
+first_hit int
+last_hit int
+num_hits int
+
+GM_stat
+-
+game_string varchar pk
+main bool
+# maybe other things? 

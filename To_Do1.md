@@ -33,6 +33,8 @@
 - queries for HW4
 - make structure diagram
 - structure could be better
+- INDEX
+- give players an ID from me
 
 ## HW4
 

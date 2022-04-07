@@ -760,21 +760,31 @@ INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm1
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmcsc10.tfm
-INPUT ../diagrams/se diagram v3.png
-INPUT ../diagrams/se diagram v3.png
-INPUT ../diagrams/se diagram v3.png
-INPUT ../diagrams/se diagram v3.png
-INPUT ../diagrams/se diagram v3.png
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
-INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/listings/lstlang1.sty
-INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/listings/lstlang1.sty
-INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/listings/lstlang1.sty
-INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/listings/lstlang1.sty
-INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm
-INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmtt9.tfm
-INPUT /usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map
-INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/jknappen/ec/tcrm1095.tfm
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmti10.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm
+INPUT ../mongo/mongo_games_v0.png
+INPUT ../mongo/mongo_games_v0.png
+INPUT ../mongo/mongo_games_v0.png
+INPUT ../mongo/mongo_games_v0.png
+INPUT ../mongo/mongo_games_v0.png
+INPUT /usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map
+INPUT ../mongo/mongo_players_v0.png
+INPUT ../mongo/mongo_players_v0.png
+INPUT ../mongo/mongo_players_v0.png
+INPUT ../mongo/mongo_players_v0.png
+INPUT ../mongo/mongo_players_v0.png
+INPUT ../diagrams/se diagram v3.png
+INPUT ../diagrams/se diagram v3.png
+INPUT ../diagrams/se diagram v3.png
+INPUT ../diagrams/se diagram v3.png
+INPUT ../diagrams/se diagram v3.png
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/listings/lstlang1.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/listings/lstlang1.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/listings/lstlang1.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/listings/lstlang1.sty
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmtt9.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/jknappen/ec/tcrm1095.tfm
 INPUT hw4_report.aux
 INPUT ./hw4_report.out
 INPUT ./hw4_report.out
@@ -786,7 +796,6 @@ INPUT /usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pf
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb
-INPUT /usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb
