@@ -21,7 +21,7 @@ CREATE TABLE player (
 
 CREATE TABLE setting (
     setting_id INT,
-    world VARCHAR,
+    setting VARCHAR,
     is_sanderson BOOLEAN,
     is_cosmere BOOLEAN,
 
@@ -57,13 +57,13 @@ CREATE TABLE death (
 CREATE TABLE game (
     game_id INT, 
     game_format CHAR(2) NOT NULL,
-    game_number FLOAT NOT NULL,
+    game_num FLOAT NOT NULL,
     game_string CHAR(6) UNIQUE NOT NULL, -- optional
     anon_num INT, -- TODO num only if anon else null
 
     -- ??
-    -- mechanics_balance CHAR(1) NOT NULL,
-    -- distribution_balance CHAR(1) NOT NULL,
+    mechanics_balance CHAR(2),
+    distribution_balance CHAR(2),
 
     IM_id INT,
     start_date DATE,
@@ -72,7 +72,7 @@ CREATE TABLE game (
     num_posts INT,
     
     title VARCHAR,
-    link VARCHAR,
+    --link VARCHAR,
 
     setting_id INT,
 
@@ -112,7 +112,7 @@ CREATE TABLE playergame (
     last_hit INT,
     num_hits INT,
     win BOOLEAN, -- ? 
-    pinchhitter BOOLEAN,
+    --pinchhitter BOOLEAN,
     inactive BOOLEAN,
 
     PRIMARY KEY (pg_id),
@@ -157,4 +157,17 @@ CREATE INDEX players ON playergame
 
 -- method can be hash, btree, gist, ... 
 -- DROP INDEX name; or DROP INDEX IF EXISTS name;
+
+
+
+GRANT ALL ON player TO isanford_123;
+GRANT ALL ON setting TO isanford_123;
+GRANT ALL ON alignment TO isanford_123;
+GRANT ALL ON death TO isanford_123;
+GRANT ALL ON game TO isanford_123;
+GRANT ALL ON gms TO isanford_123;
+GRANT ALL ON playergame TO isanford_123;
+GRANT ALL ON roles TO isanford_123;
+GRANT ALL ON player_roles TO isanford_123;
+
 
