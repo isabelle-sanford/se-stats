@@ -1,6 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1649333294 "/home/isanford/courses/databases/se_data/hw4_report/hw4_report.tex" "hw4_report.pdf" "hw4_report" 1649333295
-  "/home/isanford/courses/databases/se_data/hw4_report/hw4_report.tex" 1649333292 16794 80eec5df447e3d4f3a9b1177800f8f00 ""
+["pdflatex"] 1649349851 "/home/isanford/courses/databases/se_data/hw4_report/hw4_report.tex" "hw4_report.pdf" "hw4_report" 1649349853
+  "../diagrams/se diagram v3.png" 1649348085 229420 c6b5636baff8146c8f14d05644641325 ""
+  "/home/isanford/courses/databases/se_data/hw4_report/hw4_report.tex" 1649349849 16855 799689c5e3f6ecb77934113695ca3823 ""
   "/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2021/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2021/texmf-dist/fonts/tfm/jknappen/ec/tcrm1095.tfm" 1136768653 1536 02c06700a42be0f5a28664c7273f82e7 ""
@@ -123,11 +124,11 @@
   "/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1630626981 5184997 e8ebe783312624c87e02fd98e3693f46 ""
   "/usr/local/texlive/2021/texmf-var/web2c/pdftex/pdflatex.fmt" 1630627026 2798001 f846054f58e7967ed9dfef3a1a9b5338 ""
   "/usr/local/texlive/2021/texmf.cnf" 1630626977 455 5b996dcaa0eb4ef14a83b026bc0a008c ""
-  "hw4_report.aux" 1649333295 3222 b06e6a9127523c3b84ef40bfba116325 "pdflatex"
-  "hw4_report.out" 1649333295 3413 9648a15d42979228dfdb55989c7ef0ed "pdflatex"
-  "hw4_report.tex" 1649333292 16794 80eec5df447e3d4f3a9b1177800f8f00 ""
+  "hw4_report.aux" 1649349853 3222 e29d59e2cf00da49f8ed12c81b81c441 "pdflatex"
+  "hw4_report.out" 1649349853 3413 9648a15d42979228dfdb55989c7ef0ed "pdflatex"
+  "hw4_report.tex" 1649349849 16855 799689c5e3f6ecb77934113695ca3823 ""
   (generated)
-  "hw4_report.aux"
-  "hw4_report.pdf"
   "hw4_report.log"
+  "hw4_report.aux"
   "hw4_report.out"
+  "hw4_report.pdf"

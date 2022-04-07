@@ -1,12 +1,17 @@
 # TO DO
 
-## With original spreadsheet
+## NOW
 
-- Get new copies of game & data
+- mongo structure diagram
+- mongo queries
+- hw4 part 1 report
+- hw4 part 2 report
+- clean up enough to send and no more :)
+
+## With original spreadsheet
 
 ### In Data
 
-- ideally - remove format/number rows and put them in Game
 - ideally - add pinchhitter col
 
 ### In Game
@@ -17,16 +22,25 @@
 
 ## With tables in pandas
 
-- Aaaaaa
+- Sort cleaning & insertion into different places
 
 ## With SQL
 
-- stuff
-- actually insert properly
+- make at least 1 materialized view
 
 ## With mongo
 
-- everything >:(
+- queries for HW4
+- make structure diagram
+- structure could be better
+
+## HW4
+
+- part 1 of report, describing structure
+- part 2 of report, explaining queries
+- mongo queries
+- mongo diagram
+- comment probs
 
 ## LATER
 
@@ -37,3 +51,5 @@ fix up key tables
 how do I get sql to FUCKING ROUND
 
 add sheet sources in notebook
+
+organize file structure into something halfway reasonable
