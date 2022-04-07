@@ -1,0 +1,84 @@
+
+
+
+
+PLAYERS
+{
+    "name": "Meta",
+    games: [
+        {
+            string: "LG5",
+            alignment: "E",
+            death: "X",
+            result: "L",
+            hits: {
+                first: 6,
+                last: 6,
+                num: 1
+            },
+            roles: ["Regular"]
+        },
+        {
+            string: "MR1",
+            alignment: "F",
+            death: "X",
+            result: "L",
+            hits: {
+                first: 2,
+                last: 3,
+                num: 4
+            }
+        },
+    ],
+    GMed: [
+        {
+            string: "MR7",
+            main: True,
+            mech_balance: "MM",
+            dist_balance: "B", 
+
+        }
+    ]
+}
+
+
+GAMES 
+{
+    // could do manual id
+    name: "LG1",
+    format: "LG",
+    num: 1,
+    // anon_num: ,
+    complexity: "Standard",
+    fundamentals: "V/E",
+    winner: "E", // alternatively have list?
+    mech_balance: "BB",
+    dist_balance: "BB",
+    // IM: "person", // post LG5
+    num_players: 16,
+    num_elims: 4,
+    num_cycles: 4,
+    num_survivors: 6,
+    // num_pinchhitters: 0, // sigh
+    GMs: ["Meta"],
+    Title: "In the Wake of the Koloss",
+    // Link: // once it gets here
+    World: "Scadrial",
+    player_list: [] // idk
+    // other stuff
+}
+
+
+
+
+● show db - show database names
+● Show collections - show collections in current database
+● db - shows which database is currently assigned
+● use [name of database] - select database
+
+● insertOne() - save document to collection
+● findOne() - returns single document
+● find() - returns all documents that match query
+● updateOne() - modify document
+● deleteOne() - remove one document
+● deleteMany() - remove all documents matching filter

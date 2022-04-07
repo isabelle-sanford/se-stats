@@ -68,3 +68,8 @@ and possibly other IDs
 ### Other
 * PG needs to be cleaned to remove things not in death / alignment tables; want to be able to do constraints also on complexity / etc 
 
+
+What is the standard deviation between players in elim %?
+Does the sheet have general role info? I'd be curious whether games with vote manip have a bias toward one team or the other
+What is the total number of surviving eliminators?
+Average number of surviving eliminators for games where the eliminators win would be interesting
