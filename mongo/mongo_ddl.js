@@ -1,3 +1,7 @@
+// Index
+db.games.createIndex({ format: 1 });
+db.players.createIndex({ "games.game_string": 1 });
+
 // Q1: What games have I played?
 
 db.players.findOne(
@@ -5,40 +9,19 @@ db.players.findOne(
   { "games.game_string": 1, _id: 0 }
 );
 
-// Q2:
+// Q2: What % of the time does the evil team win?
+
+db.games.find({ winner: "E" }).count() / db.games.count();
+
+// Q3: Does who wins correlate to game length?
 
 db.games.aggregate([
   {
     $group: {
       _id: "$winner",
       avgCycles: {
-        $avg: {
-          $toInt: "$num_cycles",
-        },
+        $avg: "$num_cycles",
       },
     },
   },
 ]);
-
-db.games.aggregate([
-  {
-    $group: {
-      _id: "$winner",
-      avgCycles: {
-        $toInt: "$num_cycles",
-      },
-    },
-  },
-]);
-
-db.games.aggregate([
-  { $addFields: { intCycles: { $toInt: "$num_cycles" } } },
-  { $project: { winner: 1, intCycles: 1, game_string: 1 } },
-]);
-
-winsAndNums = {
-  $addFields: {
-    intCycles: { $toInt: "$num_cycles" },
-  },
-};
-db.games.find({ game_num: "8" }, { test: { $toInt: "$num_cycles" } });

@@ -1,4 +1,4 @@
--- LAST MODIFIED 4/7/22
+-- LAST MODIFIED 4/7/22 (added link col back)
 
 
 \c isanford;
@@ -75,7 +75,7 @@ CREATE TABLE game (
     num_posts INT,
     
     title VARCHAR,
-    --link VARCHAR,
+    link VARCHAR,
 
     setting_id INT,
 
