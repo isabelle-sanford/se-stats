@@ -124,8 +124,6 @@ The \texttt{games} data is actually fairly close to what the original Games tabl
 
 I've included an example below (real data, truncated for space), but essentially the Game data is split into sensible categories (similar to those listed on page 1), and there's a player list pulled from the original Player Data. That player list doesn't contain any stats about what happened to the player in that game (although it arguably should), but a name is enough to look up the relevant data from the \texttt{players} collection. I've also kept some of the summary stats (like the number of players) in Mongo, for easy access to especially common ones without having to cross-reference with \texttt{players}. There's an index on the ``format'' option, as filtering by format will be fairly common and there are only five formats available. 
 
-
-
 \begin{verbatim}
 {'format': 'MR',
 'game_num': 38.1,
@@ -216,6 +214,8 @@ There's also an index in the \texttt{playergame} table on `player\_id', which is
 As I mentioned, the \texttt{gms} table has been separated out. It would be more intuitive to just have a GM attribute inside \texttt{game}, but the problem is that there can be (and often are) multiple GMs running a single game. So to avoid duplication, there's a small table with just a player and a game they ran in each row, plus a boolean indicating whether they were the ``main'' GM or not. 
 
 The last branch I haven't described here is the \texttt{pg\_roles} table and its associated \texttt{role} key table. These are the most tentative tables, mainly because we only recently started collecting role data and less than a quarter of the data is filled in right now. But the idea is that a player sometimes has multiple roles in a single game, which means putting roles into \texttt{playergame} wouldn't work without duplication somewhere or using arrays. Instead, I gave \texttt{playergame} a primary key ID, and the idea is for \texttt{pg\_roles} to list roles which a certain player in a certain game had. Currently both the \texttt{roles} and the \texttt{pg\_roles} tables are empty, because cleaning those up enough to insert is lower priority than, say, my number theory homework. 
+
+Since the data does now take a fair amount of joining to make it human-understandable, I'm planning on (but have not yet made) a materialized view that has some summary stats and the real names of things, replicating some of the parts of the original sheet. 
 
 
 \section{Queries}

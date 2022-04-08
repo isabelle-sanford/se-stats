@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021) (preloaded format=pdflatex 2021.9.2)  7 APR 2022 22:46
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021) (preloaded format=pdflatex 2021.9.2)  7 APR 2022 23:16
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -479,13 +479,13 @@ Package pdftex.def Info: ../mongo/mongo_games_v0.png  used on input line 123.
 <../mongo/mongo_players_v0.png, id=60, 525.46312pt x 319.1925pt>
 File: ../mongo/mongo_players_v0.png Graphic file (type png)
 <use ../mongo/mongo_players_v0.png>
-Package pdftex.def Info: ../mongo/mongo_players_v0.png  used on input line 163.
+Package pdftex.def Info: ../mongo/mongo_players_v0.png  used on input line 161.
 (pdftex.def)             Requested size: 262.73091pt x 159.59586pt.
  [3 <../mongo/mongo_players_v0.png>]
 <../diagrams/se diagram v3.png, id=67, 624.83438pt x 485.4135pt>
 File: ../diagrams/se diagram v3.png Graphic file (type png)
 <use ../diagrams/se diagram v3.png>
-Package pdftex.def Info: ../diagrams/se diagram v3.png  used on input line 206.
+Package pdftex.def Info: ../diagrams/se diagram v3.png  used on input line 204.
 (pdftex.def)             Requested size: 312.41643pt x 242.70615pt.
  [4 <../diagrams/se diagram v3.png>] (/usr/local/texlive/2021/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
@@ -502,13 +502,13 @@ Package rerunfilecheck Info: File `hw4_report.out' has not changed.
 Here is how much of TeX's memory you used:
  16575 strings out of 478599
  260143 string characters out of 5854101
- 966411 words of memory out of 5000000
+ 974623 words of memory out of 5000000
  34001 multiletter control sequences out of 15000+600000
  412153 words of font info for 61 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
  71i,7n,80p,899b,1960s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sftt0900.pfb>
-Output written on hw4_report.pdf (7 pages, 463837 bytes).
+Output written on hw4_report.pdf (7 pages, 464000 bytes).
 PDF statistics:
  229 PDF objects out of 1000 (max. 8388607)
  188 compressed objects within 2 object streams

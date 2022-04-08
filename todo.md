@@ -15,3 +15,10 @@ make git repo (if possible >>)
 update dbd diagram
 
 SIGH okay alignment/death/etc should have numerical PKs because chars could change
+
+-- CREATE INDEX [name] ON [table]
+-- opt:USING [method]
+-- ([column] ASC NULLS FIRST) -- or DESC, NULLS LAST
+
+-- method can be hash, btree, gist, ...
+-- DROP INDEX name; or DROP INDEX IF EXISTS name;
