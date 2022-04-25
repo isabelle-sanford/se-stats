@@ -1,0 +1,578 @@
+Created pool  BoundPool {
+  _events: [Object: null prototype] {},
+  _eventsCount: 0,
+  _maxListeners: undefined,
+  options: {
+    user: 'dbuser',
+    host: 'localhost',
+    database: 'isanford',
+    port: 5432,
+    max: 10,
+    maxUses: Infinity,
+    allowExitOnIdle: false,
+    maxLifetimeSeconds: 0,
+    idleTimeoutMillis: 10000
+  },
+  log: [Function (anonymous)],
+  Client: [class Client extends EventEmitter] {
+    Query: [class Query extends EventEmitter]
+  },
+  Promise: [Function: Promise],
+  _clients: [],
+  _idle: [],
+  _expired: WeakSet { <items unknown> },
+  _pendingQueue: [],
+  _endCallback: undefined,
+  ending: false,
+  ended: false,
+  [Symbol(kCapture)]: false
+}
+Server created Successfully on port 40967
+game data loaded, in theory
+game data loaded, in theory
+data loaded, in theory
+game data loaded, in theory
+data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+data loaded, in theory
+game data loaded, in theory
+data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+data loaded, in theory
+game data loaded, in theory
+data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+data loaded, in theory
+game data loaded, in theory
+data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+data loaded, in theory
+game data loaded, in theory
+data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+data loaded, in theory
+game data loaded, in theory
+data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+data loaded, in theory
+data loaded, in theory
+data loaded, in theory
+data loaded, in theory
+data loaded, in theory
+data loaded, in theory
+data loaded, in theory
+data loaded, in theory
+data loaded, in theory
+data loaded, in theory
+data loaded, in theory
+data loaded, in theory
+data loaded, in theory
+data loaded, in theory
+data loaded, in theory
+data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+data loaded, in theory
+data loaded, in theory
+data loaded, in theory
+data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+data loaded, in theory
+data loaded, in theory
+data loaded, in theory
+data loaded, in theory
+data loaded, in theory
+data loaded, in theory
+data loaded, in theory
+data loaded, in theory
+data loaded, in theory
+data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+data loaded, in theory
+data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+data loaded, in theory
+data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+data loaded, in theory
+data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+data loaded, in theory
+game data loaded, in theory
+data loaded, in theory
+game data loaded, in theory
+data loaded, in theory
+data loaded, in theory
+data loaded, in theory
+game data loaded, in theory
+Created pool  BoundPool {
+  _events: [Object: null prototype] {},
+  _eventsCount: 0,
+  _maxListeners: undefined,
+  options: {
+    user: 'dbuser',
+    host: 'localhost',
+    database: 'isanford',
+    port: 5432,
+    max: 10,
+    maxUses: Infinity,
+    allowExitOnIdle: false,
+    maxLifetimeSeconds: 0,
+    idleTimeoutMillis: 10000
+  },
+  log: [Function (anonymous)],
+  Client: [class Client extends EventEmitter] {
+    Query: [class Query extends EventEmitter]
+  },
+  Promise: [Function: Promise],
+  _clients: [],
+  _idle: [],
+  _expired: WeakSet { <items unknown> },
+  _pendingQueue: [],
+  _endCallback: undefined,
+  ending: false,
+  ended: false,
+  [Symbol(kCapture)]: false
+}
+Server created Successfully on port 40967
+game data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+data loaded, in theory
+data loaded, in theory
+data loaded, in theory
+data loaded, in theory
+data loaded, in theory
+data loaded, in theory
+data loaded, in theory
+data loaded, in theory
+data loaded, in theory
+data loaded, in theory
+data loaded, in theory
+data loaded, in theory
+data loaded, in theory
+data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+data loaded, in theory
+game data loaded, in theory
+data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+data loaded, in theory
+data loaded, in theory
+data loaded, in theory
+data loaded, in theory
+data loaded, in theory
+data loaded, in theory
+data loaded, in theory
+data loaded, in theory
+data loaded, in theory
+data loaded, in theory
+data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+data loaded, in theory
+data loaded, in theory
+data loaded, in theory
+data loaded, in theory
+data loaded, in theory
+data loaded, in theory
+data loaded, in theory
+data loaded, in theory
+data loaded, in theory
+data loaded, in theory
+data loaded, in theory
+data loaded, in theory
+data loaded, in theory
+data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+data loaded, in theory
+data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+data loaded, in theory
+data loaded, in theory
+data loaded, in theory
+data loaded, in theory
+data loaded, in theory
+data loaded, in theory
+data loaded, in theory
+data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+data loaded, in theory
+data loaded, in theory
+data loaded, in theory
+data loaded, in theory
+data loaded, in theory
+data loaded, in theory
+data loaded, in theory
+data loaded, in theory
+data loaded, in theory
+data loaded, in theory
+data loaded, in theory
+data loaded, in theory
+data loaded, in theory
+data loaded, in theory
+data loaded, in theory
+data loaded, in theory
+data loaded, in theory
+data loaded, in theory
+data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+data loaded, in theory
+game data loaded, in theory
+data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+data loaded, in theory
+data loaded, in theory
+data loaded, in theory
+data loaded, in theory
+data loaded, in theory
+game data loaded, in theory
+data loaded, in theory
+game data loaded, in theory
+data loaded, in theory
+game data loaded, in theory
+data loaded, in theory
+data loaded, in theory
+game data loaded, in theory
+data loaded, in theory
+game data loaded, in theory
+data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+data loaded, in theory
+data loaded, in theory
+data loaded, in theory
+game data loaded, in theory
+data loaded, in theory
+data loaded, in theory
+data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+data loaded, in theory
+game data loaded, in theory
+data loaded, in theory
+game data loaded, in theory
+data loaded, in theory
+game data loaded, in theory
+data loaded, in theory
+game data loaded, in theory
+data loaded, in theory
+game data loaded, in theory
+data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+data loaded, in theory
+game data loaded, in theory
+data loaded, in theory
+game data loaded, in theory
+data loaded, in theory
+game data loaded, in theory
+data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+data loaded, in theory
+data loaded, in theory
+game data loaded, in theory
+data loaded, in theory
+game data loaded, in theory
+data loaded, in theory
+data loaded, in theory
+data loaded, in theory
+data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+data loaded, in theory
+game data loaded, in theory
+data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+data loaded, in theory
+Created pool  BoundPool {
+  _events: [Object: null prototype] {},
+  _eventsCount: 0,
+  _maxListeners: undefined,
+  options: {
+    user: 'dbuser',
+    host: 'localhost',
+    database: 'isanford',
+    port: 5432,
+    max: 10,
+    maxUses: Infinity,
+    allowExitOnIdle: false,
+    maxLifetimeSeconds: 0,
+    idleTimeoutMillis: 10000
+  },
+  log: [Function (anonymous)],
+  Client: [class Client extends EventEmitter] {
+    Query: [class Query extends EventEmitter]
+  },
+  Promise: [Function: Promise],
+  _clients: [],
+  _idle: [],
+  _expired: WeakSet { <items unknown> },
+  _pendingQueue: [],
+  _endCallback: undefined,
+  ending: false,
+  ended: false,
+  [Symbol(kCapture)]: false
+}
+Server created Successfully on port 40967
+game data loaded, in theory
+game data loaded, in theory
+data loaded, in theory

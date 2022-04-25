@@ -27,7 +27,7 @@ const pool = new Pool({
 console.log("Created pool ", pool);
 
 const app = express();
-const port = 40969;
+const port = 40968; // 40969 stuck??
 
 // static pages are served from the same directory as this file
 app.use("/", express.static(path.join(__dirname)));
@@ -43,7 +43,7 @@ function init_dbreq(dberr, client, done, req, res) {
 
   //   let postt = req.body;
 
-  client.query("SELECT * from game", function (dberr, dbres) {
+  client.query("SELECT * from data_view;", function (dberr, dbres) {
     done();
     if (dberr) {
       res.writeHead(500);
@@ -56,8 +56,57 @@ function init_dbreq(dberr, client, done, req, res) {
   });
 }
 
+function init_players(dberr, client, done, req, res) {
+  if (dberr) {
+    res.writeHead(500);
+    res.end(
+      "Sorry, check with the site admin for error: " + dberr.code + " ..\n"
+    );
+    return;
+  }
+
+  //   let postt = req.body;
+
+  client.query("SELECT player_name from player", function (dberr, dbres) {
+    done();
+    if (dberr) {
+      res.writeHead(500);
+      res.end(
+        "Sorry, check with the site admin for error: " + dberr.code + " ..\n"
+      );
+    } else {
+      res.json(dbres.rows);
+    }
+  });
+}
+
+function init_gamedata(dberr, client, done, req, res) {
+  if (dberr) {
+    res.writeHead(500);
+    res.end(
+      "Sorry, check with the site admin for error: " + dberr.code + " ..\n"
+    );
+    return;
+  }
+
+  //   let postt = req.body;
+
+  client.query("SELECT * from game_view;", function (dberr, dbres) {
+    done();
+    if (dberr) {
+      res.writeHead(500);
+      res.end(
+        "Sorry, check with the site admin for error: " + dberr.code + " ..\n"
+      );
+    } else {
+      res.json(dbres.rows);
+    }
+  });
+}
+
+
 // do a query to Postgres and return the result as JSON
-function dbreq1(dberr, client, done, req, res) {
+function dbreq1(dberr, client, done, req, res, queryString) {
   if (dberr) {
     res.writeHead(500);
     res.end(
@@ -67,7 +116,7 @@ function dbreq1(dberr, client, done, req, res) {
   }
   let postt = req.body;
   client.query(
-    "SELECT * from game order by random() limit " + postt["count"],
+    queryString, // !
     function (dberr, dbres) {
       done();
       if (dberr) {
@@ -83,9 +132,24 @@ function dbreq1(dberr, client, done, req, res) {
 }
 
 // tell express aboout how to handle the dq1 request
-app.post("/games", express.json({ type: "*/*" }), function (req, res) {
+app.post("/data", express.json({ type: "*/*" }), function (req, res) {
   pool.connect(function (dberr, client, done) {
     init_dbreq(dberr, client, done, req, res);
+    console.log("data loaded, in theory");
+  });
+});
+
+app.post("/games", express.json({ type: "*/*" }), function (req, res) {
+  pool.connect(function (dberr, client, done) {
+    init_gamedata(dberr, client, done, req, res);
+    console.log("game data loaded, in theory");
+  });
+});
+
+// tell express aboout how to handle the dq1 request
+app.post("/players", express.json({ type: "*/*" }), function (req, res) {
+  pool.connect(function (dberr, client, done) {
+    init_players(dberr, client, done, req, res);
   });
 });
 
@@ -95,6 +159,73 @@ app.post("/dq1", express.json({ type: "*/*" }), function (req, res) {
     dbreq1(dberr, client, done, req, res);
   });
 });
+
+
+function getQuery(dberr, client, done, req, res) {
+  if (dberr) {
+    res.writeHead(500);
+    res.end(
+      "Sorry, check with the site admin for error: " + dberr.code + " ..\n"
+    );
+    return;
+  }
+
+  let postt = req.body;
+
+  console.log(postt)
+
+  let queryString = "SELECT * FROM data_view WHERE TRUE ";
+  if (postt["player-select"] != "All") {
+    queryString += "AND player_name LIKE '" + postt["player-select"] + "' "
+  }
+  // if (!postt["LGcheck"] || !postt["MRcheck"] || !postt["QFcheck"]) {
+  //   queryString += "AND ( "
+  //   if (postt["LGcheck"]) {
+  //     queryString += "game_format LIKE 'LG' OR "
+  //   }
+  //   if (postt["MRcheck"]) {
+  //     queryString += "game_format LIKE 'MR' OR "
+  //   }
+  //   if (postt["QFcheck"]) {
+  //     queryString += "game_format LIKE 'QF' OR "
+  //   }
+  //   queryString += " FALSE)"
+  // }
+
+  queryString += ";"
+
+  console.log(queryString)
+
+
+  client.query(
+    queryString, // !
+    function (dberr, dbres) {
+      done();
+      if (dberr) {
+        res.writeHead(500);
+        res.end(
+          "Sorry, check with the site admin for error: " + dberr.code + " ..\n"
+        );
+      } else {
+        res.json(dbres.rows);
+      }
+    }
+  );
+
+}
+
+
+
+// a request coming in as from a form
+// so it is url encoded and returns an entire page
+app.post('/forminput', express.urlencoded({ type: '*/*' }), function (req, res) {
+  console.log(req.body);
+  pool.connect(function (dberr, client, done) {
+    getQuery(dberr, client, done, req, res)
+  });
+});
+
+
 
 // start the Node server
 app.listen(port, function (error) {
