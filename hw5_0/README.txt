@@ -8,9 +8,11 @@ URL to access website:
 
 Files: 
     table_making.sql [similar to HW4]
+    materialized views making SQL
 
-    node JS file 
+    node JS file(s)
 
     (data files if changed)
+
 
 
