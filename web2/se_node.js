@@ -6,23 +6,21 @@
 
 const path = require("path");
 const express = require("express");
-const url = require('url');
+const url = require("url");
 const { Pool } = require("pg"); // connecting to postgres
 const {
-    CommandCompleteMessage,
-    closeComplete,
+  CommandCompleteMessage,
+  closeComplete,
 } = require("pg-protocol/dist/messages");
 const mustache = require("mustache");
 
-
-
 // Connection to postgres parameters
 const pool = new Pool({
-    user: "dbuser",
-    host: "localhost",
-    database: "isanford",
-    password: "12345678",
-    port: 5432,
+  user: "dbuser",
+  host: "localhost",
+  database: "isanford",
+  password: "12345678",
+  port: 5432,
 });
 
 console.log("Created pool ", pool);
@@ -30,190 +28,177 @@ console.log("Created pool ", pool);
 const app = express();
 const port = 40967;
 
-app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'html');
+app.set("views", path.join(__dirname, "views"));
+app.set("view engine", "html");
 
 // static pages are served from the same directory as this file
 app.use("/", express.static(path.join(__dirname)));
 
 function init_dbreq(dberr, client, done, req, res) {
-    if (dberr) {
-        res.writeHead(500);
-        res.end(
-            "Sorry, check with the site admin for error: " + dberr.code + " ..\n"
-        );
-        return;
-    }
+  if (dberr) {
+    res.writeHead(500);
+    res.end(
+      "Sorry, check with the site admin for error: " + dberr.code + " ..\n"
+    );
+    return;
+  }
 
-    client.query("SELECT * from data_view;", function (dberr, dbres) {
-        done();
-        if (dberr) {
-            res.writeHead(500);
-            res.end(
-                "Sorry, check with the site admin for error: " + dberr.code + " ..\n"
-            );
-        } else {
-            res.json(dbres.rows);
-        }
-    });
+  client.query("SELECT * from data_view;", function (dberr, dbres) {
+    done();
+    if (dberr) {
+      res.writeHead(500);
+      res.end(
+        "Sorry, check with the site admin for error: " + dberr.code + " ..\n"
+      );
+    } else {
+      res.json(dbres.rows);
+    }
+  });
 }
 
 function init_players(dberr, client, done, req, res) {
-    if (dberr) {
-        res.writeHead(500);
-        res.end(
-            "Sorry, check with the site admin for error: " + dberr.code + " ..\n"
-        );
-        return;
-    }
+  if (dberr) {
+    res.writeHead(500);
+    res.end(
+      "Sorry, check with the site admin for error: " + dberr.code + " ..\n"
+    );
+    return;
+  }
 
-    client.query("SELECT player_name from player", function (dberr, dbres) {
-        done();
-        if (dberr) {
-            res.writeHead(500);
-            res.end(
-                "Sorry, check with the site admin for error: " + dberr.code + " ..\n"
-            );
-        } else {
-            res.json(dbres.rows);
-        }
-    });
+  client.query("SELECT player_name from player", function (dberr, dbres) {
+    done();
+    if (dberr) {
+      res.writeHead(500);
+      res.end(
+        "Sorry, check with the site admin for error: " + dberr.code + " ..\n"
+      );
+    } else {
+      res.json(dbres.rows);
+    }
+  });
 }
 
 function init_gamedata(dberr, client, done, req, res) {
-    if (dberr) {
-        res.writeHead(500);
-        res.end(
-            "Sorry, check with the site admin for error: " + dberr.code + " ..\n"
-        );
-        return;
-    }
+  if (dberr) {
+    res.writeHead(500);
+    res.end(
+      "Sorry, check with the site admin for error: " + dberr.code + " ..\n"
+    );
+    return;
+  }
 
-    client.query("SELECT * from game_view;", function (dberr, dbres) {
-        done();
-        if (dberr) {
-            res.writeHead(500);
-            res.end(
-                "Sorry, check with the site admin for error: " + dberr.code + " ..\n"
-            );
-        } else {
-            res.json(dbres.rows);
-        }
-    });
+  client.query("SELECT * from game_view;", function (dberr, dbres) {
+    done();
+    if (dberr) {
+      res.writeHead(500);
+      res.end(
+        "Sorry, check with the site admin for error: " + dberr.code + " ..\n"
+      );
+    } else {
+      res.json(dbres.rows);
+    }
+  });
 }
 
 function init_gms(dberr, client, done, req, res) {
-    if (dberr) {
-        res.writeHead(500);
-        res.end(
-            "Sorry, check with the site admin for error: " + dberr.code + " ..\n"
-        );
-        return;
-    }
+  if (dberr) {
+    res.writeHead(500);
+    res.end(
+      "Sorry, check with the site admin for error: " + dberr.code + " ..\n"
+    );
+    return;
+  }
 
-    client.query("SELECT * from gm_list;", function (dberr, dbres) {
-        done();
-        if (dberr) {
-            res.writeHead(500);
-            res.end(
-                "Sorry, check with the site admin for error: " + dberr.code + " ..\n"
-            );
-        } else {
-            res.json(dbres.rows);
-        }
-    });
+  client.query("SELECT * from gm_list;", function (dberr, dbres) {
+    done();
+    if (dberr) {
+      res.writeHead(500);
+      res.end(
+        "Sorry, check with the site admin for error: " + dberr.code + " ..\n"
+      );
+    } else {
+      res.json(dbres.rows);
+    }
+  });
 }
 
 app.post("/data", express.json({ type: "*/*" }), function (req, res) {
-    pool.connect(function (dberr, client, done) {
-        init_dbreq(dberr, client, done, req, res);
-        console.log("data loaded, in theory");
-    });
+  pool.connect(function (dberr, client, done) {
+    init_dbreq(dberr, client, done, req, res);
+    console.log("data loaded, in theory");
+  });
 });
 
 app.post("/games", express.json({ type: "*/*" }), function (req, res) {
-    pool.connect(function (dberr, client, done) {
-        init_gamedata(dberr, client, done, req, res);
-        console.log("game data loaded, in theory");
-    });
+  pool.connect(function (dberr, client, done) {
+    init_gamedata(dberr, client, done, req, res);
+    console.log("game data loaded, in theory");
+  });
 });
 
 app.post("/players", express.json({ type: "*/*" }), function (req, res) {
-    pool.connect(function (dberr, client, done) {
-        init_players(dberr, client, done, req, res);
-    });
+  pool.connect(function (dberr, client, done) {
+    init_players(dberr, client, done, req, res);
+  });
 });
 
 app.post("/gms", express.json({ type: "*/*" }), function (req, res) {
-    pool.connect(function (dberr, client, done) {
-        init_gms(dberr, client, done, req, res);
-    });
+  pool.connect(function (dberr, client, done) {
+    init_gms(dberr, client, done, req, res);
+  });
 });
 
 // TODO
-function getrendered(strings) {
-    let params = {
-        headers: { "Content-type": "text/plain" }
-    }
-    fetch('views/onegame_view', params).then((response) => response.text())
-        .then((template) => {
-            let rendered = mustache.render(template, strings);
-            return rendered
-        });
+async function getrendered(strings) {
+  let params = {
+    headers: { "Content-type": "text/plain" },
+  };
+  fetch("views/onegame_view", params)
+    .then((response) => response.text())
+    .then((template) => {
+      let rendered = mustache.render(template, strings);
+      return rendered;
+    });
 }
 
+app.use("/one_game");
+
 app.get("/one_game", function (req, res) {
-    console.log(req.url)
-    let url_parts = url.parse(req.url, true);
-    let query = url_parts.query["game-select"];
+  console.log(req.url);
+  let url_parts = url.parse(req.url, true);
+  let query = url_parts.query["game-select"];
 
-    pool.connect(async function (dberr, client, done) {
+  pool.connect(async function (dberr, client, done) {
+    let game_query = `SELECT * FROM game_view WHERE game_string LIKE '${query}';`;
+    let data_query = `SELECT * FROM data_view WHERE game_string LIKE '${query}';`;
+    let gm_query = `SELECT * FROM gm_list WHERE game_string LIKE '${query}';`;
 
-        let game_query = `SELECT * FROM game_view WHERE game_string LIKE '${query}';`
-        let data_query = `SELECT * FROM data_view WHERE game_string LIKE '${query}';`;
-        let gm_query = `SELECT * FROM gm_list WHERE game_string LIKE '${query}';`
+    let game_info = await client.query(game_query);
+    let data_info = await client.query(data_query);
+    let gm_info = await client.query(gm_query);
 
-        let game_info = await client.query(game_query);
-        let data_info = await client.query(data_query);
-        let gm_info = await client.query(gm_query);
+    console.log(game_info.rows[0]);
 
-        console.log(game_info.rows[0])
+    // if there are two games with same string that's BAD
+    let strings = parseGameData(game_info[0], data_info, gm_info);
 
-        opts = {
-            game_info: game_info.rows[0],
-            data_info: data_info.rows,
-            gm_info: gm_info
-        }
+    //let rendered = getrendered(strings)
+    let rendered = mustache.render(template, strings);
 
-        let strings = parseGameData(opts)
-
-        //let rendered = getrendered(strings)
-        let rendered = mustache.render(template, strings)
-
-        res.write(rendered)
-
-        console.log("written :)");
-
-        res.end()
-    });
-})
-
-
-
+    res.write(rendered);
+    res.end();
+  });
+});
 
 // start the Node server
 app.listen(port, function (error) {
-    if (error) throw error;
-    console.log(`Server created Successfully on port ${port}`);
+  if (error) throw error;
+  console.log(`Server created Successfully on port ${port}`);
 });
 
-
-function parseGameData(opts) {
-    let game_info = opts["game_info"]
-    let data_info = opts["data_info"]
-    let gm_info = opts["gm_info"]
-    // TODO: actual wanted link
-    let title_string = `<h1 class="bg-primary py-2">
+function parseGameData(game_info, data_info, gm_info) {
+  // TODO: actual wanted link
+  let title_string = `<h1 class="bg-primary py-2">
             ${game_info.game_string}- 
             <u><a class="text-light" 
                 href="https://www.17thshard.com/forum/topic/4985-long-game-1-in-the-wake-of-the-koloss/">
@@ -221,7 +206,7 @@ function parseGameData(opts) {
             </a></u>
             </h1>`;
 
-    let game_info_string = `<ul> 
+  let game_info_string = `<ul> 
         <li>GM(s): <strong>${gm_info}</strong></li> 
         <li><strong>${data_info.length}</strong> players</li> 
         <li><strong>${game_info.num_cycles}</strong> cycles</li> 
@@ -231,27 +216,26 @@ function parseGameData(opts) {
         <li> Fundamentals: ${game_info.fundamentals}</li> 
         </ul>`;
 
-    nicer_data = data_info.map((d) => {
-        return {
-            Name: d.player_name,
-            Won: d.win ? "Y" : "N",
-            Alignment: d.is_elim ? "Evil" : d.alignment_desc,
-            Death: d.death_char === "F" ? "Friendly Fire" : d.death_desc,
-            "1st hit": d.first_hit === null ? "-" : d.first_hit,
-            "Last hit": d.last_hit === null ? "-" : d.last_hit,
-            "# Hits": d.num_hits,
-        };
-    });
-
-    let table_string = makeTable(nicer_data);
-
+  nicer_data = data_info.map((d) => {
     return {
-        "title": title_string,
-        "info": game_info_string,
-        "table": table_string
-    }
-}
+      Name: d.player_name,
+      Won: d.win ? "Y" : "N",
+      Alignment: d.is_elim ? "Evil" : d.alignment_desc,
+      Death: d.death_char === "F" ? "Friendly Fire" : d.death_desc,
+      "1st hit": d.first_hit === null ? "-" : d.first_hit,
+      "Last hit": d.last_hit === null ? "-" : d.last_hit,
+      "# Hits": d.num_hits,
+    };
+  });
 
+  let table_string = makeTable(nicer_data);
+
+  return {
+    title: title_string,
+    info: game_info_string,
+    table: table_string,
+  };
+}
 
 /**
  * Create an html table from a bunch of data in JSON form.
@@ -260,14 +244,14 @@ function parseGameData(opts) {
  * @returns an HTML table
  */
 function makeTable(dbres) {
-    let tbl = '<table class="table table-striped table-sm">';
-    let dbkeys = Object.keys(dbres[0]);
-    tbl += "<thead><tr>";
-    // first, format the table header.
-    // each item in the header is a key in the first JSON object
-    // each of these is turned into a button that sorts the JSON data on that key
-    dbkeys.forEach((k) => {
-        tbl += `
+  let tbl = '<table class="table table-striped table-sm">';
+  let dbkeys = Object.keys(dbres[0]);
+  tbl += "<thead><tr>";
+  // first, format the table header.
+  // each item in the header is a key in the first JSON object
+  // each of these is turned into a button that sorts the JSON data on that key
+  dbkeys.forEach((k) => {
+    tbl += `
           <th>
           <div class="d-grid gap-">
           <button 
@@ -279,33 +263,33 @@ function makeTable(dbres) {
           </button>
           </div>
           </th>`;
-    });
+  });
 
-    // next make function body
-    tbl += "</tr></thead><tbody>";
-    dbres.forEach((element) => {
-        tbl += "<tr>";
-        dbkeys.forEach((k) => {
-            // hmm
-            if (k === "Game") {
-                tbl += `<td
+  // next make function body
+  tbl += "</tr></thead><tbody>";
+  dbres.forEach((element) => {
+    tbl += "<tr>";
+    dbkeys.forEach((k) => {
+      // hmm
+      if (k === "Game") {
+        tbl += `<td
               class="${k} ${element[k]}"
               onclick='examineGame("${element[k]}")'>
               
               ${element[k]}
               
               </td>`;
-            } else {
-                tbl += `<td
+      } else {
+        tbl += `<td
                   class="${k} ${element[k]}">
                   ${element[k]}
                   </td>`;
-            }
-        });
-        tbl += "</tr>";
+      }
     });
-    tbl += "</tbody></table>";
-    return tbl;
+    tbl += "</tr>";
+  });
+  tbl += "</tbody></table>";
+  return tbl;
 }
 
 // TODO: YIKES

@@ -1,11 +1,13 @@
 const port = 40967;
 
-const data_url = `http://165.106.10.170:${port}/data`;
-const games_url = `http://165.106.10.170:${port}/games`;
-const gm_url = `http://165.106.10.170:${port}/gms`;
+//const data_url = `http://165.106.10.170:${port}/data`;
+const games_url = `http://165.106.10.170:${port}/gamelist`;
+//const gm_url = `http://165.106.10.170:${port}/gms`;
 const players_url = `http://165.106.10.170:${port}/players`;
 
 const one_game_page = `http://165.106.10.170:${port}/one_game`;
+const one_player_page = `http://165.106.10.170:${port}/one_player`;
+
 
 let result = null;
 let nicer_data = null;
@@ -67,5 +69,5 @@ function makeTable(dbres) {
 }
 
 function round(num) {
-  Math.round(num * 100) / 100;
+  return Math.round(num * 100) / 100;
 }

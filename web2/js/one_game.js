@@ -26,44 +26,6 @@ fillGameDropdown();
 let table_output = document.querySelector("#output-table");
 let ind_output = document.querySelector("#output");
 
-let result = null;
-let nicer_data = null;
-
-
-// function g2() {
-//   let params = {
-//     method: "GET"
-//   };
-//   let myurl = `http://165.106.10.170:${port}/agame`;
-//   fetch(myurl, params).then(function (response) {
-//     response.text().then(function (text) {
-//       console.log(text)
-//       //game_res = JSON.parse(text)[0];
-
-//       data_res = JSON.parse(text);
-
-//       //gm_res = JSON.parse(text);
-
-//       nicer_data = data_res.map((d) => {
-//         return {
-//           Name: d.player_name,
-//           Won: d.win ? "Y" : "N",
-//           Alignment: d.is_elim ? "Evil" : d.alignment_desc,
-//           Death: d.death_char === "F" ? "Friendly Fire" : d.death_desc,
-//           "1st hit": d.first_hit === null ? "-" : d.first_hit,
-//           "Last hit": d.last_hit === null ? "-" : d.last_hit,
-//           "# Hits": d.num_hits,
-//         };
-//       });
-//       table_output.innerHTML = makeTable(nicer_data);
-//     });
-//   });
-
-// }
-
-// g2();
-
-
 function getGameData() {
   let game_chosen = document.querySelector("#game-select").value;
   console.log("filtering to " + game_chosen);
@@ -110,9 +72,6 @@ function getGameData() {
     });
   });
 }
-
-
-
 
 function parseGameData(game_info, data_info, gm_info) {
   // TODO: actual wanted link

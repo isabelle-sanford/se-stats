@@ -5,21 +5,15 @@ function fillPlayerDropdown() {
     method: "POST",
     headers: { "Content-type": "application/json" },
   };
-  let uurl = `http://165.106.10.170:${port}/players`;
   params["body"] = JSON.stringify({}); // pass the param "count" using post
-  fetch(uurl, params).then(function (response) {
+  fetch(players_url, params).then(function (response) {
     response.text().then(function (text) {
       let result = JSON.parse(text);
       console.log(result);
 
       let opt = "";
       result.forEach((name) => {
-        opt +=
-          '<option value="' +
-          name.player_name +
-          '" >' +
-          name.player_name +
-          "</option>";
+        opt += `<option value="${name.player_name}"> ${name.player_name} </option> `;
       });
 
       dropdown.innerHTML = opt;
@@ -32,8 +26,7 @@ fillPlayerDropdown();
 let table_output = document.querySelector("#output-table");
 let ind_output = document.querySelector("#output");
 
-let result = null;
-let nicer_data = null;
+// put result / nicer data declarations in init
 
 //
 function getPlayerData() {
@@ -92,8 +85,6 @@ function parsePlayerData(data_info, gm_info) {
     player_info_string += gm_info_string;
   }
 
-  document.querySelector("#player-info").innerHTML = player_info_string;
-
   nicer_data = data_info.map((p) => {
     return {
       Game: p.game_string,
@@ -106,5 +97,6 @@ function parsePlayerData(data_info, gm_info) {
     };
   });
 
+  document.querySelector("#player-info").innerHTML = player_info_string;
   table_output.innerHTML = tabform1(nicer_data);
 }

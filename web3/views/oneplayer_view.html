@@ -60,7 +60,7 @@
               id="player-select"
               name="player-select"
             >
-              <option selected>N/A</option>
+              <option selected>{{ selected_player }}</option>
             </select>
           </div>
 
@@ -74,12 +74,15 @@
     <div class="container">
       <div class="row" id="output">
         <div class="col-12" id="player-name">
+          {{{title}}}
           <br />
         </div>
 
-        <div class="col-3 col-xs-6 justify-content-top" id="player-info"></div>
+        <div class="col-3 col-xs-6 justify-content-top" id="player-info">
+          {{{info}}}
+        </div>
 
-        <div class="col-9 col-xs-12" id="output-table"></div>
+        <div class="col-9 col-xs-12" id="output-table">{{{table}}}</div>
       </div>
       <br />
     </div>

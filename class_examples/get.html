@@ -1,0 +1,38 @@
+<html>
+  <script language="javascript">
+    function doQuery() {
+      console.log("D");
+      let params = {
+        method: "POST",
+        headers: { "Content-type": "application/json" },
+      };
+      let uurl = "http://165.106.10.170:30005/dq1";
+      params["body"] = JSON.stringify({
+        count: 4,
+        body: "Exciting, eh",
+        userID: 3,
+      });
+      fetch(uurl, params).then(function (response) {
+        response.text().then(function (text) {
+          console.log("AAAA", text);
+          let result2 = JSON.parse(text);
+          console.log(result2);
+          document.querySelector("#gt").innerHTML = stringer(result2);
+        });
+      });
+    }
+    function stringer(arr) {
+      let res = "";
+      for (let i = 0; i < arr.length; i++) {
+        for (const [key, value] of Object.entries(arr[i])) {
+          res += "  " + key + ":" + value;
+        }
+      }
+      return res;
+    }
+  </script>
+  <body>
+    <br /><button onclick="doQuery();" name="query">JSON bodyy</button>
+    <div id="gt"></div>
+  </body>
+</html>
