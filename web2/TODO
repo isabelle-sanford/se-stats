@@ -1,0 +1,48 @@
+# TO DO
+
+## Data
+
+- actually get links from sheet
+- WHY DOES EVERY GAME STRING HAVE A BUNCH OF TRAILING SPACES
+
+## Input
+
+- Selects on single pages should be easier to find someone (type start? Provide small set of links to top X players?)
+
+## Node / get / etc
+
+- fetch view for mustache from file not from fucking huge string 
+- either do the other thing to sort tables or make sure sorting utility has access to table data (for single game things)
+- replicate all Get stuff for single_player
+- ideally put makeTable etc somewhere other than se_node??
+
+## Aesthetics
+
+- Navbar: make the right link show as active on the right page
+
+## etc
+
+gracefully fail when no results show up
+make singular pages via GET so you can link to a specific person/game
+AESTHETICS:
+Navbar - not just even spacing like that
+More bolding lots of places
+Full data - headers for each input are ehhhhh
+figure out a better way to show win/loss?
+Make accessible to mobile (SE users! )
+In singular game/player - make it easier to find a specific thing without scrolling 200 things. Maybe typeable thingy?
+make sorting go both ways
+sort by chronology
+put link to games on click in player GM games list
+
+WITH DATA:
+make alignment descriptions that are a word or two >> same with survival
+
+NOT before presentation:
+more / better summary stats
+sorting does NOT do well with nulls-or-whatever (in hits cols)
+Toggler button on small screens is yiikes
+
+Add checks for BT, AG
+
+Make actual about page for footer

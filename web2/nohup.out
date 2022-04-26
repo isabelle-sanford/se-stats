@@ -1,0 +1,253 @@
+Created pool  BoundPool {
+  _events: [Object: null prototype] {},
+  _eventsCount: 0,
+  _maxListeners: undefined,
+  options: {
+    user: 'dbuser',
+    host: 'localhost',
+    database: 'isanford',
+    port: 5432,
+    max: 10,
+    maxUses: Infinity,
+    allowExitOnIdle: false,
+    maxLifetimeSeconds: 0,
+    idleTimeoutMillis: 10000
+  },
+  log: [Function (anonymous)],
+  Client: [class Client extends EventEmitter] {
+    Query: [class Query extends EventEmitter]
+  },
+  Promise: [Function: Promise],
+  _clients: [],
+  _idle: [],
+  _expired: WeakSet { <items unknown> },
+  _pendingQueue: [],
+  _endCallback: undefined,
+  ending: false,
+  ended: false,
+  [Symbol(kCapture)]: false
+}
+Server created Successfully on port 40967
+data loaded, in theory
+data loaded, in theory
+data loaded, in theory
+data loaded, in theory
+/one_game?game-select=LG1+++
+{
+  game_id: 0,
+  game_format: 'LG',
+  game_string: 'LG1   ',
+  anon_num: null,
+  mechanics_balance: null,
+  distribution_balance: null,
+  im: null,
+  num_cycles: 4,
+  setting: 'Scadrial',
+  is_sanderson: true,
+  is_cosmere: true,
+  complexity: 'Standard',
+  fundamentals: 'V/E',
+  num_posts: 462,
+  role_madness: false,
+  title: 'In the Wake of Koloss'
+}
+written :)
+game data loaded, in theory
+data loaded, in theory
+/one_game?game-select=AG1+++
+{
+  game_id: 18,
+  game_format: 'AG',
+  game_string: 'AG1   ',
+  anon_num: null,
+  mechanics_balance: null,
+  distribution_balance: null,
+  im: 'Gamma',
+  num_cycles: 9,
+  setting: 'Scadrial',
+  is_sanderson: true,
+  is_cosmere: true,
+  complexity: 'Standard',
+  fundamentals: 'V/E',
+  num_posts: 825,
+  role_madness: false,
+  title: 'In the Re-Wake of the Koloss'
+}
+written :)
+game data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+/one_game?game-select=LG1+++
+{
+  game_id: 0,
+  game_format: 'LG',
+  game_string: 'LG1   ',
+  anon_num: null,
+  mechanics_balance: null,
+  distribution_balance: null,
+  im: null,
+  num_cycles: 4,
+  setting: 'Scadrial',
+  is_sanderson: true,
+  is_cosmere: true,
+  complexity: 'Standard',
+  fundamentals: 'V/E',
+  num_posts: 462,
+  role_madness: false,
+  title: 'In the Wake of Koloss'
+}
+written :)
+game data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+data loaded, in theory
+data loaded, in theory
+/one_game?game-select=LG1+++
+{
+  game_id: 0,
+  game_format: 'LG',
+  game_string: 'LG1   ',
+  anon_num: null,
+  mechanics_balance: null,
+  distribution_balance: null,
+  im: null,
+  num_cycles: 4,
+  setting: 'Scadrial',
+  is_sanderson: true,
+  is_cosmere: true,
+  complexity: 'Standard',
+  fundamentals: 'V/E',
+  num_posts: 462,
+  role_madness: false,
+  title: 'In the Wake of Koloss'
+}
+written :)
+game data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+/one_game?game-select=LG1+++
+{
+  game_id: 0,
+  game_format: 'LG',
+  game_string: 'LG1   ',
+  anon_num: null,
+  mechanics_balance: null,
+  distribution_balance: null,
+  im: null,
+  num_cycles: 4,
+  setting: 'Scadrial',
+  is_sanderson: true,
+  is_cosmere: true,
+  complexity: 'Standard',
+  fundamentals: 'V/E',
+  num_posts: 462,
+  role_madness: false,
+  title: 'In the Wake of Koloss'
+}
+written :)
+game data loaded, in theory
+Created pool  BoundPool {
+  _events: [Object: null prototype] {},
+  _eventsCount: 0,
+  _maxListeners: undefined,
+  options: {
+    user: 'dbuser',
+    host: 'localhost',
+    database: 'isanford',
+    port: 5432,
+    max: 10,
+    maxUses: Infinity,
+    allowExitOnIdle: false,
+    maxLifetimeSeconds: 0,
+    idleTimeoutMillis: 10000
+  },
+  log: [Function (anonymous)],
+  Client: [class Client extends EventEmitter] {
+    Query: [class Query extends EventEmitter]
+  },
+  Promise: [Function: Promise],
+  _clients: [],
+  _idle: [],
+  _expired: WeakSet { <items unknown> },
+  _pendingQueue: [],
+  _endCallback: undefined,
+  ending: false,
+  ended: false,
+  [Symbol(kCapture)]: false
+}
+Server created Successfully on port 40967
+data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+/one_game?game-select=LG1+++
+{
+  game_id: 0,
+  game_format: 'LG',
+  game_string: 'LG1   ',
+  anon_num: null,
+  mechanics_balance: null,
+  distribution_balance: null,
+  im: null,
+  num_cycles: 4,
+  setting: 'Scadrial',
+  is_sanderson: true,
+  is_cosmere: true,
+  complexity: 'Standard',
+  fundamentals: 'V/E',
+  num_posts: 462,
+  role_madness: false,
+  title: 'In the Wake of Koloss'
+}
+written :)
+game data loaded, in theory
+data loaded, in theory
+data loaded, in theory
+game data loaded, in theory
+game data loaded, in theory
+/one_game?game-select=LG7+++
+{
+  game_id: 9,
+  game_format: 'LG',
+  game_string: 'LG7   ',
+  anon_num: null,
+  mechanics_balance: null,
+  distribution_balance: null,
+  im: 'little wilson',
+  num_cycles: 6,
+  setting: 'Scadrial',
+  is_sanderson: true,
+  is_cosmere: true,
+  complexity: 'Semi Standard',
+  fundamentals: 'FAC',
+  num_posts: 657,
+  role_madness: false,
+  title: 'Annealing of Luthadel'
+}
+written :)
+game data loaded, in theory
