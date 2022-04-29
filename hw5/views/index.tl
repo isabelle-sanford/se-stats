@@ -11,22 +11,23 @@
   <link rel="stylesheet" href="./style.css" />
 
   <meta name="description" content="Statistics for Sanderson Elimination" />
+  <script src="../sorttable.js"></script>
 </head>
 
 <body>
   <!-- NAVBAR -->
   <nav class="navbar navbar-dark bg-primary navbar-expand-lg flex-md-nowrap shadow p-0 m-0">
     <div class="container-fluid my-0 py-0">
-      <a class="navbar-brand" href="index.html">Sanderson Elimination Statistics</a>
+      <a class="navbar-brand" href="/">Sanderson Elimination Statistics</a>
 
       <div class="collapse navbar-collapse" id="navbarToggle">
         <div class="navbar-nav">
-          <a class="nav-link active" href="index.html">Full Data</a>
+          <a class="nav-link active" href="/">Full Data</a>
           <a class="nav-link" href="one_game">Find a Game</a>
           <a class="nav-link" href="one_player">Find a Player</a>
         </div>
       </div>
-      <a class="nav-link" href="#">Switch to Mongo</a>
+      <a class="nav-link" href="indexM">Switch to Mongo</a>
 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggle"
         aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
@@ -39,42 +40,57 @@
   <div class="container jumbotron">
     <nav>
       <div class="nav nav-tabs bg-primary border border-primary border-5 border-bottom-0" id="nav-tab" role="tablist">
-        <button class="nav-link active" id="nav-player-tab" data-bs-toggle="tab" data-bs-target="#nav-player"
-          type="button" role="tab" aria-controls="nav-player" aria-selected="true">
+        <!-- todo: make correct one show active -->
+        <button class="nav-link" id="nav-player-tab" data-bs-toggle="tab" data-bs-target="#nav-player" type="button"
+          role="tab" aria-controls="nav-player" aria-selected="${d.on_data_tab}">
           Data
         </button>
-        <button class="nav-link" id="nav-game-tab" data-bs-toggle="tab" data-bs-target="#nav-game" type="button"
-          role="tab" aria-controls="nav-game" aria-selected="false">
+        <button class="nav-link active" id="nav-game-tab" data-bs-toggle="tab" data-bs-target="#nav-game" type="button"
+          role="tab" aria-controls="nav-game" aria-selected="${d.on_game_tab}">
           Games
         </button>
       </div>
     </nav>
     <div class="tab-content px-5 border border-primary border-top-0 border-5" id="nav-tabContent">
       <!-- general data -->
-      <div class="tab-pane show active" id="nav-player" role="tabpanel" aria-labelledby="nav-player-tab">
-        <form method="get" action="data" id="get-one-game">
-
-          <div class="row justify-content-center align-items-center">
-            <div class="col-6 col-xs-12">
+      <!-- show active thingy!! -->
+      <div class="tab-pane" id="nav-player" role="tabpanel" aria-labelledby="nav-player-tab">
+        <form method="post" action="index" id="get-data">
+          <input type="hidden" name="tab" value="on-data-tab">
+          <div class="row">
+            <div class="col-auto">
               <br />
               <h3>Format</h3>
               <div>
                 <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="checkbox" value="" id="LGcheck" checked />
+                  <input class="form-check-input" type="checkbox" value="" id="LGcheck" name="LGcheck" checked />
                   <label class="form-check-label" for="LGcheck">
                     Long Game
                   </label>
                 </div>
                 <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="checkbox" value="" id="MRcheck" checked />
+                  <input class="form-check-input" type="checkbox" value="" id="MRcheck" name="MRcheck" checked />
                   <label class="form-check-label" for="MRcheck">
                     Mid Range
                   </label>
                 </div>
                 <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="checkbox" value="" id="QFcheck" checked />
+                  <input class="form-check-input" type="checkbox" value="" id="QFcheck" name="QFcheck" checked />
                   <label class="form-check-label" for="QFcheck">
                     Quick Fix
+                  </label>
+                </div>
+                <br />
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" value="" id="AGcheck" name="AGcheck" checked />
+                  <label class="form-check-label" for="AGcheck">
+                    Anniversary Game
+                  </label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" value="" id="BTcheck" name="BTcheck" checked />
+                  <label class="form-check-label" for="BTcheck">
+                    Break Tank
                   </label>
                 </div>
               </div>
@@ -83,17 +99,17 @@
               <h3>Win</h3>
               <div>
                 <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="checkbox" value="" id="WinCheck" checked />
+                  <input class="form-check-input" type="checkbox" value="" id="WinCheck" name="WinCheck" checked />
                   <label class="form-check-label" for="WinCheck"> Won </label>
                 </div>
                 <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="checkbox" value="" id="LoseCheck" checked />
+                  <input class="form-check-input" type="checkbox" value="" id="LoseCheck" name="LoseCheck" checked />
                   <label class="form-check-label" for="LoseCheck">
                     Lost
                   </label>
                 </div>
                 <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="checkbox" value="" id="DrawCheck" checked />
+                  <input class="form-check-input" type="checkbox" value="" id="DrawCheck" name="DrawCheck" checked />
                   <label class="form-check-label" for="DrawCheck">
                     Drew
                   </label>
@@ -104,73 +120,80 @@
               <h3>Alignments</h3>
               <div>
                 <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="checkbox" value="" id="VillageCheckD" checked />
+                  <input class="form-check-input" type="checkbox" value="" id="VillageCheckD" name="VillageCheckD"
+                    checked />
                   <label class="form-check-label" for="VillageCheckD">
                     Village
                   </label>
                 </div>
                 <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="checkbox" value="" id="ElimCheckD" checked />
+                  <input class="form-check-input" type="checkbox" value="" id="ElimCheckD" name="ElimCheckD" checked />
                   <label class="form-check-label" for="ElimCheckD">
                     Elim
                   </label>
                 </div>
                 <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="checkbox" value="" id="FactionCheckD" checked />
+                  <input class="form-check-input" type="checkbox" value="" id="FactionCheckD" name="FactionCheckD"
+                    checked />
                   <label class="form-check-label" for="FactionCheckD">
                     Faction
                   </label>
                 </div>
                 <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="checkbox" value="" id="NeutralCheckD" checked />
+                  <input class="form-check-input" type="checkbox" value="" id="NeutralCheckD" name="NeutralCheckD"
+                    checked />
                   <label class="form-check-label" for="NeutralCheckD">
                     Neutral
                   </label>
                 </div>
                 <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="checkbox" value="" id="OtherAlignmentCheckD" checked />
+                  <input class="form-check-input" type="checkbox" value="" id="OtherAlignmentCheckD"
+                    name="OtherAlignmentCheckD" checked />
                   <label class="form-check-label" for="OtherAlignmentCheckD">
                     Other
                   </label>
                 </div>
               </div>
             </div>
-            <div class="col-6 col-xs-12">
+            <div class="col-auto">
               <br />
-              <h3>Death [not functional]</h3>
+              <h3>Death</h3>
               <div>
                 <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="SurviveCheck" checked />
+                  <input class="form-check-input" type="checkbox" value="" id="SurviveCheck" name="SurviveCheck"
+                    checked />
                   <label class="form-check-label" for="SurviveCheck">
                     Survived (S)
                   </label>
                 </div>
                 <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="EKillCheck" checked />
+                  <input class="form-check-input" type="checkbox" value="" id="EKillCheck" name="EKillCheck" checked />
                   <label class="form-check-label" for="EKillCheck">
                     Killed by Evil (E, M)
                   </label>
                 </div>
                 <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="ExeCheck" checked />
+                  <input class="form-check-input" type="checkbox" value="" id="ExeCheck" name="ExeCheck" checked />
                   <label class="form-check-label" for="ExeCheck">
                     Executed (X)
                   </label>
                 </div>
                 <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="VigCheck" checked />
+                  <input class="form-check-input" type="checkbox" value="" id="VigCheck" name="VigCheck" checked />
                   <label class="form-check-label" for="VigCheck">
                     Vigilante (V, F)
                   </label>
                 </div>
                 <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="NeutralCheck" checked />
-                  <label class="form-check-label" for="NeutralCheck">
+                  <input class="form-check-input" type="checkbox" value="" id="NeutralDeathCheck"
+                    name="NeutralDeathCheck" checked />
+                  <label class="form-check-label" for="NeutralDeathCheck">
                     Killed by Neutral (N)
                   </label>
                 </div>
                 <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="OtherDeathCheck" checked />
+                  <input class="form-check-input" type="checkbox" value="" id="OtherDeathCheck" name="OtherDeathCheck"
+                    checked />
                   <label class="form-check-label" for="OtherDeathCheck">
                     Other (I, O, D, P)
                   </label>
@@ -179,12 +202,15 @@
             </div>
           </div>
           <br />
+
+          <div class="row d-grid gap-2">
+            <button type="submit" class="btn btn-primary">
+              Submit
+            </button>
+          </div>
+
+
         </form>
-        <div class="row justify-content-center align-items-center">
-          <button onclick="queryData()" type="submit" class="btn btn-primary">
-            Submit
-          </button>
-        </div>
         <br />
 
 
@@ -192,61 +218,80 @@
       </div>
 
       <!-- games -->
-      <div class="tab-pane" id="nav-game" role="tabpanel" aria-labelledby="nav-game-tab">
-        <form method="post">
-          <div class="row justify-content-center align-items-center">
-            <div class="col-6 col-xs-12">
+      <div class="tab-pane show active" id="nav-game" role="tabpanel" aria-labelledby="nav-game-tab">
+        <br />
+        <form method="post" action="index">
+          <input type="hidden" name="tab" value="on-game-tab">
+          <div class="row">
+            <div class="col-auto">
               <h3>Format</h3>
               <div>
                 <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="LGcheckG" checked />
+                  <input class="form-check-input" type="checkbox" value="" id="LGcheckG" name="LGcheckG" checked />
                   <label class="form-check-label" for="LGcheckG">
                     Long Game
                   </label>
                 </div>
                 <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="MRcheckG" checked />
+                  <input class="form-check-input" type="checkbox" value="" id="MRcheckG" name="MRcheckG" checked />
                   <label class="form-check-label" for="MRcheckG">
                     Mid Range
                   </label>
                 </div>
                 <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="QFcheckG" checked />
+                  <input class="form-check-input" type="checkbox" value="" id="QFcheckG" name="QFcheckG" checked />
                   <label class="form-check-label" for="QFcheckG">
                     Quick Fix
                   </label>
                 </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="AGcheckG" name="AGcheckG" checked />
+                  <label class="form-check-label" for="AGcheckG">
+                    Anniversary Game
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="BTcheckG" name="BTcheckG" checked />
+                  <label class="form-check-label" for="BTcheckG">
+                    Break Tank
+                  </label>
+                </div>
               </div>
             </div>
-            <div class="col-6 col-xs-12">
+            <div class="col-auto">
               <h3>Winner [not functional]</h3>
               <div>
                 <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="VillageWinCheck" checked />
+                  <input class="form-check-input" type="checkbox" value="" id="VillageWinCheck" name="VillageWinCheck"
+                    checked />
                   <label class="form-check-label" for="VillageWinCheck">
                     Village
                   </label>
                 </div>
                 <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="ElimWinCheck" checked />
+                  <input class="form-check-input" type="checkbox" value="" id="ElimWinCheck" name="ElimWinCheck"
+                    checked />
                   <label class="form-check-label" for="ElimWinCheck">
                     Eliminators
                   </label>
                 </div>
                 <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="FactionWinCheck" checked />
+                  <input class="form-check-input" type="checkbox" value="" id="FactionWinCheck" name="FactionWinCheck"
+                    checked />
                   <label class="form-check-label" for="FactionWinCheck">
                     Faction
                   </label>
                 </div>
                 <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="NeutralWinCheck" checked />
+                  <input class="form-check-input" type="checkbox" value="" id="NeutralWinCheck" name="NeutralWinCheck"
+                    checked />
                   <label class="form-check-label" for="NeutralWinCheck">
                     Neutral
                   </label>
                 </div>
                 <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="OtherWinCheck" checked />
+                  <input class="form-check-input" type="checkbox" value="" id="OtherWinCheck" name="OtherWinCheck"
+                    checked />
                   <label class="form-check-label" for="OtherWinCheck">
                     Other
                   </label>
@@ -256,12 +301,12 @@
           </div>
           <br />
 
+          <div class="row d-grid gap-2">
+            <button type="submit" class="btn btn-primary">
+              Submit
+            </button>
+          </div>
         </form>
-        <div class="row justify-content-center align-items-center">
-          <button onclick="queryGames()" type="submit" class="btn btn-primary">
-            Submit
-          </button>
-        </div>
         <br />
       </div>
     </div>
@@ -271,7 +316,7 @@
   <div class="container">
     <div class="row" id="output-stats"></div>
 
-    <div class="row justify-content-center align-items-center" id="output-table"></div>
+    <div class="row justify-content-center align-items-center" id="output-table">${d.table}</div>
   </div>
 
   <!-- FOOTER -->
@@ -280,6 +325,7 @@
     <a class="footer-data text-dark"
       href="https://docs.google.com/spreadsheets/d/1CxrgdT4Xd8J0N3CuVmkVRryMeIdm93H8rzv8-YlP0kw" title="Original Data"
       target="_blank"><i class="fa fa-fw fa-2x fa-cloud-download"></i><span>Original Data (Stats Sheet)</span></a>
+    <!-- where the FUCK did the <i> come from -->
     <!-- target="_blank" opens data page in new tab >>> remove if we keep href as data.html -->
   </footer>
 
@@ -298,8 +344,6 @@
 
   <!-- MINE -->
   <script type="text/javascript" src="js/init_utils.js"></script>
-  <script type="text/javascript" src="js/index.js"></script>
-  <script type="text/javascript" src="js/end_utils.js"></script>
 </body>
 
 </html>

@@ -16,18 +16,18 @@
 
 <body>
   <!-- NAVBAR -->
-  <nav class="navbar navbar-dark bg-primary navbar-expand-lg flex-md-nowrap shadow p-0 m-0">
+  <nav class="navbar navbar-dark bg-success navbar-expand-lg flex-md-nowrap shadow p-0 m-0">
     <div class="container-fluid my-0 py-0">
-      <a class="navbar-brand" href="/">Sanderson Elimination Statistics</a>
+      <a class="navbar-brand" href="indexM">Sanderson Elimination Statistics</a>
 
       <div class="collapse navbar-collapse" id="navbarToggle">
         <div class="navbar-nav">
-          <a class="nav-link" href="/">Full Data</a>
-          <a class="nav-link" href="one_game">Find a Game</a>
-          <a class="nav-link active" href="one_player">Find a Player</a>
+          <a class="nav-link" href="indexM">Full Data</a>
+          <a class="nav-link" href="one_gameM">Find a Game</a>
+          <a class="nav-link active" href="one_playerM">Find a Player</a>
         </div>
       </div>
-      <a class="nav-link" href="one_playerM">Switch to Mongo</a>
+      <a class="nav-link" href="one_player">Switch to Postgres</a>
 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggle"
         aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
@@ -37,7 +37,7 @@
   </nav>
 
   <div class="container jumbotron">
-    <form method="get" action="one_player">
+    <form method="get" action="one_playerM">
       <div class="row">
         <div class="col-5">
           <select class="form-select" aria-label="Default select example" id="player" name="player">
@@ -46,7 +46,7 @@
         </div>
 
         <div class="col">
-          <button type="submit" class="btn btn-primary mb-3">Submit</button>
+          <button type="submit" class="btn btn-success mb-3">Submit</button>
         </div>
       </div>
     </form>

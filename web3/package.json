@@ -3,6 +3,7 @@
     "express": "^4.18.0",
     "express-tl": "^1.1.0",
     "html": "^1.0.0",
+    "mongodb": "3.7",
     "mustache": "^4.2.0",
     "pg": "^8.7.3",
     "whiskers": "^0.4.0"

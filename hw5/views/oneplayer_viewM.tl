@@ -9,22 +9,25 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous" />
   <link rel="stylesheet" href="./style.css" />
+  <script src="../sorttable.js"></script>
+
+  <meta name="description" content="Statistics for Sanderson Elimination" />
 </head>
 
 <body>
   <!-- NAVBAR -->
-  <nav class="navbar navbar-dark bg-primary navbar-expand-lg flex-md-nowrap shadow p-0 m-0">
+  <nav class="navbar navbar-dark bg-success navbar-expand-lg flex-md-nowrap shadow p-0 m-0">
     <div class="container-fluid my-0 py-0">
-      <a class="navbar-brand" href="index.html">Sanderson Elimination Statistics</a>
+      <a class="navbar-brand" href="indexM">Sanderson Elimination Statistics</a>
 
       <div class="collapse navbar-collapse" id="navbarToggle">
         <div class="navbar-nav">
-          <a class="nav-link active" href="index.html">Full Data</a>
-          <a class="nav-link" href="one_game.html">View a Game</a>
-          <a class="nav-link" href="one_player.html">View a Player</a>
+          <a class="nav-link" href="indexM">Full Data</a>
+          <a class="nav-link" href="one_gameM">Find a Game</a>
+          <a class="nav-link active" href="one_playerM">Find a Player</a>
         </div>
       </div>
-      <a class="nav-link" href="#">Switch to Mongo</a>
+      <a class="nav-link" href="one_player">Switch to Postgres</a>
 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggle"
         aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
@@ -33,39 +36,33 @@
     </div>
   </nav>
 
-  <!-- select -->
   <div class="container jumbotron">
-    
-      <form method="get" action="one_game"><div class="row ">
-        <div class="col-3">
-          <select class="form-select" aria-label="Default select example" id="game-select" name="game-select">
-            <option selected>{{selected_game}}</option>
+    <form method="get" action="one_playerM">
+      <div class="row">
+        <div class="col-5">
+          <select class="form-select" aria-label="Default select example" id="player" name="player">
+            <option id="sel" selected>${d.selected_player}</option>
           </select>
         </div>
-      
-      <div class="col-5">
-        <button type="submit" class="btn btn-primary" onclick="g2()">
-          Submit
-        </button>
+
+        <div class="col">
+          <button type="submit" class="btn btn-success mb-3">Submit</button>
+        </div>
       </div>
-</form>
-    </div>
+    </form>
   </div>
 
-  <!-- output -->
   <div class="container">
     <div class="row" id="output">
-      <div class="col-12">
-        {{{title}}}
+      <div class="col-12" id="player-name">
+        ${d.title}
       </div>
 
-      <div class="col-3 col-xs-6 justify-content-top" id="game-info">
-        {{{info}}}
+      <div class="col-auto justify-content-top" id="player-info">
+        ${d.info}
       </div>
 
-      <div class="col-9 col-xs-12" id="output-table">
-        {{{table}}}
-      </div>
+      <div class="col-auto" id="output-table">${d.table}</div>
     </div>
     <br />
   </div>
@@ -89,16 +86,12 @@
     crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
 
-  <!-- d3 - might need for bootstrap? -->
-  <script src="https://d3js.org/d3.v5.min.js"></script>
-
   <!-- plotly -->
   <!-- <script src="https://cdn.plot.ly/plotly-latest.min.js"></script> -->
 
   <!-- MINE -->
   <script type="text/javascript" src="js/init_utils.js"></script>
-  <script type="text/javascript" src="js/one_game.js"></script>
-  <script type="text/javascript" src="js/end_utils.js"></script>
+  <script type="text/javascript" src="js/one_player.js"></script>
 </body>
 
 </html>

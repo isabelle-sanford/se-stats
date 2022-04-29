@@ -1,0 +1,418 @@
+Created pool  BoundPool {
+  _events: [Object: null prototype] {},
+  _eventsCount: 0,
+  _maxListeners: undefined,
+  options: {
+    user: 'dbuser',
+    host: 'localhost',
+    database: 'isanford',
+    port: 5432,
+    max: 10,
+    maxUses: Infinity,
+    allowExitOnIdle: false,
+    maxLifetimeSeconds: 0,
+    idleTimeoutMillis: 10000
+  },
+  log: [Function (anonymous)],
+  Client: [class Client extends EventEmitter] {
+    Query: [class Query extends EventEmitter]
+  },
+  Promise: [Function: Promise],
+  _clients: [],
+  _idle: [],
+  _expired: WeakSet { <items unknown> },
+  _pendingQueue: [],
+  _endCallback: undefined,
+  ending: false,
+  ended: false,
+  [Symbol(kCapture)]: false
+}
+Thu, 28 Apr 2022 22:55:47 GMT body-parser deprecated undefined extended: provide extended option at server.js:247:28
+Thu, 28 Apr 2022 22:55:47 GMT body-parser deprecated undefined extended: provide extended option at server.js:266:29
+Server created Successfully on port 40967
+connection established
+request body: 
+{
+  tab: 'on-data-tab',
+  BTcheck: '',
+  WinCheck: '',
+  LoseCheck: '',
+  DrawCheck: '',
+  FactionCheckD: '',
+  NeutralCheckD: '',
+  OtherAlignmentCheckD: '',
+  SurviveCheck: '',
+  EKillCheck: '',
+  ExeCheck: '',
+  VigCheck: '',
+  NeutralDeathCheck: '',
+  OtherDeathCheck: ''
+}
+query: 
+SELECT * FROM data_view WHERE TRUE AND  (FALSE OR game_format LIKE 'BT' ) AND  (FALSE  OR alignment_char LIKE 'F' OR alignment_char LIKE 'N' OR alignment_char LIKE 'O') AND  TRUE;
+0
+No data found! 
+/one_game
+getting game: undefined
+/one_player
+undefined
+no query
+/one_player?player=Meta
+Meta
+connecting
+28
+/one_playerM
+undefined
+/one_playerM?player=Meta
+Meta
+connecting
+connecting to mongo
+connected!
+{
+  _id: new ObjectId("624e5632d20eaa6182dc3889"),
+  player_name: 'Meta',
+  games: [
+    {
+      game_string: 'LG3',
+      alignment: 'G',
+      death: 'S',
+      result: 'W',
+      hits: [Object],
+      roles: [Array],
+      inactive: false
+    },
+    {
+      game_string: 'LG4',
+      alignment: 'G',
+      death: 'F',
+      result: 'W',
+      hits: [Object],
+      roles: [Array],
+      inactive: false
+    },
+    {
+      game_string: 'LG5',
+      alignment: 'G',
+      death: 'S',
+      result: 'W',
+      hits: [Object],
+      roles: [Array],
+      inactive: false
+    },
+    {
+      game_string: 'LG7',
+      alignment: 'G',
+      death: 'S',
+      result: 'W',
+      hits: [Object],
+      roles: [Array],
+      inactive: false
+    },
+    {
+      game_string: 'MR2',
+      alignment: 'E',
+      death: 'X',
+      result: 'L',
+      hits: [Object],
+      roles: [Array],
+      inactive: false
+    },
+    {
+      game_string: 'LG8',
+      alignment: 'G',
+      death: 'F',
+      result: 'L',
+      hits: [Object],
+      roles: [Array],
+      inactive: false
+    },
+    {
+      game_string: 'MR3',
+      alignment: 'G',
+      death: 'E',
+      result: 'L',
+      hits: [Object],
+      roles: [Array],
+      inactive: false
+    },
+    {
+      game_string: 'QF4',
+      alignment: 'G',
+      death: 'E',
+      result: 'L',
+      hits: [Object],
+      roles: [Array],
+      inactive: false
+    },
+    {
+      game_string: 'MR4',
+      alignment: 'G',
+      death: 'X',
+      result: 'W',
+      hits: [Object],
+      roles: [Array],
+      inactive: false
+    },
+    {
+      game_string: 'QF5',
+      alignment: 'N',
+      death: 'N',
+      result: 'L',
+      hits: [Object],
+      roles: [Array],
+      inactive: false
+    },
+    {
+      game_string: 'LG10',
+      alignment: 'N',
+      death: 'S',
+      result: 'W',
+      hits: [Object],
+      roles: [Array],
+      inactive: false
+    },
+    {
+      game_string: 'QF6',
+      alignment: 'G',
+      death: 'S',
+      result: 'W',
+      hits: [Object],
+      roles: [Array],
+      inactive: false
+    },
+    {
+      game_string: 'LG11',
+      alignment: 'G',
+      death: 'S',
+      result: 'W',
+      hits: [Object],
+      roles: [Array],
+      inactive: false
+    },
+    {
+      game_string: 'LG12',
+      alignment: 'G',
+      death: 'S',
+      result: 'W',
+      hits: [Object],
+      roles: [Array],
+      inactive: false
+    },
+    {
+      game_string: 'QF8',
+      alignment: 'G',
+      death: 'F',
+      result: 'W',
+      hits: [Object],
+      roles: [Array],
+      inactive: false
+    },
+    {
+      game_string: 'LG13',
+      alignment: 'G',
+      death: 'E',
+      result: 'W',
+      hits: [Object],
+      roles: [Array],
+      inactive: false
+    },
+    {
+      game_string: 'QF9',
+      alignment: 'G',
+      death: 'E',
+      result: 'L',
+      hits: [Object],
+      roles: [Array],
+      inactive: false
+    },
+    {
+      game_string: 'QF11',
+      alignment: 'G',
+      death: 'S',
+      result: 'L',
+      hits: [Object],
+      roles: [Array],
+      inactive: false
+    },
+    {
+      game_string: 'LG16',
+      alignment: 'G',
+      death: 'X',
+      result: 'W',
+      hits: [Object],
+      roles: [Array],
+      inactive: false
+    },
+    {
+      game_string: 'MR12',
+      alignment: 'E',
+      death: 'X',
+      result: 'L',
+      hits: [Object],
+      roles: [Array],
+      inactive: false
+    },
+    {
+      game_string: 'QF15',
+      alignment: 'G',
+      death: 'E',
+      result: 'L',
+      hits: [Object],
+      roles: [Array],
+      inactive: false
+    },
+    {
+      game_string: 'LG22',
+      alignment: 'G',
+      death: 'S',
+      result: 'W',
+      hits: [Object],
+      roles: [Array],
+      inactive: false
+    },
+    {
+      game_string: 'MR15',
+      alignment: 'S',
+      death: 'E',
+      result: 'L',
+      hits: [Object],
+      roles: [Array],
+      inactive: false
+    },
+    {
+      game_string: 'QF17',
+      alignment: 'N',
+      death: 'N',
+      result: 'L',
+      hits: [Object],
+      roles: [Array],
+      inactive: false
+    },
+    {
+      game_string: 'LG25',
+      alignment: 'E',
+      death: 'S',
+      result: 'W',
+      hits: [Object],
+      roles: [Array],
+      inactive: false
+    },
+    {
+      game_string: 'QF18',
+      alignment: 'G',
+      death: 'E',
+      result: 'W',
+      hits: [Object],
+      roles: [Array],
+      inactive: false
+    },
+    {
+      game_string: 'LG32',
+      alignment: 'G',
+      death: 'E',
+      result: 'W',
+      hits: [Object],
+      roles: [Array],
+      inactive: false
+    },
+    {
+      game_string: 'LG34',
+      alignment: 'E',
+      death: 'X',
+      result: 'L',
+      hits: [Object],
+      roles: [Array],
+      inactive: false
+    },
+    {
+      game_string: 'LG37',
+      alignment: 'N',
+      death: NaN,
+      result: 'L',
+      hits: [Object],
+      roles: [Array],
+      inactive: false
+    }
+  ],
+  GMed: [
+    { game_string: 'LG1', main: true },
+    { game_string: 'LG2', main: true },
+    { game_string: 'QF2', main: true },
+    { game_string: 'AG1', main: true },
+    { game_string: 'AG2', main: true },
+    { game_string: 'AG3', main: true }
+  ],
+  IMed: [
+    { game_string: 'MR1' },
+    { game_string: 'LG6' },
+    { game_string: 'LG9' },
+    { game_string: 'MR5' },
+    { game_string: 'MR6' },
+    { game_string: 'MR8' },
+    { game_string: 'LG14' },
+    { game_string: 'LG15.2' },
+    { game_string: 'MR10' },
+    { game_string: 'QF13' },
+    { game_string: 'QF14' },
+    { game_string: 'LG20' },
+    { game_string: 'LG24' },
+    { game_string: 'MR16' },
+    { game_string: 'QF19' },
+    { game_string: 'LG29' },
+    { game_string: 'LG30' },
+    { game_string: 'LG33' },
+    { game_string: 'QF24' }
+  ]
+}
+loading page...
+loading page...
+loading page...
+loading page...
+connection established
+request body: 
+{
+  tab: 'on-game-tab',
+  LGcheckG: '',
+  MRcheckG: '',
+  QFcheckG: '',
+  AGcheckG: '',
+  BTcheckG: '',
+  VillageWinCheck: '',
+  ElimWinCheck: '',
+  FactionWinCheck: '',
+  NeutralWinCheck: '',
+  OtherWinCheck: ''
+}
+query: 
+SELECT * FROM game_view WHERE TRUE AND  TRUE;
+191
+first row queried: 
+{
+  game_id: 0,
+  game_format: 'LG',
+  game_string: 'LG1',
+  anon_num: null,
+  mechanics_balance: null,
+  distribution_balance: null,
+  im: null,
+  num_cycles: 4,
+  setting: 'Scadrial',
+  is_sanderson: true,
+  is_cosmere: true,
+  complexity: 'Standard',
+  fundamentals: 'V/E',
+  num_posts: 462,
+  role_madness: false,
+  title: 'In the Wake of Koloss'
+}
+nicened first row: 
+{
+  Game: 'LG1',
+  Title: 'In the Wake of Koloss',
+  '# Cycles': 4,
+  Complexity: 'Standard',
+  Fundamentals: 'V/E',
+  Setting: 'Scadrial',
+  '# Posts': 462
+}
+rendered! 

@@ -1,5 +1,6 @@
 const port = 40967;
 
+const dataq_url = `http://165.106.10.170:${port}/get_data`;
 //const data_url = `http://165.106.10.170:${port}/data`;
 const games_url = `http://165.106.10.170:${port}/gamelist`;
 //const gm_url = `http://165.106.10.170:${port}/gms`;

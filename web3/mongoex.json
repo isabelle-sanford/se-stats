@@ -1,0 +1,920 @@
+[
+  {
+    "_id": 5,
+    "format": "LG",
+    "game_num": 5.0,
+    "game_string": "LG5",
+    "basics": {
+      "fundamentals": "V/E",
+      "complexity": "Semi Standard",
+      "role_madness": "False"
+    },
+    "player_stats": {
+      "num_players": 20.0,
+      "num_elims": 4.0,
+      "num_survivors": 6.0,
+      "player_list": [
+        "Meta",
+        "Claincy",
+        "Wes",
+        "Alvron",
+        "Aonar",
+        "Luckat",
+        "Aspren",
+        "A Joe in the Bush",
+        "18thShard",
+        "Macen",
+        "Gleeman",
+        "GreyPilgrim",
+        "Wyrmhero",
+        "Tulir",
+        "Sart",
+        "Adolin Dustbringer",
+        "Sphinx",
+        "Jain",
+        "Kasimir",
+        "Theorymaker"
+      ]
+    },
+    "winner": "V",
+    "num_cycles": 7.0,
+    "num_posts": 617.0,
+    "title": "Noble Secrets",
+    "balance": {
+      "mechanics": "nan",
+      "distribution": "nan"
+    },
+    "setting": {
+      "world": "Roshar"
+    },
+    "GMs": [
+      "Mailliw73"
+    ],
+    "IM": "little wilson"
+  },
+  {
+    "player_name": "Elbereth",
+    "games": [
+      {
+        "game_string": "LG15.1",
+        "alignment": "G",
+        "death": "S",
+        "result": "L",
+        "hits": {
+          "first": "nan",
+          "last": "nan",
+          "num": 0.0
+        },
+        "roles": [
+          "nan",
+          "nan"
+        ],
+        "inactive": "False"
+      },
+      {
+        "game_string": "LG15.2",
+        "alignment": "G",
+        "death": "S",
+        "result": "W",
+        "hits": {
+          "first": "nan",
+          "last": "nan",
+          "num": 0.0
+        },
+        "roles": [
+          "Kill",
+          "nan"
+        ],
+        "inactive": "False"
+      },
+      {
+        "game_string": "MR10",
+        "alignment": "G",
+        "death": "S",
+        "result": "L",
+        "hits": {
+          "first": "nan",
+          "last": "nan",
+          "num": 0.0
+        },
+        "roles": [
+          "nan",
+          "nan"
+        ],
+        "inactive": "False"
+      },
+      {
+        "game_string": "AG2",
+        "alignment": "G",
+        "death": "S",
+        "result": "L",
+        "hits": {
+          "first": "nan",
+          "last": "nan",
+          "num": 0.0
+        },
+        "roles": [
+          "nan",
+          "nan"
+        ],
+        "inactive": "False"
+      },
+      {
+        "game_string": "QF12",
+        "alignment": "G",
+        "death": "E",
+        "result": "L",
+        "hits": {
+          "first": "nan",
+          "last": "nan",
+          "num": 1.0
+        },
+        "roles": [
+          "nan",
+          "nan"
+        ],
+        "inactive": "False"
+      },
+      {
+        "game_string": "LG16",
+        "alignment": "G",
+        "death": "S",
+        "result": "W",
+        "hits": {
+          "first": "nan",
+          "last": "nan",
+          "num": 0.0
+        },
+        "roles": [
+          "nan",
+          "nan"
+        ],
+        "inactive": "False"
+      },
+      {
+        "game_string": "MR11",
+        "alignment": "E",
+        "death": "S",
+        "result": "W",
+        "hits": {
+          "first": "nan",
+          "last": "nan",
+          "num": "nan"
+        },
+        "roles": [
+          "nan",
+          "nan"
+        ],
+        "inactive": "False"
+      },
+      {
+        "game_string": "LG17",
+        "alignment": "G",
+        "death": "E",
+        "result": "W",
+        "hits": {
+          "first": "nan",
+          "last": "nan",
+          "num": 1.0
+        },
+        "roles": [
+          "nan",
+          "nan"
+        ],
+        "inactive": "False"
+      },
+      {
+        "game_string": "QF13",
+        "alignment": "G",
+        "death": "S",
+        "result": "W",
+        "hits": {
+          "first": "nan",
+          "last": "nan",
+          "num": "nan"
+        },
+        "roles": [
+          "nan",
+          "nan"
+        ],
+        "inactive": "False"
+      },
+      {
+        "game_string": "LG18",
+        "alignment": "G",
+        "death": "O",
+        "result": "W",
+        "hits": {
+          "first": "nan",
+          "last": "nan",
+          "num": 0.0
+        },
+        "roles": [
+          "nan",
+          "nan"
+        ],
+        "inactive": "False"
+      },
+      {
+        "game_string": "MR12",
+        "alignment": "F",
+        "death": "S",
+        "result": "W",
+        "hits": {
+          "first": "nan",
+          "last": "nan",
+          "num": "nan"
+        },
+        "roles": [
+          "nan",
+          "nan"
+        ],
+        "inactive": "False"
+      },
+      {
+        "game_string": "QF14",
+        "alignment": "G",
+        "death": "N",
+        "result": "D",
+        "hits": {
+          "first": 6.0,
+          "last": 12.0,
+          "num": 2.0
+        },
+        "roles": [
+          "nan",
+          "nan"
+        ],
+        "inactive": "False"
+      },
+      {
+        "game_string": "LG20",
+        "alignment": "N",
+        "death": "N",
+        "result": "L",
+        "hits": {
+          "first": 6.0,
+          "last": 6.0,
+          "num": 1.0
+        },
+        "roles": [
+          "nan",
+          "nan"
+        ],
+        "inactive": "False"
+      },
+      {
+        "game_string": "QF15",
+        "alignment": "E",
+        "death": "S",
+        "result": "W",
+        "hits": {
+          "first": "nan",
+          "last": "nan",
+          "num": "nan"
+        },
+        "roles": [
+          "nan",
+          "nan"
+        ],
+        "inactive": "False"
+      },
+      {
+        "game_string": "LG21",
+        "alignment": "N",
+        "death": "N",
+        "result": "L",
+        "hits": {
+          "first": 1.0,
+          "last": 1.0,
+          "num": 1.0
+        },
+        "roles": [
+          "nan",
+          "nan"
+        ],
+        "inactive": "False"
+      },
+      {
+        "game_string": "LG22",
+        "alignment": "G",
+        "death": "E",
+        "result": "W",
+        "hits": {
+          "first": "nan",
+          "last": "nan",
+          "num": "nan"
+        },
+        "roles": [
+          "Kill",
+          "nan"
+        ],
+        "inactive": "False"
+      },
+      {
+        "game_string": "QF16",
+        "alignment": "G",
+        "death": "E",
+        "result": "W",
+        "hits": {
+          "first": 4.0,
+          "last": 4.0,
+          "num": 1.0
+        },
+        "roles": [
+          "nan",
+          "nan"
+        ],
+        "inactive": "False"
+      },
+      {
+        "game_string": "LG23",
+        "alignment": "C",
+        "death": "X",
+        "result": "W",
+        "hits": {
+          "first": 6.0,
+          "last": 6.0,
+          "num": 1.0
+        },
+        "roles": [
+          "nan",
+          "nan"
+        ],
+        "inactive": "False"
+      },
+      {
+        "game_string": "MR15",
+        "alignment": "G",
+        "death": "S",
+        "result": "W",
+        "hits": {
+          "first": "nan",
+          "last": "nan",
+          "num": "nan"
+        },
+        "roles": [
+          "nan",
+          "nan"
+        ],
+        "inactive": "False"
+      },
+      {
+        "game_string": "LG24",
+        "alignment": "G",
+        "death": "N",
+        "result": "L",
+        "hits": {
+          "first": 3.0,
+          "last": 3.0,
+          "num": 1.0
+        },
+        "roles": [
+          "nan",
+          "nan"
+        ],
+        "inactive": "False"
+      },
+      {
+        "game_string": "QF17",
+        "alignment": "N",
+        "death": "N",
+        "result": "L",
+        "hits": {
+          "first": 1.0,
+          "last": 1.0,
+          "num": 1.0
+        },
+        "roles": [
+          "nan",
+          "nan"
+        ],
+        "inactive": "False"
+      },
+      {
+        "game_string": "MR16",
+        "alignment": "F",
+        "death": "N",
+        "result": "W",
+        "hits": {
+          "first": 9.0,
+          "last": 9.0,
+          "num": 1.0
+        },
+        "roles": [
+          "nan",
+          "nan"
+        ],
+        "inactive": "False"
+      },
+      {
+        "game_string": "MR17",
+        "alignment": "G",
+        "death": "M",
+        "result": "L",
+        "hits": {
+          "first": 3.0,
+          "last": 3.0,
+          "num": 2.0
+        },
+        "roles": [
+          "nan",
+          "nan"
+        ],
+        "inactive": "False"
+      },
+      {
+        "game_string": "LG27",
+        "alignment": "F",
+        "death": "S",
+        "result": "D",
+        "hits": {
+          "first": "nan",
+          "last": "nan",
+          "num": 0.0
+        },
+        "roles": [
+          "nan",
+          "nan"
+        ],
+        "inactive": "False"
+      },
+      {
+        "game_string": "QF19",
+        "alignment": "G",
+        "death": "E",
+        "result": "W",
+        "hits": {
+          "first": 1.0,
+          "last": 1.0,
+          "num": 1.0
+        },
+        "roles": [
+          "nan",
+          "nan"
+        ],
+        "inactive": "False"
+      },
+      {
+        "game_string": "LG28",
+        "alignment": "E",
+        "death": "S",
+        "result": "L",
+        "hits": {
+          "first": "nan",
+          "last": "nan",
+          "num": 0.0
+        },
+        "roles": [
+          "nan",
+          "nan"
+        ],
+        "inactive": "False"
+      },
+      {
+        "game_string": "MR18",
+        "alignment": "G",
+        "death": "X",
+        "result": "L",
+        "hits": {
+          "first": 1.0,
+          "last": 1.0,
+          "num": 1.0
+        },
+        "roles": [
+          "nan",
+          "nan"
+        ],
+        "inactive": "False"
+      },
+      {
+        "game_string": "AG3",
+        "alignment": "G",
+        "death": "E",
+        "result": "L",
+        "hits": {
+          "first": 13.0,
+          "last": 13.0,
+          "num": 1.0
+        },
+        "roles": [
+          "nan",
+          "nan"
+        ],
+        "inactive": "False"
+      },
+      {
+        "game_string": "LG30",
+        "alignment": "G",
+        "death": "S",
+        "result": "L",
+        "hits": {
+          "first": "nan",
+          "last": "nan",
+          "num": 0.0
+        },
+        "roles": [
+          "nan",
+          "nan"
+        ],
+        "inactive": "False"
+      },
+      {
+        "game_string": "QF22",
+        "alignment": "G",
+        "death": "X",
+        "result": "L",
+        "hits": {
+          "first": 2.0,
+          "last": 2.0,
+          "num": 1.0
+        },
+        "roles": [
+          "nan",
+          "nan"
+        ],
+        "inactive": "False"
+      },
+      {
+        "game_string": "QF23",
+        "alignment": "E",
+        "death": "X",
+        "result": "W",
+        "hits": {
+          "first": 6.0,
+          "last": 6.0,
+          "num": 1.0
+        },
+        "roles": [
+          "nan",
+          "nan"
+        ],
+        "inactive": "False"
+      },
+      {
+        "game_string": "LG35",
+        "alignment": "N",
+        "death": "S",
+        "result": "W",
+        "hits": {
+          "first": "nan",
+          "last": "nan",
+          "num": 0.0
+        },
+        "roles": [
+          "nan",
+          "nan"
+        ],
+        "inactive": "False"
+      },
+      {
+        "game_string": "MR23",
+        "alignment": "F",
+        "death": "S",
+        "result": "W",
+        "hits": {
+          "first": 4.0,
+          "last": 5.0,
+          "num": 2.0
+        },
+        "roles": [
+          "nan",
+          "nan"
+        ],
+        "inactive": "False"
+      },
+      {
+        "game_string": "LG37",
+        "alignment": "N",
+        "death": "S",
+        "result": "D",
+        "hits": {
+          "first": "nan",
+          "last": "nan",
+          "num": "nan"
+        },
+        "roles": [
+          "nan",
+          "nan"
+        ],
+        "inactive": "False"
+      },
+      {
+        "game_string": "LG39",
+        "alignment": "G",
+        "death": "E",
+        "result": "L",
+        "hits": {
+          "first": 9.0,
+          "last": 9.0,
+          "num": 1.0
+        },
+        "roles": [
+          "nan",
+          "nan"
+        ],
+        "inactive": "False"
+      },
+      {
+        "game_string": "LG43",
+        "alignment": "C",
+        "death": "S",
+        "result": "L",
+        "hits": {
+          "first": "nan",
+          "last": "nan",
+          "num": 0.0
+        },
+        "roles": [
+          "nan",
+          "nan"
+        ],
+        "inactive": "False"
+      },
+      {
+        "game_string": "LG46",
+        "alignment": "N",
+        "death": "I",
+        "result": "L",
+        "hits": {
+          "first": 2.0,
+          "last": 9.0,
+          "num": 2.0
+        },
+        "roles": [
+          "nan",
+          "nan"
+        ],
+        "inactive": "True"
+      },
+      {
+        "game_string": "QF39",
+        "alignment": "G",
+        "death": "E",
+        "result": "L",
+        "hits": {
+          "first": 3.0,
+          "last": 3.0,
+          "num": 1.0
+        },
+        "roles": [
+          "nan",
+          "nan"
+        ],
+        "inactive": "False"
+      },
+      {
+        "game_string": "LG60",
+        "alignment": "G",
+        "death": "X",
+        "result": "L",
+        "hits": {
+          "first": 6.0,
+          "last": 8.0,
+          "num": 3.0
+        },
+        "roles": [
+          "nan",
+          "nan"
+        ],
+        "inactive": "False"
+      },
+      {
+        "game_string": "QF40.1",
+        "alignment": "G",
+        "death": "S",
+        "result": "L",
+        "hits": {
+          "first": "nan",
+          "last": "nan",
+          "num": 0.0
+        },
+        "roles": [
+          "nan",
+          "nan"
+        ],
+        "inactive": "False"
+      },
+      {
+        "game_string": "QF40.2",
+        "alignment": "G",
+        "death": "S",
+        "result": "L",
+        "hits": {
+          "first": "nan",
+          "last": "nan",
+          "num": 0.0
+        },
+        "roles": [
+          "nan",
+          "nan"
+        ],
+        "inactive": "False"
+      },
+      {
+        "game_string": "LG61",
+        "alignment": "G",
+        "death": "X",
+        "result": "W",
+        "hits": {
+          "first": 4.0,
+          "last": 4.0,
+          "num": 1.0
+        },
+        "roles": [
+          "nan",
+          "nan"
+        ],
+        "inactive": "False"
+      },
+      {
+        "game_string": "LG62",
+        "alignment": "F",
+        "death": "O",
+        "result": "W",
+        "hits": {
+          "first": "nan",
+          "last": "nan",
+          "num": 0.0
+        },
+        "roles": [
+          "nan",
+          "nan"
+        ],
+        "inactive": "False"
+      },
+      {
+        "game_string": "QF44",
+        "alignment": "E",
+        "death": "S",
+        "result": "W",
+        "hits": {
+          "first": "nan",
+          "last": "nan",
+          "num": 0.0
+        },
+        "roles": [
+          "nan",
+          "nan"
+        ],
+        "inactive": "False"
+      },
+      {
+        "game_string": "LG67",
+        "alignment": "G",
+        "death": "E",
+        "result": "L",
+        "hits": {
+          "first": 4.0,
+          "last": 4.0,
+          "num": 1.0
+        },
+        "roles": [
+          "nan",
+          "nan"
+        ],
+        "inactive": "True"
+      },
+      {
+        "game_string": "MR43",
+        "alignment": "G",
+        "death": "I",
+        "result": "L",
+        "hits": {
+          "first": "nan",
+          "last": "nan",
+          "num": 0.0
+        },
+        "roles": [
+          "nan",
+          "nan"
+        ],
+        "inactive": "True"
+      }
+    ],
+    "GMed": [
+      {
+        "game_string": "QF11",
+        "main": "False"
+      },
+      {
+        "game_string": "LG19",
+        "main": "True"
+      },
+      {
+        "game_string": "MR13",
+        "main": "True"
+      },
+      {
+        "game_string": "MR14",
+        "main": "True"
+      },
+      {
+        "game_string": "LG25",
+        "main": "True"
+      },
+      {
+        "game_string": "LG26",
+        "main": "True"
+      },
+      {
+        "game_string": "QF18",
+        "main": "True"
+      },
+      {
+        "game_string": "LG29",
+        "main": "False"
+      },
+      {
+        "game_string": "LG31",
+        "main": "True"
+      },
+      {
+        "game_string": "LG33",
+        "main": "True"
+      },
+      {
+        "game_string": "QF25",
+        "main": "True"
+      },
+      {
+        "game_string": "AG4",
+        "main": "False"
+      },
+      {
+        "game_string": "LG42",
+        "main": "False"
+      },
+      {
+        "game_string": "LG44",
+        "main": "False"
+      },
+      {
+        "game_string": "LG49",
+        "main": "True"
+      },
+      {
+        "game_string": "MR38.1",
+        "main": "True"
+      },
+      {
+        "game_string": "MR38.2",
+        "main": "True"
+      },
+      {
+        "game_string": "AG6",
+        "main": "True"
+      },
+      {
+        "game_string": "LG64",
+        "main": "True"
+      },
+      {
+        "game_string": "LG65",
+        "main": "True"
+      },
+      {
+        "game_string": "QF46",
+        "main": "True"
+      },
+      {
+        "game_string": "AG7",
+        "main": "True"
+      },
+      {
+        "game_string": "AG8",
+        "main": "True"
+      },
+      {
+        "game_string": "BT1",
+        "main": "True"
+      }
+    ],
+    "IMed": [
+      {
+        "game_string": "MR42"
+      },
+      {
+        "game_string": "LG68"
+      },
+      {
+        "game_string": "LG70"
+      },
+      {
+        "game_string": "QF48"
+      },
+      {
+        "game_string": "LG72"
+      },
+      {
+        "game_string": "MR50"
+      },
+      {
+        "game_string": "LG77"
+      },
+      {
+        "game_string": "LG84"
+      }
+    ]
+  }
+]
