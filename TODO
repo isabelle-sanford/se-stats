@@ -1,8 +1,10 @@
 # TO DO
 
-## actually for hw
+## Folder organization etc
 
-MONGO
+SQL folder notebook will have references wrong
+SE html page might too - keep or no? 
+Delete some of the data files? Not sure which
 
 ## Data
 
@@ -29,7 +31,7 @@ MONGO
 ## etc
 
 - Convert to Typescript
-
+figure out fucking require
 Games tables (fulldata and single player) should include GM list
 find a decent url name for one_game and one_player
 interdependent links to players/games on tables on each page
